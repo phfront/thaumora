@@ -10,7 +10,7 @@ CurseForge), com um resumo em português no fim da descrição.
   > A magic-only adventure for Minecraft 1.21.1 (NeoForge). No electricity, no cables: storage, automation, travel and combat are all done with spells, spirits, rituals and alchemy. Create is the only machinery, as arcane engineering.
 - **Categories:** Magic (principal), Exploration, Adventure and RPG
 - **License:** All Rights Reserved (padrão para modpack; os mods seguem as licenças de cada autor)
-- **Logo:** imagem quadrada, mínimo 400×400 (obrigatória)
+- **Logo:** `assets/logo.png` (1254×1254, gerado no ChatGPT; mínimo do CurseForge: 400×400)
 
 ## Arquivo da versão
 

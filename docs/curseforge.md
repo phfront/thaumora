@@ -38,9 +38,16 @@ O CurseForge identifica cada jar por um hash (murmur2) e tem um endpoint que rec
 - [x] fingerprint exato: feito pelo export do Prism (196 de 217) + API pública do site do CurseForge para os outros 21 → `data/cf_lock.json`
 - [x] baixar os mods só do CurseForge: `tools/build_instance.py` baixa pelo CDN público (`mediafilez.forgecdn.net`), sem chave, a partir dos IDs do `cf_prism.json`. Para um mod **novo** do CurseForge ainda é preciso instalar uma vez pelo Prism (é de lá que saem os IDs) e rodar `--import-prism`
 - [x] gerar o `.zip` do modpack: `python -I tools/cf_sync.py --export-only` → `dist/Thaumora-<versão>.zip` (para se o `cf_lock.json` não cobrir exatamente os jars do pack). `overrides/` ainda vazio: configs, KubeJS e quests entram quando forem do pack de fato
-- [ ] enviar o pack ao CurseForge (a API de upload de modpack pede um token de autor; o primeiro envio do projeto é manual no site). Textos da página em `docs/curseforge-pagina.md`
+- [x] enviar o pack ao CurseForge: projeto **Thaumora** criado e `Thaumora 0.1.0-beta` enviado em 25/11/2026 (Beta, 1.21.1, NeoForge; publicação automática quando aprovado; distribuição liberada para apps de terceiros). Aguardando a moderação. Textos da página em `docs/curseforge-pagina.md`, logo em `assets/logo.png`
 
 ## Mod novo no pack, daqui para frente
 1. `mods.json` → `resolve_mods.py` → `build_instance.py --apply` → testar.
 2. Achar o projeto/arquivo do jar novo no CurseForge e acrescentar em `data/cf_lock.json` (com a chave: `cf_sync.py` faz sozinho).
 3. `cf_sync.py --export-only` recusa exportar se algum jar do pack ficar sem ID.
+
+## Mundo principal e atualizações
+- O mundo principal é jogado pelo **app do CurseForge**: perfil importado de `dist/Thaumora-0.1.0-beta.zip` (25/11/2026), 10 GB de RAM. Log em `%USERPROFILE%\curseforge\minecraft\Instances\Thaumora\logs\latest.log`.
+- Quando o projeto for aprovado: instalar o Thaumora oficial pela busca do app e copiar a pasta `saves/<mundo>` do perfil importado para o oficial (uma vez só). Daí em diante, versões novas pelo botão **Update** do app, que mantém `saves`.
+- **Antes de cada versão nova chegar ao mundo principal:** copiar o mundo para a instância de testes do Prism (`Thaumora`), abrir com a versão nova e ler o log (blocos/itens sumidos, erros, crash). Só depois gerar o zip e atualizar.
+- Mod novo: o conteúdo de geração de mundo só aparece em áreas ainda não exploradas. Mod removido: os blocos e itens dele somem do mundo, então remover mod de mundo em andamento é sempre decisão explícita.
+- Backup automático do Simple Backups: completo a cada 2 h de jogo, guarda os 10 últimos.
