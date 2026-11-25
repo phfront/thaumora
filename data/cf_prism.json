@@ -1,0 +1,117 @@
+{
+ "_comentario": "Mods instalados pelo Prism a partir do CurseForge (IDs para o manifest.json). Gerado de mods/.index da instância.",
+ "files": [
+  {
+   "n": "Ars Elemancy",
+   "file": "ars_elemancy-1.21.1-1.18.3.jar",
+   "projectID": 1153666,
+   "fileID": 8349780,
+   "sha1": "f7e01437c86fc74e2abb2ad93554dc20c30b214b"
+  },
+  {
+   "n": "Ars Elemental",
+   "file": "ars_elemental-1.21.1-0.7.11.3.jar",
+   "projectID": 561470,
+   "fileID": 9716535,
+   "sha1": "7757f06e39eb976172e813ff4899411636b4943b"
+  },
+  {
+   "n": "Botania Revived",
+   "file": "Botania-Revived-1.21.1-2.0.4-NeoForge.jar",
+   "projectID": 1725641,
+   "fileID": 9695259,
+   "sha1": "00ebd14c970335dc695c06631cbd299dff12a60c"
+  },
+  {
+   "n": "Create: Thaumaturgy",
+   "file": "create_thaumaturgy-1.21.1-0.15.0.jar",
+   "projectID": 1741015,
+   "fileID": 9809372,
+   "sha1": "5af1a7715a8bf63ebb7dc48379a38c39303dfad0"
+  },
+  {
+   "n": "FTB Library (NeoForge)",
+   "file": "ftb-library-neoforge-2101.1.40.jar",
+   "projectID": 404465,
+   "fileID": 9650381,
+   "sha1": "e5f24391a447754dbc6d37d866981f47d67bb664"
+  },
+  {
+   "n": "FTB Quests (NeoForge)",
+   "file": "ftb-quests-neoforge-2101.1.39.jar",
+   "projectID": 289412,
+   "fileID": 9650792,
+   "sha1": "d5a0de6ad0517fd843ea830b49b06287c0686906"
+  },
+  {
+   "n": "FTB Teams (NeoForge)",
+   "file": "ftb-teams-neoforge-2101.1.12.jar",
+   "projectID": 404468,
+   "fileID": 9434081,
+   "sha1": "9c831fbbbccf2178827c3ccf278b2f2a0ce57306"
+  },
+  {
+   "n": "FTB Ultimine (NeoForge)",
+   "file": "ftb-ultimine-neoforge-2101.1.15.jar",
+   "projectID": 386134,
+   "fileID": 8231400,
+   "sha1": "c96a7cc0b52bf919660ea61c1536cebd9d5773b3"
+  },
+  {
+   "n": "Lodestone",
+   "file": "lodestone-1.21.1-1.8.2.jar",
+   "projectID": 616457,
+   "fileID": 7264731,
+   "sha1": "d1f7c638fac5192e01b1873f27e694a3c262ad11"
+  },
+  {
+   "n": "Roots Classic",
+   "file": "RootsClassic-1.21.1-1.5.10.jar",
+   "projectID": 295780,
+   "fileID": 8860609,
+   "sha1": "7d02ec46e4d276ebf556cdd529a75108b4724efd"
+  },
+  {
+   "n": "ShatterLib | OctoLib",
+   "file": "OctoLib-NEOFORGE-0.6.3.3-1.21.jar",
+   "projectID": 916747,
+   "fileID": 9809320,
+   "sha1": "13f9804713b57daf4b1f3a519dabd3225c51ef67"
+  },
+  {
+   "n": "Thaumaturge",
+   "file": "thaumaturge-1.21.1-NeoForge-1.1.1.jar",
+   "projectID": 1628024,
+   "fileID": 9815157,
+   "sha1": "4709549ec4f0dc3b185095a8f4f7d30bd8108675"
+  },
+  {
+   "n": "Thaumaturgic Brewing",
+   "file": "thaumaturgicbrewing-1.21.1-0.2.1.jar",
+   "projectID": 1798272,
+   "fileID": 9660295,
+   "sha1": "aa709ce0bd30ddcf4d5e28750e0d86c145f4bc4e"
+  },
+  {
+   "n": "Thaumaturgic Infusion",
+   "file": "thaumaturgicinfusion-1.21.1-0.8.4.jar",
+   "projectID": 1798279,
+   "fileID": 9660293,
+   "sha1": "4c6191426d4b0bbee0eb5f178ad08c29dd98bda4"
+  },
+  {
+   "n": "Thaumaturgic Tinkerer",
+   "file": "thaumaturgictinkerer-1.21.1-1.1.0.jar",
+   "projectID": 1802868,
+   "fileID": 9719010,
+   "sha1": "09e03db1eefb678ecdc18e70af3b7f55cd715375"
+  },
+  {
+   "n": "The Twilight Forest",
+   "file": "twilightforest-1.21.1-4.8.3345-universal.jar",
+   "projectID": 227639,
+   "fileID": 7797302,
+   "sha1": "9cfd4154928433e2f1f6cfc3deb48c284debb580"
+  }
+ ]
+}

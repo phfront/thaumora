@@ -132,6 +132,24 @@ nav.top a:hover{background:var(--surface2);color:var(--text)}
 .mods{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:10px}
 .mod{display:grid;grid-template-columns:48px 1fr;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px;text-decoration:none;color:inherit;transition:border-color .15s}
 .mod:hover{border-color:var(--accent)}
+button.mod{font:inherit;text-align:left;width:100%;cursor:pointer}
+.mod .more{color:var(--accent);font-weight:600}
+/* painel de detalhes do mod */
+dialog.dlg{border:1px solid var(--border);border-radius:16px;padding:0;background:var(--surface);color:var(--text);width:min(720px,calc(100vw - 24px));max-height:calc(100dvh - 32px);box-shadow:var(--shadow)}
+dialog.dlg::backdrop{background:rgba(10,6,18,.6)}
+.dlg .shot{width:100%;max-height:260px;object-fit:cover;background:var(--surface2)}
+.dlg .in{padding:18px 20px 22px}
+.dlg .hd{display:grid;grid-template-columns:56px 1fr auto;gap:12px;align-items:center}
+.dlg .hd img,.dlg .hd .av{width:56px;height:56px;border-radius:12px;object-fit:cover}
+.dlg h3{margin:0;font-size:22px}
+.dlg .x{background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:10px;width:36px;height:36px;font-size:18px;cursor:pointer}
+.dlg .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;font-size:12px;color:var(--faint)}
+.dlg h4{font-family:Inter,system-ui,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:18px 0 6px}
+.dlg p{margin:0;line-height:1.6}
+.dlg ul{margin:0;padding-left:20px}
+.dlg li{margin:3px 0}
+.dlg .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.dlg .links a{border:1px solid var(--border);border-radius:10px;padding:7px 12px;text-decoration:none;font-weight:600;font-size:14px}
 .mod.out{opacity:.62}
 .mod img,.mod .av{width:48px;height:48px;border-radius:10px;object-fit:cover}
 .av{display:grid;place-items:center;font-family:Cinzel,serif;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--gold))}
@@ -321,6 +339,7 @@ footer{padding:32px 0 56px;color:var(--faint);font-size:13px;border-top:1px soli
 
 <footer><div class="wrap">Thaumora · página gerada por <code>tools/build_page.py</code> em __BUILD_DATE__ · os ícones e imagens pertencem aos autores de cada mod (Modrinth).</div></footer>
 
+<dialog id="modDlg" class="dlg"></dialog>
 <script>
 const MODS = __MODS_JSON__;
 
@@ -450,15 +469,36 @@ $("#stChips").addEventListener("click", e => { const b = e.target.closest(".chip
 $("#q").addEventListener("input", renderMods);
 function renderMods(){
   const q = $("#q").value.trim().toLowerCase();
-  const list = MODS.filter(m => (cat==="all"||m.cat===cat) && stOn.has(m.s) && (!q || (m.n+" "+m.d).toLowerCase().includes(q)));
+  const list = MODS.filter(m => (cat==="all"||m.cat===cat) && stOn.has(m.s) && (!q || (m.n+" "+m.d+" "+JSON.stringify(m.info||"")).toLowerCase().includes(q)));
   $("#count").textContent = `${list.length} de ${MODS.length} mods`;
   $("#modList").innerHTML = list.map(m => `
-    <a class="mod ${m.s==="no"?"out":""}" href="${esc(m.url)}" target="_blank" rel="noopener">${icon(m)}
+    <button type="button" class="mod ${m.s==="no"?"out":""}" data-n="${esc(m.n)}">${icon(m)}
       <div><div class="top"><span class="name">${esc(m.n)}</span><span class="badge ${STATUS[m.s][1]}">${STATUS[m.s][0]}</span>${m.cf?'<span class="badge s-cf">CurseForge</span>':""}</div>
       <div class="desc">${esc(m.d)}</div>
-      <div class="meta">${m.t&&m.t!=="—"?`<span class="tierb">Tier ${esc(m.t)}</span>`:""}<span>${CATS[m.cat][0]}</span>${m.dl?`<span>· ${fmt(m.dl)} downloads</span>`:""}</div></div>
-    </a>`).join("") || `<p style="color:var(--muted)">Nenhum mod encontrado.</p>`;
+      <div class="meta">${m.t&&m.t!=="—"?`<span class="tierb">Tier ${esc(m.t)}</span>`:""}<span>${CATS[m.cat][0]}</span>${m.dl?`<span>· ${fmt(m.dl)} downloads</span>`:""}${m.info?'<span class="more">· ver detalhes</span>':""}</div></div>
+    </button>`).join("") || `<p style="color:var(--muted)">Nenhum mod encontrado.</p>`;
 }
+$("#modList").addEventListener("click", e => { const b = e.target.closest(".mod"); if (b) openMod(b.dataset.n); });
+function openMod(n){
+  const m = MODS.find(x => x.n === n); if (!m) return;
+  const i = m.info || {};
+  const sec = (t, html) => html ? `<h4>${t}</h4>${html}` : "";
+  $("#modDlg").innerHTML = `
+    ${m.img ? `<img class="shot" src="${esc(m.img)}" alt="">` : ""}
+    <div class="in">
+      <div class="hd">${icon(m)}<div><h3>${esc(m.n)}</h3>
+        <div class="tags"><span class="badge ${STATUS[m.s][1]}">${STATUS[m.s][0]}</span>${m.cf?'<span class="badge s-cf">CurseForge</span>':""}${m.t&&m.t!=="—"?`<span class="tierb">Tier ${esc(m.t)}</span>`:""}<span>${CATS[m.cat][0]}</span>${m.dl?`<span>· ${fmt(m.dl)} downloads</span>`:""}</div></div>
+        <button class="x" type="button" aria-label="Fechar" onclick="this.closest('dialog').close()">✕</button></div>
+      ${sec("O que é", `<p>${esc(i.sobre || m.d)}</p>`)}
+      ${sec("Principais recursos", (i.recursos||[]).length ? `<ul>${i.recursos.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : "")}
+      ${sec("Como começar", i.comecar ? `<p>${esc(i.comecar)}</p>` : "")}
+      ${sec("No Thaumora", i.thaumora ? `<p>${esc(i.thaumora)}</p>` : "")}
+      <div class="links"><a href="${esc(m.url)}" target="_blank" rel="noopener">Página do mod ↗</a></div>
+    </div>`;
+  $("#modDlg").showModal();
+  $("#modDlg").scrollTop = 0;
+}
+$("#modDlg").addEventListener("click", e => { if (e.target.id === "modDlg") e.target.close(); });
 renderChips(); renderMods();
 
 /* automação */

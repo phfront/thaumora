@@ -1006,5 +1006,19 @@
   "img": "https://cdn.modrinth.com/data/73mSSnCf/images/2b38f9ae72c451a9d58536a8ce38b540d0d0d0a8_350.webp",
   "dl": 521425,
   "ver": "nxnnnx"
+ },
+ "guard-villagers": {
+  "id": "H1sntfo8",
+  "icon": "https://cdn.modrinth.com/data/H1sntfo8/b95a237f1b05eb3aa8e27b16b756db99d327c37f_96.webp",
+  "img": "https://cdn.modrinth.com/data/H1sntfo8/images/61baa9134e4ba2d762619146d653d8221948f502_350.webp",
+  "dl": 14003015,
+  "ver": "nxxnnn"
+ },
+ "moogs-voyager-structures": {
+  "id": "OQAgZMH1",
+  "icon": "https://cdn.modrinth.com/data/OQAgZMH1/33277345757fcfdae356bb1b58064de77b065722.gif",
+  "img": "https://cdn.modrinth.com/data/OQAgZMH1/images/bab43992ab033b7e586a57771250d6f1da865a45_350.webp",
+  "dl": 9256109,
+  "ver": "nnnnnn"
  }
 }

@@ -1,8 +1,10 @@
-﻿"""Serve a página do Thaumora só na interface do Tailscale.
+﻿"""Serve as páginas dos projetos de Minecraft só na interface do Tailscale.
 
-- GET /            -> thaumora.html (sempre a versão atual do disco, sem cache)
-- GET /__version   -> data de modificação do arquivo (a página usa para se recarregar sozinha)
+- GET /            -> modpacks/thaumora/thaumora.html
+- GET /thaumind    -> mods/thaumind/docs/plano.html (planejamento do mod Thaumind)
+- GET /__version   -> data de modificação das páginas (elas usam para se recarregar sozinhas)
 
+Sempre lê a versão atual do disco, sem cache.
 Uso: pythonw tools/serve.py   (roda em segundo plano; iniciado no logon pela
 tarefa agendada "Thaumora Page Server"). Porta 8791 (a 8787 é usada por outro projeto).
 """
@@ -12,7 +14,15 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-PAGE = Path(__file__).resolve().parent.parent / "thaumora.html"
+PACK = Path(__file__).resolve().parent.parent
+MINECRAFT = PACK.parent.parent
+PAGES = {
+    "/": PACK / "thaumora.html",
+    "/index.html": PACK / "thaumora.html",
+    "/thaumora.html": PACK / "thaumora.html",
+    "/thaumind": MINECRAFT / "mods" / "thaumind" / "docs" / "plano.html",
+    "/thaumind/": MINECRAFT / "mods" / "thaumind" / "docs" / "plano.html",
+}
 PORT = 8791
 
 
@@ -39,10 +49,12 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         path = self.path.split("?", 1)[0]
-        if path in ("/", "/index.html", "/thaumora.html"):
-            self._send(PAGE.read_bytes(), "text/html; charset=utf-8")
+        page = PAGES.get(path)
+        if page and page.exists():
+            self._send(page.read_bytes(), "text/html; charset=utf-8")
         elif path == "/__version":
-            self._send(str(PAGE.stat().st_mtime_ns).encode(), "text/plain")
+            v = "-".join(str(p.stat().st_mtime_ns) for p in sorted(set(PAGES.values())) if p.exists())
+            self._send(v.encode(), "text/plain")
         else:
             self.send_error(404)
 

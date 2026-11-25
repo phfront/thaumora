@@ -1,0 +1,460 @@
+{
+ "Iron's Spells 'n Spellbooks": {
+  "sobre": "Mod de magia que traz a fantasia clássica de RPG: você junta feitiços em spellbooks e lança tudo com uma roda de magias. O foco é combate e aventura, com magos inimigos, estruturas para saquear, dungeons e artefatos mágicos.",
+  "recursos": [
+   "Mais de 100 feitiços com níveis de melhoria, divididos em escolas de magia",
+   "Spellbooks que guardam seus feitiços e são usados com uma roda de magias",
+   "12 conjuntos de armadura de mago que aumentam mana e poder de feitiço",
+   "2 bosses que lançam feitiços e 9 tipos de magos inimigos, aliados ou mercadores",
+   "11 estruturas geradas no mundo, com loot de feitiços e materiais",
+   "Sistemas de Weapon Imbuement (colocar feitiços em armas) e de Armor Upgrade"
+  ],
+  "comecar": "Explore o mundo atrás das estruturas do mod e dos mercadores para conseguir os primeiros pergaminhos e materiais. Depois faça um spellbook e coloque feitiços nele. O guia oficial de progressão fica em iron.wiki/progression.",
+  "thaumora": "É o pilar da fase IV (Batalha arcana), a magia de combate do pack. Com o Ars 'n' Spells a mana fica unificada com a do Ars Nouveau, o Iron's Dynamic Skill Trees adiciona árvores de habilidade e o Apotheosis tem compatibilidade nativa com ele.",
+  "fonte": "https://modrinth.com/mod/irons-spells-n-spellbooks"
+ },
+ "Thaumaturge": {
+  "sobre": "Sucessor espiritual do Thaumcraft 4 e 6, refeito para NeoForge moderno. É um mod sobre aprender: você começa só com um palpite e um cristal e vai descobrindo do que as coisas são feitas, de onde vem a magia e qual é o preço de usá-la.",
+  "recursos": [
+   "Cristais encontrados no subterrâneo, que são o ponto de partida de tudo",
+   "Journal (diário) de pesquisa que libera conhecimento conforme você avança",
+   "Alquimia e análise do que cada coisa é feita, no estilo dos aspectos do Thaumcraft",
+   "Wands e feitiços que você mesmo projeta",
+   "Golems e infusão, além de segredos que o próprio mod esconde para você descobrir"
+  ],
+  "comecar": "Procure cristais no subterrâneo, pegue um e durma. O resto está no livro: o journal vai mostrando o que você precisa saber quando estiver pronto.",
+  "thaumora": "É um dos mods centrais da fase II (Arcanismo) e o motivo de o Thavma ter ficado de fora. Os addons Thaumaturgic Infusion, Brewing e Tinkerer e o Create: Thaumaturgy, todos no pack, expandem o mod e o ligam à engenharia arcana do Create.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/thaumaturge"
+ },
+ "Hexalia": {
+  "sobre": "Mod de bruxaria popular e magia natural, centrado em herbalismo, rituais, plantas encantadas e forças vivas da natureza. A progressão vem de descobrir e entender os sistemas, não de uma árvore de habilidades, e a magia vai se misturando à sua casa e ao seu jardim.",
+  "recursos": [
+   "Colheita de ervas e plantas, refinadas no Mortar & Pestle",
+   "Preparo de misturas místicas e queima de combinações de ervas no Censer",
+   "Plantas encantadas que podem ser despertadas",
+   "Nature's Rituals, feitos com oferendas, sal e forças elementais",
+   "Ferramentas mágicas como Kelpweave Blade, Rootshaper e Cinderhew",
+   "Ídolos, equipamentos de proteção, acessórios (anéis, pingentes, amuletos) e criaturas sobrenaturais"
+  ],
+  "comecar": "O guia do mod é o Verdant Grimoire, que cobre ingredientes, rituais, preparos, equipamentos e criaturas. Comece colhendo ervas e processando-as no Mortar & Pestle; as receitas aparecem no EMI.",
+  "thaumora": "É um dos mods de entrada da fase I (Naturalismo): magia de jardim e ervas que dá para começar cedo. Combina com Hexerei, Enchanted: Witchcraft e Roots Classic, que seguem a mesma linha de bruxaria natural.",
+  "fonte": "https://modrinth.com/mod/hexalia"
+ },
+ "Neo Vitae": {
+  "sobre": "Mod de magia de sangue no espírito do Blood Magic, em que o sangue é a moeda do poder. Você colhe, refina e usa essa essência em altares, sigilos e rituais, até abrir um portal para uma dimensão de demônios.",
+  "recursos": [
+   "Ara Vitae: altar multibloco de seis tiers que consome Essentia Vitae para transmutar itens, melhorado com runas",
+   "Blood Orbs e a Anima, um estoque pessoal de essência que vale em qualquer dimensão",
+   "Sigils feitos na Tabula Vitae, como Sigil of Holding, Magnetism, Water, Lava, Void e Teleposition",
+   "Alchemy Flasks, Anointments para armas e ferramentas e equipamento Sentient forjado no Hellfire Forge",
+   "Sanguine Ward: escudo pessoal que gasta essência para absorver dano",
+   "Mais de 30 rituais com a Master Ritual Stone, como Well of Suffering, Ritual of Overgrowth e Soaring Skies",
+   "Dimensão Dungeon infinita, aberta pelo ritual Highway to Hell, cheia de demônios próprios (Daemonium Ignis, Glaciaris e outros)"
+  ],
+  "comecar": "O guia é o livro Scriptura Vitae. A jornada começa, nas palavras do mod, com um diamante e um ferimento: as primeiras gotas de sangue alimentam um altar simples, que depois cresce em tiers.",
+  "thaumora": "Representa a fase V (Magia proibida) no lugar do port do Blood Magic; é experimental. Seus rituais de colheita, crescimento e mineração são uma forma de automação mágica que combina com a regra de não usar tecnologia elétrica.",
+  "fonte": "https://modrinth.com/mod/neovitae"
+ },
+ "Apotheosis": {
+  "sobre": "Mod de progressão estilo RPG que tenta continuar fiel às mecânicas vanilla. Na 1.21.1 ele é dividido em módulos: o Apotheosis (aventura), o Apothic Attributes, o Apothic Enchanting e o Apothic Spawners.",
+  "recursos": [
+   "Affixes: atributos aleatórios em qualquer item, com raridades, achados em baús e em mobs",
+   "Gems encaixadas em Sockets; Sigil of Socketing e Sigil of Withdrawal para adicionar soquetes e remover gemas",
+   "Salvaging Table, Reforging Table e Augmenting Table para desmontar, refazer e aperfeiçoar itens",
+   "World Tiers (Haven, Frontier, Ascent, Summit, Pinnacle), escolhidos com CTRL+T, que aumentam loot e dificuldade",
+   "Apothic Invaders e Apothic Elites: mobs fortalecidos que sempre dão loot melhor",
+   "Apothic Enchanting: reforma completa do encantamento com muitos encantamentos novos"
+  ],
+  "comecar": "O guia é o Chronicle of Shadows, feito com um livro e uma barra de ouro. Os primeiros itens com affix vêm de baús e mobs; desmonte-os na Salvaging Table para conseguir materiais de raridade.",
+  "thaumora": "Faz parte da fase IV (Batalha arcana), dando ao combate uma camada de loot e de mobs de elite. Tem compatibilidade nativa com o Iron's Spells, e o Apothic Spawners vem como entrada separada no pack.",
+  "fonte": "https://modrinth.com/mod/apotheosis"
+ },
+ "Psi": {
+  "sobre": "Mod de programação de feitiços inspirado no anime Mahouka Kokou no Rettousei. Você monta sequências de ações, os spells, encaixando peças lógicas como numa programação visual, e usa conceitos básicos de matemática como vetores.",
+  "recursos": [
+   "Montagem de spells a partir de peças que se conectam, com muita liberdade criativa",
+   "Sistema de níveis que libera peças novas aos poucos, com tutoriais dentro do jogo",
+   "Uso de vetores e matemática simples para mirar e mover coisas no mundo",
+   "Ferramentas para compartilhar e copiar spells, inclusive de fontes de fora do jogo"
+  ],
+  "comecar": "A documentação e os tutoriais ficam no livro de guia do mod (feito com Patchouli). Siga os níveis na ordem, porque cada um ensina um conceito e libera novas peças.",
+  "thaumora": "É opcional e fica na fase IV (Batalha arcana), para quem gosta de quebra-cabeça e programação. É uma magia meio tecnológica, mas não usa energia elétrica, então cabe nas regras do pack.",
+  "fonte": "https://modrinth.com/mod/psi"
+ },
+ "Ars 'n' Spells": {
+  "sobre": "Addon que une o Ars Nouveau e o Iron's Spells 'n Spellbooks numa experiência de magia só. Ele junta as barras de mana, divide a progressão entre os dois sistemas e deixa colocar feitiços de um mod em itens do outro.",
+  "recursos": [
+   "Cinco modos de unificação de mana (ISS Primary, Ars Primary, Hybrid, Separate, Disabled), trocados com /ans mode",
+   "Bônus de equipamentos e acessórios valem para os dois sistemas de mana",
+   "O poder dos feitiços do Ars aumenta com o spell power do Iron's",
+   "Resonance: bônus de dano quando a mana está quase cheia",
+   "Ficar perto de Source Jars do Ars acelera a regeneração de mana",
+   "Spell Transcription: ritual no Ritual Brazier que grava um feitiço de um mod em um item do outro"
+  ],
+  "comecar": "Funciona sozinho assim que você tem os dois mods. Para gravar feitiços cruzados, faça o tablet Spell Transcription no Enchanting Apparatus do Ars Nouveau e use-o num Ritual Brazier.",
+  "thaumora": "Fica na fase IV (Batalha arcana) e liga os dois maiores sistemas de feitiço do pack, o Ars Nouveau e o Iron's Spells. Também lê os affixes de mana do Apotheosis em acessórios.",
+  "fonte": "https://modrinth.com/mod/ars-n-spells"
+ },
+ "Ars Creo": {
+  "sobre": "Addon pequeno que liga o Ars Nouveau ao Create. Ele permite gerar força rotacional com Starbuncles e levar torres de feitiço em contraptions.",
+  "recursos": [
+   "Starbuncle Wheel: gera SU (força rotacional do Create) com a energia de Starbuncles",
+   "Spell Turrets funcionam em contraptions do Create",
+   "Timer Turret, Basic Spell Turret e Enhanced Spell Turret, com gatilhos diferentes numa contraption",
+   "Source Jars podem fazer parte de uma contraption e abastecer as torres"
+  ],
+  "comecar": "Depois de ter Starbuncles no Ars Nouveau e o básico do Create, faça uma Starbuncle Wheel para gerar rotação, ou monte uma Spell Turret numa contraption.",
+  "thaumora": "Entra na fase II e é uma das pontes centrais da engenharia arcana: a energia do Create vem da magia do Ars Nouveau, sem tecnologia elétrica. Combina bem com drills e máquinas móveis do Create.",
+  "fonte": "https://modrinth.com/mod/ars-creo"
+ },
+ "Copycats+": {
+  "sobre": "Addon do Create com todos os blocos copycat num mod só. Um bloco copycat copia a textura de outro bloco e permite formas que o vanilla não tem.",
+  "recursos": [
+   "Mais de 30 formas: slabs, stairs, vertical steps, beams, slices, layers, panes, bytes (mini-blocos) e boards",
+   "Portas, trapdoors, fence gates, botões e placas de pressão copycat",
+   "Shafts, cogwheels e canos de fluido copycat, para esconder mecanismos do Create",
+   "Texturas conectadas entre copycats que dividem a mesma face"
+  ],
+  "comecar": "Faça a peça copycat desejada e clique nela com o bloco cuja textura quer copiar.",
+  "thaumora": "Mod de decoração, sem tier. Serve para deixar as máquinas do Create com cara de construção arcana, escondendo engrenagens em blocos de pedra ou madeira.",
+  "fonte": "https://modrinth.com/mod/copycats"
+ },
+ "Deep Aether": {
+  "sobre": "Addon do The Aether que expande a dimensão do céu com biomas, materiais e criaturas novas, mantendo o estilo original. A ideia dos autores é dar ao Aether o tratamento que o Nether recebeu na 1.16.",
+  "recursos": [
+   "Biomas novos: Aerglow Forest, Blue Aerglow Forest, Aerlavender Fields, Yagroot Swamp e Golden Heights",
+   "Skyjade: minério no Holystone com ferramentas e armadura que ficam mais fracas conforme gastam",
+   "Stratus: material das Sterling Aerclouds, com queda lenta e um dash com o conjunto completo",
+   "Novas árvores (Roseroot, Yagroot, Conberry, Sunroot) e pedras (Clorite, Aseterite)",
+   "Mobs como Aerglow Fish e Aether Quail, o líquido Poison e o Virulent Quicksand",
+   "Spooky Ring nas dungeons, que aumenta o dano durante a noite"
+  ],
+  "comecar": "Entre no Aether pelo portal de glowstone do The Aether e procure os biomas novos. As Sterling Aerclouds ficam bem alto, acima de Y 200.",
+  "thaumora": "Faz parte da fase III, ampliando o Aether para quem explorar as dimensões. Funciona junto com o The Aether, que também está no pack.",
+  "fonte": "https://modrinth.com/mod/deep-aether"
+ },
+ "The Bumblezone": {
+  "sobre": "Dimensão de abelhas que parece o interior de uma colmeia gigante, com paredes enormes e canais de água entre elas. As abelhas defendem o mel com muita fúria.",
+  "recursos": [
+   "Dimensão com áreas cobertas de pólen e cânions de cristais de mel",
+   "Wrath of the Hive: pegar mel ou bater numa abelha deixa todas as abelhas próximas fortes e furiosas",
+   "Protection of the Hive: alimentar as abelhas faz elas defenderem você",
+   "Estruturas para explorar e uma armadura de abelha exclusiva",
+   "Honey Compass que leva até a Bee Queen"
+  ],
+  "comecar": "A aba de conquistas do Bumblezone explica como entrar na dimensão e o que fazer lá. Leve comidas de mel para acalmar as abelhas.",
+  "thaumora": "É opcional e fica fora da trilha de tiers, para quem quiser uma dimensão diferente. Tem um resource pack interno Anti-Trypophobia para quem se incomoda com as texturas.",
+  "fonte": "https://modrinth.com/mod/the-bumblezone"
+ },
+ "Unusual End": {
+  "sobre": "Mod que deixa o End mais variado, com biomas, criaturas, estruturas e recursos novos, tentando combinar com o estilo vanilla. Os End Highlands ganham plantas e novos perigos.",
+  "recursos": [
+   "Biomas novos: Gloopy Plains (com Enderblobs e Ender Infection) e Warped Reef (com criaturas aquáticas)",
+   "Estruturas: End House, Ancient End Tower, Flying End Ships, Wanderer Islands, Warped Ships e Warped Stations",
+   "Mobs como Ender Fireflies (domáveis), Endstone Trappers, Undead Enderlings e Draglings",
+   "Recursos como Shiny Crystals, Prismalite, Citrine e Chorus Cane Planks",
+   "Citrine Candle, que faz os Undead Enderlings sumirem por perto"
+  ],
+  "comecar": "Vá para o End e explore os Highlands. As End Houses costumam dar um mapa para a Ancient End Tower mais próxima.",
+  "thaumora": "Fica na fase V, parte da reforma do End junto com Nullscape, End Remastered e MES: Moog's End Structures. Tem compatibilidade com Create, Farmer's Delight e Ender's Delight.",
+  "fonte": "https://modrinth.com/mod/unusual_end"
+ },
+ "Mowzie's Mobs": {
+  "sobre": "Mod de criaturas e bosses com IA própria, atmosfera forte e animações muito fluidas. Ao derrotar os bosses você pode tomar os poderes mágicos deles para si.",
+  "recursos": [
+   "Ferrous Wroughtnaut: cavaleiro blindado subterrâneo que dá o Wrought Helm e o Axe of a Thousand Metals",
+   "Frostmaw: fera gigante de gelo das regiões nevadas, que guarda um cristal de gelo poderoso",
+   "Umvuthi, the Sunbird: boss da savana com magia solar, que dá a máscara Sol Visage",
+   "Tongbi, the Sculptor: desafio de parkour num mosteiro que dá o Earthrend Gauntlet",
+   "Criaturas como Foliaath, Grottol, Naga, Lantern, Abavuthana, Bluffs e Elokosa"
+  ],
+  "comecar": "Explore os biomas certos: savanas para os Abavuthana e o Umvuthi, regiões nevadas para o Frostmaw, cavernas para o Wroughtnaut e os Grottols.",
+  "thaumora": "Fica na fase III como fonte de bosses e de artefatos mágicos ganhos em combate. Combina com L_Ender's Cataclysm e When Dungeons Arise para quem gosta de lutar contra chefes.",
+  "fonte": "https://modrinth.com/mod/mowzies-mobs"
+ },
+ "Structory": {
+  "sobre": "Datapack de estruturas atmosféricas com um pouco de história escondida. Espalha ruínas, torres, cabanas, cemitérios, povoados e barcos com cara de civilização perdida.",
+  "recursos": [
+   "Ruínas como Mangrove Ruins (pântanos) e Taiga Ruins (frio)",
+   "Old Manor, com bruxas, e o raro Graveyard",
+   "Pequenas histórias contadas pelas próprias estruturas e por aldeões",
+   "Funciona junto com o addon Structory: Towers, que também está no pack"
+  ],
+  "comecar": "Basta explorar: as estruturas aparecem em chunks novos pelo Overworld.",
+  "thaumora": "Sem tier fixo, dá clima de mundo antigo e misterioso à exploração do pack. Combina com Structory: Towers, Towns and Towers e as outras estruturas do pack.",
+  "fonte": "https://modrinth.com/mod/structory"
+ },
+ "MNS: Moog's Nether Structures": {
+  "sobre": "Mod que adiciona estruturas novas ao Nether, feitas só com blocos vanilla. Traz loot novo, inimigos difíceis e desafios mantendo o visual do jogo original.",
+  "recursos": [
+   "Várias estruturas novas espalhadas pelo Nether",
+   "Loot próprio nos baús e inimigos guardando os locais",
+   "Visual vanilla, que combina com outros mods de Nether"
+  ],
+  "comecar": "Entre no Nether e explore; as estruturas aparecem em chunks novos.",
+  "thaumora": "Fica na fase IV e dá mais motivos para explorar o Nether junto com Incendium e Nether Depths Upgrade. Faz parte da família Moog, ao lado do MSS e do MES no pack.",
+  "fonte": "https://modrinth.com/mod/mns-moogs-nether-structures"
+ },
+ "Towns and Towers": {
+  "sobre": "Mod que expande vilas, postos de pillagers e navios, com mais detalhes que as versões vanilla. Muitas estruturas são inspiradas em construções e estilos arquitetônicos reais.",
+  "recursos": [
+   "Mais de 50 estruturas novas",
+   "Vilas novas com estilos diferentes por bioma",
+   "Postos de pillagers novos",
+   "Navios para explorar",
+   "Loot principalmente das tabelas vanilla, então os itens de outros mods aparecem nos baús"
+  ],
+  "comecar": "Explore o Overworld; as estruturas aparecem em chunks novos e podem ser achadas com o comando /locate structure.",
+  "thaumora": "Sem tier fixo, deixa o Overworld mais vivo e dá mais vilas para negociar. Combina com o Easy Villagers e o Just Enough Professions do pack.",
+  "fonte": "https://modrinth.com/mod/towns-and-towers"
+ },
+ "Waystones": {
+  "sobre": "Mod de teleporte com pedras mágicas. Depois de ativar uma waystone, você pode voltar a ela usando outra waystone ou itens de teleporte.",
+  "recursos": [
+   "Waystones que podem ser feitas ou achadas em vilas",
+   "Warp Scroll (uso único) e Warp Stone (recarregável) para teleportar",
+   "Warp Plates, outra forma de viajar entre pontos",
+   "Waystones globais, disponíveis em qualquer lugar"
+  ],
+  "comecar": "Procure uma waystone numa vila e clique nela para ativá-la, ou faça a sua. Depois use qualquer waystone para viajar entre as que você ativou.",
+  "thaumora": "Sem tier, é o transporte básico do pack com cara de magia. Ajuda a ir e voltar das estruturas e dimensões sem precisar de outros meios de teleporte.",
+  "fonte": "https://modrinth.com/mod/waystones"
+ },
+ "Simply Swords": {
+  "sobre": "Mod de armas que adiciona 14 tipos de arma com estilos de jogo diferentes. Também traz armas únicas com habilidades poderosas, achadas só em baús.",
+  "recursos": [
+   "14 tipos de arma, como spears, glaives, chakrams arremessáveis, katanas, greathammers, greataxes, rapiers e twinblades",
+   "Armas únicas com habilidades especiais, que não podem ser craftadas",
+   "Chance de achar armas únicas em qualquer baú durante a aventura"
+  ],
+  "comecar": "Faça as variantes comuns com os materiais vanilla e abra baús em estruturas para tentar as armas únicas.",
+  "thaumora": "Sem tier fixo, dá opções de combate corpo a corpo para quem mistura espada e magia. Os baús das muitas estruturas do pack são a fonte das armas únicas.",
+  "fonte": "https://modrinth.com/mod/simply-swords"
+ },
+ "Iron's Dynamic Skill Trees": {
+  "sobre": "Datapack/mod que adiciona quatro árvores de habilidade ao Iron's Spells 'n Spellbooks, usando o Pufferfish's Skills. As árvores crescem conforme você lança feitiços.",
+  "recursos": [
+   "Magic I: melhorias gerais de magia no começo",
+   "Primary School e Secondary School: especialização em uma escola principal e uma secundária",
+   "Magic II: maestria final, com foco na escola Eldritch",
+   "XP ganho lançando feitiços; feitiços mais raros e caros dão mais XP",
+   "Habilidade Reset School para refazer a escolha sem perder a experiência"
+  ],
+  "comecar": "Lance feitiços do Iron's Spells para ganhar XP e abra a tela do Pufferfish's Skills para gastar os pontos.",
+  "thaumora": "Fica na fase IV (Batalha arcana) e dá progressão de longo prazo ao Iron's Spells. Funciona junto com o Pufferfish's Skills, que está no pack.",
+  "fonte": "https://modrinth.com/mod/irons-spells-n-spellbooks-dynamic-skill-trees"
+ },
+ "Loot Journal": {
+  "sobre": "Mod só de cliente que mostra uma notificação animada de cada item que você pega, como um feed de RPG.",
+  "recursos": [
+   "Notificações que deslizam da borda da tela e juntam itens repetidos",
+   "Destaque especial para itens raros e também para experiência",
+   "Temas visuais e layout configuráveis dentro do jogo"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Deixa mais claro o que caiu de bosses, baús e rituais.",
+  "fonte": "https://modrinth.com/mod/loot-journal"
+ },
+ "Occultism Delight": {
+  "sobre": "Addon que liga o Occultism ao Farmer's Delight com um bloco só, a Occult Cooking Pot. É uma panela do Farmer's Delight que puxa os ingredientes direto do armazenamento do Occultism.",
+  "recursos": [
+   "Occult Cooking Pot: cozinha qualquer receita da panela do Farmer's Delight, inclusive de addons",
+   "Painel de receitas com contagem de quantas você pode fazer agora, busca e filtro",
+   "Cozinha em lote com shift-clique",
+   "Liga-se a um Dimensional Storage Actuator, sem energia e sem limite de alcance, até entre dimensões"
+  ],
+  "comecar": "Faça a Occult Cooking Pot a partir de uma panela do Farmer's Delight, coloque sobre uma fonte de calor e use agachado + botão direito num Dimensional Storage Actuator para ligar. Depois é só abrir e escolher a receita.",
+  "thaumora": "Sem tier fixo, aparece quando você já tem o Dimensional Storage do Occultism. É um bom exemplo de automação mágica no pack, ligando a cozinha ao armazenamento.",
+  "fonte": "https://modrinth.com/mod/occult-delight"
+ },
+ "Serene Seasons": {
+  "sobre": "Mod que adiciona estações do ano. A cor da grama e das folhas muda durante o ano, e no inverno a temperatura cai e pode nevar em biomas onde normalmente não neva.",
+  "recursos": [
+   "Quatro estações com cores de vegetação diferentes",
+   "Plantações crescem melhor ou pior dependendo da estação",
+   "Clima e neve mudam conforme a época do ano"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Faz o planejamento da fazenda importar mais, o que combina com o lado de naturalismo e herbalismo do pack.",
+  "fonte": "https://modrinth.com/mod/serene-seasons"
+ },
+ "Aquaculture 2": {
+  "sobre": "Mod que expande a pesca com mais de 30 peixes novos, que dependem do bioma. Também traz varas melhores, acessórios para elas e loot novo.",
+  "recursos": [
+   "Mais de 30 peixes por tipo de bioma, inclusive biomas de mods, que também nadam no mundo",
+   "Varas novas que aceitam hooks, bait, linhas e bobbers",
+   "Tackle Box para aplicar e guardar acessórios de pesca",
+   "Fish fillets feitos a partir dos peixes",
+   "Loot como Neptune's Bounty, caixas, Message in a Bottle e ferramentas e armadura de Neptunium"
+  ],
+  "comecar": "Pesque com qualquer vara em biomas diferentes. Depois faça uma das varas novas e uma Tackle Box para colocar acessórios.",
+  "thaumora": "Sem tier, é uma atividade tranquila de fazenda e comida. Os peixes servem de ingrediente para o Farmer's Delight e os outros mods de culinária do pack.",
+  "fonte": "https://modrinth.com/mod/aquaculture"
+ },
+ "Amendments": {
+  "sobre": "Mod de ajustes nos blocos vanilla, feito pelos autores do Supplementaries. Ele dá mais função e visual melhor a blocos que já existem, sem adicionar coisas totalmente novas.",
+  "recursos": [
+   "Caldeirões que guardam qualquer líquido, misturam poções e tintas e fervem com calor embaixo",
+   "Lanternas presas na parede, com balanço e animação na mão",
+   "Pilhas de crânios e velas sobre crânios",
+   "Jukebox mostrando o disco, tapetes em degraus e lajes, bolos empilhados e lectern com cores de fonte"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Complementa o Supplementaries e ajuda na decoração de laboratórios e salas de ritual.",
+  "fonte": "https://modrinth.com/mod/amendments"
+ },
+ "Arcane Lanterns": {
+  "sobre": "Mod de lanternas mágicas. No Lantern Maker você infunde uma lanterna comum com catalisadores e ela ganha um efeito em área.",
+  "recursos": [
+   "Lantern Maker: coloque os catalisadores e depois uma lanterna vanilla por cima",
+   "Life Lantern acelera plantações e Love Lantern faz os animais procriarem",
+   "Warding Lantern empurra criaturas para longe e Containment Lantern prende criaturas numa área",
+   "Outras como Feral, Boreal, Brilliant, Wailing, Withering e Cloud Lantern"
+  ],
+  "comecar": "Faça um Lantern Maker e veja no EMI os catalisadores de cada lanterna.",
+  "thaumora": "Sem tier fixo, dá pequenas ajudas mágicas para a base e a fazenda, como acelerar plantações ou manter mobs longe.",
+  "fonte": "https://modrinth.com/mod/arcane-lanterns"
+ },
+ "Carry On": {
+  "sobre": "Permite pegar e carregar blocos com inventário, como baús e fornalhas, e mobs pequenos, só com as mãos vazias. O conteúdo do bloco é mantido.",
+  "recursos": [
+   "Shift + botão direito com a mão vazia para levantar, botão direito para colocar",
+   "Funciona com blocos de um bloco só de qualquer mod",
+   "Carregar deixa você mais lento, e mais ainda se o baú estiver cheio"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Facilita mudar a base de lugar sem esvaziar baús.",
+  "fonte": "https://modrinth.com/mod/carry-on"
+ },
+ "Tom's Simple Storage": {
+  "sobre": "Mod de armazenamento simples em estilo vanilla. Liga seus baús a um terminal único com busca e crafting.",
+  "recursos": [
+   "Storage Terminal e Crafting Terminal para ver e usar todos os baús ligados",
+   "Inventory Connector, que junta os baús numa rede",
+   "Wireless terminal, conectores com filtro e Inventory Hopper"
+  ],
+  "comecar": "Coloque um Inventory Connector encostado nos baús e um terminal ligado a ele.",
+  "thaumora": "É a organização do começo de jogo, feita só com madeira e ferro, antes do Dimensional Storage do Occultism.",
+  "fonte": "https://modrinth.com/mod/toms-storage"
+ },
+ "Polymorph": {
+  "sobre": "Resolve conflitos de receita deixando você escolher o resultado quando os mesmos ingredientes servem para mais de um item.",
+  "recursos": [
+   "Botão acima do resultado na bancada para escolher entre as opções",
+   "Também funciona na fornalha e na smithing table",
+   "Lembra a última escolha enquanto os ingredientes não mudam"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Com cerca de 155 mods, evita que receitas iguais de mods diferentes bloqueiem um item.",
+  "fonte": "https://modrinth.com/mod/polymorph"
+ },
+ "Xaero's World Map": {
+  "sobre": "Mapa-múndi em tela cheia que se desenha sozinho conforme você explora.",
+  "recursos": [
+   "Abre com a tecla M, com arrastar e zoom pelo mouse",
+   "Mostra e cria waypoints do Xaero's Minimap e permite teleportar até eles",
+   "Funciona em dimensões de caverna como o Nether"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Funciona junto com o Xaero's Minimap do pack e ajuda a marcar estruturas e portais.",
+  "fonte": "https://modrinth.com/mod/xaeros-world-map"
+ },
+ "FallingTree": {
+  "sobre": "Faz a árvore inteira cair quando você corta um tronco.",
+  "recursos": [
+   "Modos: instantâneo, descer aos poucos ou queda com animação",
+   "Opção de desativar o efeito agachando"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Poupa tempo ao juntar madeira, inclusive das árvores mágicas de outros mods.",
+  "fonte": "https://modrinth.com/mod/fallingtree"
+ },
+ "Corpse": {
+  "sobre": "Quando você morre, aparece um corpo com a sua skin guardando todos os itens que estavam no inventário.",
+  "recursos": [
+   "O corpo não cai no void nem queima na lava",
+   "Os itens voltam aos espaços originais quando você pega de volta",
+   "Histórico de mortes na tecla U, com o local de cada morte"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Deixa as mortes nas dimensões perigosas e contra bosses menos punitivas.",
+  "fonte": "https://modrinth.com/mod/corpse"
+ },
+ "KubeJS": {
+  "sobre": "Mod de scripts em JavaScript usado pelo autor do pack para mudar receitas e tags, adicionar itens e blocos e ajustar eventos do mundo.",
+  "recursos": [
+   "Edição de receitas e tags de qualquer mod",
+   "Criação de itens e blocos personalizados",
+   "Scripts de eventos do mundo e integração com quests"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo para o jogador. É a ferramenta que o pack usa para ajustar receitas e integrações entre os mods de magia.",
+  "fonte": "https://modrinth.com/mod/kubejs"
+ },
+ "Harvest with ease": {
+  "sobre": "Permite colher e replantar plantações com o botão direito, sem quebrar e plantar de novo.",
+  "recursos": [
+   "Funciona com plantações vanilla e com a maioria das de mods",
+   "Também funciona com Nether Wart e Cocoa Beans",
+   "Respeita Fortune para dar mais drops"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Facilita cuidar das plantações e das ervas dos mods de magia natural.",
+  "fonte": "https://modrinth.com/mod/harvest-with-ease"
+ },
+ "Just Enough Professions": {
+  "sobre": "Addon de visualizador de receitas que mostra qual bloco de trabalho dá cada profissão de aldeão.",
+  "recursos": [
+   "Consulte os usos de uma Emerald ou de um ovo de aldeão para ver todas as profissões",
+   "Segurando shift, mostra de qual mod vem a profissão"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Ajuda a montar salões de aldeões com o Easy Villagers.",
+  "fonte": "https://modrinth.com/mod/just-enough-professions-jep"
+ },
+ "LambDynamicLights": {
+  "sobre": "Adiciona luz dinâmica: itens que emitem luz iluminam o ambiente quando estão na mão de alguém ou no chão.",
+  "recursos": [
+   "Tocha ou lanterna na mão ilumina ao seu redor",
+   "Mobs em chamas, blazes, glow squids e outros também iluminam",
+   "Tochas apagam a luz dentro da água"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Ajuda a explorar cavernas e dimensões escuras sem colocar tochas o tempo todo.",
+  "fonte": "https://modrinth.com/mod/lambdynamiclights"
+ },
+ "Iris": {
+  "sobre": "Carregador de shaders moderno, compatível com a maioria dos shader packs feitos para o OptiFine.",
+  "recursos": [
+   "Permite usar shader packs para luz, sombra e água mais bonitas",
+   "Funciona junto com o Sodium"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. É opcional: ligue shaders só se o seu computador aguentar.",
+  "fonte": "https://modrinth.com/mod/iris"
+ },
+ "Entity Culling": {
+  "sobre": "Mod de desempenho que deixa de desenhar entidades e blocos com entidade, como baús, que estão escondidos atrás de paredes.",
+  "recursos": [
+   "Calcula o que está visível usando núcleos extras do processador",
+   "Não muda o comportamento de mobs nem de fazendas"
+  ],
+  "comecar": "",
+  "thaumora": "Passivo, sem tier. Ajuda o FPS em bases cheias de blocos mágicos e máquinas do Create.",
+  "fonte": "https://modrinth.com/mod/entityculling"
+ },
+ "Thavma": {
+  "sobre": "Releitura do Thaumcraft clássico para NeoForge, em versão alfa, sobre manipular os elementos da natureza e criar máquinas arcanas.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora porque o pack já usa o Thaumaturge como sucessor do Thaumcraft, e ter os dois seria repetir o mesmo papel.",
+  "fonte": "https://modrinth.com/mod/thavma"
+ },
+ "Blue Skies": {
+  "sobre": "Mod de aventura com duas dimensões, Everbright (clara e gelada) e Everdawn (mais escura e quente), cada uma com dungeons próprias.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora porque não existe versão para NeoForge 1.21.1.",
+  "fonte": "https://modrinth.com/mod/blue-skies"
+ }
+}

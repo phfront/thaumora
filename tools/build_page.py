@@ -73,8 +73,15 @@ def main():
         cache.update(fetch(missing))
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    # descrições detalhadas (data/info/*.json, chave = nome do mod)
+    details = {}
+    for f in sorted((DATA.parent / "info").glob("*.json")):
+        details.update(json.loads(f.read_text(encoding="utf-8")))
+
     problems = []
     for m in mods:
+        if m["n"] in details:
+            m["info"] = {k: v for k, v in details[m["n"]].items() if k != "fonte"}
         info = cache.get(m.get("mr") or "")
         if m.get("mr") and not info:
             problems.append(f"slug nao encontrado no Modrinth: {m['mr']}")

@@ -1,0 +1,463 @@
+{
+ "Malum": {
+  "sobre": "Malum é um mod de magia sombria centrado na arcana dos espíritos, um estudo das almas. Você extrai espíritos dos seres e os usa para infundir, transmutar e criar equipamentos. O mod é aberto: dá para seguir as partes que mais interessam, na ordem que quiser.",
+  "recursos": [
+   "Encyclopedia Arcana: o livro-guia, um diário escrito por um autor desconhecido que explica todo o mod",
+   "Spirit Infusion: o processo central, que usa espíritos para criar itens, equipamentos e materiais mágicos",
+   "Spirit Focusing: materializa recursos novos a partir de matéria espiritual pura",
+   "Totem Magic: cada tipo de espírito libera rituais de totem com efeitos próprios",
+   "Runewood Trees: árvores mágicas com conjunto completo de blocos de madeira",
+   "Minérios novos como Soulstone, Cthonic Gold e Natural Quartz",
+   "Trinkets, armaduras, ferramentas e armas com efeitos únicos que combinam entre si"
+  ],
+  "comecar": "Comece explorando: procure Runewood Trees na superfície e Soulstone no subsolo, e use a Encyclopedia Arcana como guia. A partir dela você monta a Spirit Infusion e passa a colher espíritos dos mobs.",
+  "thaumora": "Fica no tier III (Ocultismo e alquimia) e é um dos pilares de magia de almas do pack, ao lado do Occultism e do Eidolon. Os trinkets usam os slots do Curios, compartilhados com Relics, Artifacts e Reliquary.",
+  "fonte": "https://modrinth.com/mod/malum"
+ },
+ "Mahou Tsukai": {
+  "sobre": "Mahou Tsukai é um mod de magia focado em feitiços únicos e efeitos visuais caprichados, e não em sistemas de criação de feitiço. Muitos feitiços se inspiram em Fate/Stay Night e outras obras, mas não é preciso conhecer essas obras para jogar.",
+  "recursos": [
+   "Feitiços únicos: cada um tem um motivo próprio para existir, sem versões melhores que tornem os antigos inúteis",
+   "Sem tiers: a única progressão é a sua mana, que cresce com o uso",
+   "Não depende de geração de mundo, com exceção de uma dimensão própria",
+   "Quase tudo é configurável: custo e regeneração de mana, tamanho e efeito dos feitiços, sons e renderização",
+   "O comando /showmahou mostra ou esconde a barra de mana"
+  ],
+  "comecar": "Como não há estruturas nem minérios, tudo começa pelos feitiços e pela mana. A wiki oficial do mod, indicada na página, explica como despertar a magia e como cada feitiço funciona.",
+  "thaumora": "Fica no tier IV (Batalha arcana) como uma escola de combate bem diferente das outras, com magia de projeção, reforço e selamento. Funciona sozinho, sem depender de outros mods do pack.",
+  "fonte": "https://modrinth.com/mod/mahou-tsukai"
+ },
+ "Eidolon: Repraised": {
+  "sobre": "Eidolon: Repraised é o port moderno do Eidolon, mod de magia sombria de Elucent com alquimia, necromancia e manipulação de almas. Você faz rituais, reza para divindades em altares e cria itens mágicos com fragmentos de alma. O port está em beta e ainda tem partes em desenvolvimento.",
+  "recursos": [
+   "Ars Ecclesia: o livro-guia, com toda a documentação e as receitas",
+   "Rituais no Brazier, movidos por fragmentos de alma: criam itens, invocam monstros e protegem áreas grandes de mobs hostis",
+   "Theurgy: altares e efígies para rezar ao senhor sombrio ou ao da luz (Holy Path), com sacrifícios, reputação e novos conhecimentos",
+   "Artifice: alquimia no Crucible e uma bancada mágica própria para armas, ferramentas, armaduras e curios",
+   "Cânticos (chants) que lançam feitiços, com mana recuperada por orações e oferendas",
+   "Necromancer: chefe que aparece nas ondas finais de um raid e dropa o Summoning Staff, que controla mortos-vivos",
+   "Itens como Raven Cloak (pulo múltiplo e planar), Archangel Sight Ring e equipamentos de prata"
+  ],
+  "comecar": "Crafte o Ars Ecclesia, que traz todas as receitas. Para o caminho sombrio, a página indica entregar o Ars Ecclesia a uma Witch e depois começar a rezar num altar com uma efígie.",
+  "thaumora": "Fica no tier III (Ocultismo e alquimia), junto com Malum e Occultism, como a parte de necromancia e devoção do pack. O Crucible aceita qualquer bloco quente da tag dele, incluindo blocos tipo fogueira.",
+  "fonte": "https://modrinth.com/mod/eidolonrepraised"
+ },
+ "Embers Re-Ignited": {
+  "sobre": "Embers Re-Ignited é o port para 1.21.1 do Embers Rekindled, um mod de magia-tecnologia de inspiração anã movido a ember, uma energia mágica. Você constrói fornalhas, transmissores e máquinas que funcionam com ember e trabalha ligas como a Dawnstone. Esta versão adiciona integração direta com o Create.",
+  "recursos": [
+   "Ancient Golem: o inimigo que você precisa derrotar para começar o mod",
+   "Ancient Codex: o livro-guia, feito com os drops do golem",
+   "Rede de ember com Ember Emitter, Ember Receptor, Ember Funnel e Ember Ejector",
+   "Integração com o Create: ember gera força rotacional (SU) e alimenta Blaze Burners, que um Bellows deixa superaquecidos",
+   "Hearth Coil alimenta uma grade 3x3 de Blaze Burners",
+   "Engineer's Hammer junta o Engineer's Wrench e o Tinker's Hammer, e há upgrades de máquina movidos pelo Create",
+   "Óculos combinados: Ashen Goggles e Engineer's Goggles num item só"
+  ],
+  "comecar": "Encontre e derrote um Ancient Golem e use os drops para craftar o Ancient Codex. O codex explica o resto da progressão.",
+  "thaumora": "Fica no tier III e é a principal magitech do pack, ao lado do Create como engenharia arcana. O mod tem um dínamo de ember para FE, mas o Thaumora não usa energia elétrica, então o foco é a ligação com Blaze Burners e SU do Create. Está em beta.",
+  "fonte": "https://modrinth.com/mod/embers-re-ignited"
+ },
+ "Reliquary Reincarnations": {
+  "sobre": "Reliquary Reincarnations reúne itens e blocos mágicos clássicos que dão trabalho para conseguir, mas facilitam muito a vida. Tem armas, ímãs, amuletos contra mobs, armazenamento mágico e um sistema próprio de poções.",
+  "recursos": [
+   "Coin of Fortune: ímã que puxa itens e experiência até você",
+   "Hunter's Handgun: pistola com vários tipos de munição, como tiros teleguiados",
+   "Void Tear: guarda uma quantidade enorme de um único item; Infernal Chalice: guarda lava e protege dentro dela",
+   "Mob Charms: fazem um tipo de mob ignorar você; Interdiction Torch empurra mobs para longe",
+   "Pedestal: com o item certo dentro, vira coletor, tanque de XP, torre de ataque, ordenhadeira ou fazenda automática",
+   "Tome of Alkahestry: duplica alguns itens, até diamante e nether star, em troca de carga",
+   "Sistema de poções próprio, de ingredientes simples como batata até nether star"
+  ],
+  "comecar": "Os itens são feitos com materiais raros dropados por mobs; a wiki do mod, citada na página, detalha cada receita. EMI mostra todas elas no jogo.",
+  "thaumora": "Fica no tier V (Magia proibida) pelo peso de itens como o Tome of Alkahestry. O Pedestal com Harvest Rod ou espada é uma forma mágica de automatizar fazendas e defesa, sem eletricidade.",
+  "fonte": "https://modrinth.com/mod/reliquary-reincarnations"
+ },
+ "Ars Elemancy": {
+  "sobre": "Ars Elemancy é uma extensão do Ars Elemental, que por sua vez é addon do Ars Nouveau. Ela leva as escolas elementais adiante, combinando duas ou até as quatro escolas em armaduras e focos mais fortes.",
+  "recursos": [
+   "Seis conjuntos de dois elementos: Cindermancer, Lavamancer, Miremancer, Siltmancer, Tempestmancer e Vapormancer",
+   "Focos duplos que ampliam o poder de feitiço em duas escolas ao mesmo tempo",
+   "Elemancer: conjunto final que reúne os quatro elementos",
+   "É possível dar a Starbuncles a aparência de variantes do Ars Fauna renomeando-os"
+  ],
+  "comecar": "Você precisa já ter avançado no Ars Elemental, com as armaduras e focos de um elemento. As receitas aparecem no EMI e combinam esses itens.",
+  "thaumora": "Fica no tier III como o passo seguinte dos magos do Ars Nouveau. Requer Ars Nouveau e Ars Elemental, ambos no pack.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/ars-elemancy"
+ },
+ "Thaumaturgic Infusion / Brewing / Tinkerer": {
+  "sobre": "Este conjunto traz para o Thaumaturge os ports dos clássicos addons do Thaumcraft: Thaumic Infusion, Thaumic Brewing e Thaumic Tinkerer. Eles ampliam a alquimia, os focos e o endgame do Thaumaturge.",
+  "recursos": [
+   "Thaumaturgic Brewing: receitas no crucible para todas as poções, sem Brewing Stand nem blaze powder",
+   "No Brewing, Aqua faz a versão splash, Spiritus a lingering, Potentia deixa mais forte e Lux mais longa",
+   "Thaumaturgic Tinkerer: dez focos como efeitos de feitiço da varinha, editados no Focal Manipulator",
+   "Osmotic Enchanter: aplica 14 encantamentos novos, como Vampirism, Tunnel e Shatter",
+   "Transvectors, ímãs, Imbued Fires, talismãs e a Tablet of Necromancy para o laboratório",
+   "Endgame KAMI: armadura e ferramentas de ichor, Warp Gate e a dimensão Bedrock"
+  ],
+  "comecar": "Tudo vem pela pesquisa do Thaumaturge: a do Brewing abre depois da alquimia, e as do Tinkerer seguem a árvore de pesquisa normal.",
+  "thaumora": "Fica no tier II (Arcanismo) e aprofunda o Thaumaturge até o endgame. Integra com o Create: Thaumaturgy, e os talismãs usam os slots do Curios.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/thaumaturgic-tinkerer"
+ },
+ "Create: Enchantment Industry": {
+  "sobre": "Create: Enchantment Industry acrescenta ao Create ferramentas para lidar com experiência e encantamentos. A experiência vira um líquido que você armazena, transporta por canos e usa para encantar de forma automática.",
+  "recursos": [
+   "Liquid Experience: experiência líquida concentrada, fácil de guardar e mover",
+   "Blaze Enchanter e Blaze Forger: um blaze faz o papel de mesa de encantamento e de bigorna inteligentes",
+   "Mechanical Grindstone: rebolo automático, que também lixa",
+   "Printer: copia livros escritos, livros encantados, name tags e horários de trem",
+   "Experience Hatch e Experience Lantern: depositam e absorvem experiência, inclusive em contraptions",
+   "Hyper-enchantment: passa do nível máximo dos encantamentos",
+   "Integração com Apotheosis: Brass Bookshelf, Infuser, Gem Cutter, Affix Augmentor e Bulk Salvaging"
+  ],
+  "comecar": "Depois de montar a base do Create, faça um Experience Hatch e comece a guardar experiência líquida em tanques. O passo seguinte é o Blaze Enchanter.",
+  "thaumora": "Fica no tier IV e é a forma de automatizar encantamentos, que no pack são feitos pelo Create e pelo Apotheosis. Requer Create e Create: Dragons Plus; o Printer também copia Ancient Tomes do Quark.",
+  "fonte": "https://modrinth.com/mod/create-enchantment-industry"
+ },
+ "The Twilight Forest": {
+  "sobre": "The Twilight Forest é uma dimensão de aventura clássica, um reino de crepúsculo eterno coberto de árvores, criaturas estranhas e masmorras. A exploração segue uma progressão de chefes, cada um com mecânicas elaboradas e tesouros únicos.",
+  "recursos": [
+   "Uma dimensão inteira de floresta em crepúsculo, com biomas e criaturas próprias",
+   "Masmorras completas espalhadas pela dimensão",
+   "Lutas contra chefes variados, com mecânicas próprias, em sequência de progressão",
+   "Tesouros e itens com características e funções únicas",
+   "Portal montado com blocos naturais, em qualquer formato e tamanho"
+  ],
+  "comecar": "Faça uma moldura de grama, terra, podzol ou micélio, coloque flores, cogumelos ou plantas em cima e encha o meio de água. Depois jogue um diamante na água para ativar o portal.",
+  "thaumora": "É a dimensão do tier II (Arcanismo) e serve como a grande aventura do começo do pack. Vale a pena enfrentá-lo cedo, antes de mergulhar nas dimensões mais perigosas.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest"
+ },
+ "The Undergarden": {
+  "sobre": "The Undergarden é uma dimensão subterrânea escura, que fica bem abaixo da bedrock do Overworld. A flora se adaptou a viver sem luz, e as criaturas locais sofrem com os Rotspawn, monstros invasores de um reino caótico.",
+  "recursos": [
+   "Uma dimensão completa com 15 biomas",
+   "Mais de 10 criaturas únicas, incluindo os Rotspawn",
+   "Minérios cujas ferramentas e armas têm propriedades especiais",
+   "4 efeitos de poção novos e uma dungeon",
+   "Mais de 10 músicas e conquistas que guiam a jornada"
+  ],
+  "comecar": "Crafte um Catalyst, monte uma moldura no formato de portal do Nether com Stone Bricks ou Deepslate Bricks e clique com o Catalyst na parte de dentro da base.",
+  "thaumora": "Fica no tier III como uma dimensão sombria para explorar durante a fase de ocultismo. Os minérios dela rendem ferramentas e armas com propriedades especiais.",
+  "fonte": "https://modrinth.com/mod/the-undergarden"
+ },
+ "Nether Depths Upgrade": {
+  "sobre": "Nether Depths Upgrade é um mod pequeno que dá vida aos mares de lava do Nether. Adiciona peixes e plantas novas, além de recursos para explorar a lava.",
+  "recursos": [
+   "Nove peixes novos que vivem na lava",
+   "Flora nova nos mares de lava",
+   "Um encantamento e uma poção para explorar a lava"
+  ],
+  "comecar": "Vá a um mar de lava do Nether e pesque ou observe a lava; a poção e o encantamento ajudam a explorar com segurança.",
+  "thaumora": "É um mod de ambientação, sem tier fixo, que deixa o Nether menos vazio. Combina com Incendium e MNS, que também enriquecem o Nether do pack.",
+  "fonte": "https://modrinth.com/mod/nether-depths-upgrade"
+ },
+ "VerseWorks": {
+  "sobre": "VerseWorks é um criador de dimensões inspirado no Mystcraft: você cria mundos escrevendo livros. Você junta Verses que definem como a nova realidade será e viaja até ela com um livro de ligação.",
+  "recursos": [
+   "Mystical Crystals no subsolo: dão Hyper Dust e Verses",
+   "Ritual no caldeirão: 32 Hyper Dust e papel num caldeirão aceso com água criam um Unlinked Hyperbook, seu caminho de volta",
+   "Criação de dimensão: Hyper Dust, Verses e um Signed Book; o título vira o nome do mundo e o texto influencia a seed",
+   "Corrupção: poucos Verses deixam o mundo instável; Anti-Verses e Stable World Verses evitam isso",
+   "Dimensional Analyzer: detecta perigos escondidos no mundo criado",
+   "Viagem: coloque o Hyperbook num Lectern e clique nele"
+  ],
+  "comecar": "Procure Mystical Crystals no subsolo e quebre-os para obter Hyper Dust e Verses. Antes de viajar, faça um Linked Hyperbook apontando para o Overworld e leve um Lectern extra para não ficar preso.",
+  "thaumora": "É opcional e experimental, sem tier fixo: uma forma mágica de visitar outras dimensões. O próprio autor avisa que pode ter bugs, então faça backup do mundo (o pack tem o Simple Backups).",
+  "fonte": "https://modrinth.com/mod/verseworks"
+ },
+ "Dungeons and Taverns": {
+  "sobre": "Dungeons and Taverns adiciona estruturas em estilo vanilla que se misturam ao mundo, de tavernas e torres de vigia a masmorras perigosas. Várias delas guardam encantamentos exclusivos como saque.",
+  "recursos": [
+   "Tavernas com um Cartographer que vende mapas de estruturas conforme sobe de nível",
+   "Masmorras como Toxic Lair, Lone Citadel, Sealing Halls, Illager Manor e Witch Villa",
+   "Estruturas no Nether e no End, como Nether Keep, Nether Port e End Castle",
+   "Encantamentos exclusivos, como Aerial's Bane, Antidote, Ghasted, Wax Wings e Swift Soar",
+   "Librarians que sobem de nível dentro de certas estruturas ganham trocas exclusivas desses encantamentos"
+  ],
+  "comecar": "Encontre uma taverna e negocie com o Cartographer até ele chegar a Apprentice; ele passa a vender mapas para as outras estruturas.",
+  "thaumora": "Não tem tier fixo e acrescenta exploração ao Overworld, ao Nether e ao End. Os encantamentos novos combinam com o Apotheosis e o Create: Enchantment Industry, e o Explorer's Compass ajuda a achar as estruturas.",
+  "fonte": "https://modrinth.com/mod/dungeons-and-taverns"
+ },
+ "MSS: Moog's Soaring Structures": {
+  "sobre": "MSS: Moog's Soaring Structures adiciona ilhas flutuantes com construções para explorar. As estruturas usam blocos e entidades vanilla e trazem saque, inimigos e aldeões.",
+  "recursos": [
+   "Várias ilhas flutuantes com construções diferentes",
+   "Saque, inimigos e aldeões espalhados pelas estruturas",
+   "Feito só com blocos vanilla, então combina com qualquer estilo de mundo"
+  ],
+  "comecar": "Explore o céu do Overworld; o Explorer's Compass pode apontar para as estruturas do mod.",
+  "thaumora": "Não tem tier fixo e dá motivo para explorar o céu, combinando com feitiços de voo e mobilidade dos mods de magia. Faz parte da série Moog's, junto com MES e MNS.",
+  "fonte": "https://modrinth.com/mod/mss-moogs-soaring-structures"
+ },
+ "Illager Warship": {
+  "sobre": "Illager Warship adiciona aos oceanos um navio de guerra illager gigante, cheio de saque e itens valiosos. A tripulação de illagers defende o tesouro a bordo.",
+  "recursos": [
+   "Navio de guerra illager gigante que aparece em todos os biomas de oceano",
+   "Tripulação de vários tipos de illagers protegendo o navio",
+   "Saque e itens valiosos a bordo"
+  ],
+  "comecar": "Navegue pelos oceanos até avistar o navio, ou use o Explorer's Compass para localizá-lo. Vá preparado para enfrentar vários illagers ao mesmo tempo.",
+  "thaumora": "Não tem tier fixo; é um desafio de combate divertido para quando você já tiver bons feitiços e armas. Combina com os encantamentos Illager's Bane do Dungeons and Taverns.",
+  "fonte": "https://modrinth.com/mod/illager-warship"
+ },
+ "Galosphere": {
+  "sobre": "Galosphere melhora o subterrâneo com biomas, mecânicas e criaturas novas. O destaque são as cavernas de cristal, com gemas e mobs próprios.",
+  "recursos": [
+   "Crystal Canyons: biomas com as gemas Allurite e Lumiere em grandes formações",
+   "Sparkles: mobs que fazem allurite e lumiere crescerem nas costas",
+   "Lichen Caves: cavernas com Lichen Moss, cogumelos gigantes e Spectres voando",
+   "Pink Salt Caves: cavernas de sal rosa com um misterioso Ancient Shrine",
+   "Forgotten Ruins: estrutura rara com blocos suspeitos para escavar e Moles que dão pequenas missões"
+  ],
+  "comecar": "Desça às cavernas do Overworld; o Nature's Compass ajuda a encontrar os biomas Crystal Canyons, Lichen Caves e Pink Salt Caves.",
+  "thaumora": "Não tem tier fixo e deixa a mineração mais bonita e variada, combinando com o clima mágico do pack. As cavernas de cristal casam bem com a estética de magia do Thaumora.",
+  "fonte": "https://modrinth.com/mod/galosphere"
+ },
+ "Relics": {
+  "sobre": "Relics adiciona dezenas de relíquias com mecânicas complexas, que sobem de nível com o uso. Cada relíquia tem atributos aleatórios, então duas cópias nunca são iguais.",
+  "recursos": [
+   "25 relíquias com mecânicas únicas",
+   "Sistema de atributos aleatórios no estilo MMO",
+   "Níveis e melhorias para personalizar cada relíquia",
+   "Habilidades ativas que evoluem conforme você usa a relíquia",
+   "Balanceamento que se ajusta ao modpack"
+  ],
+  "comecar": "As relíquias são encontradas explorando o mundo, no saque de estruturas. O mod não tem livro-guia: passe o mouse sobre a relíquia para ver habilidades e níveis.",
+  "thaumora": "Não tem tier fixo; é uma recompensa de exploração que cresce com você. Usa os slots do Curios, junto com Artifacts e os trinkets do Malum.",
+  "fonte": "https://modrinth.com/mod/relics-mod"
+ },
+ "Pufferfish's Skills": {
+  "sobre": "Pufferfish's Skills é uma base para criar árvores de habilidade totalmente configuráveis. Sozinho ele não traz habilidades: são as árvores definidas pelo modpack que dão conteúdo a ele.",
+  "recursos": [
+   "Tela de habilidades aberta com a tecla K",
+   "Árvores de habilidade definidas em JSON, que o pack pode ajustar",
+   "Pontos e experiência ganhos jogando, gastos para liberar habilidades",
+   "Categorias separadas, cada uma com sua árvore"
+  ],
+  "comecar": "Aperte K para abrir a tela de habilidades e veja as categorias disponíveis. Os pontos vêm da experiência que você ganha jogando.",
+  "thaumora": "No Thaumora, a ideia é ter uma árvore por ordem de magia. É uma alternativa ao Project MMO: escolha um dos dois para a progressão de habilidades.",
+  "fonte": "https://modrinth.com/mod/skills"
+ },
+ "Bountiful": {
+  "sobre": "Bountiful gira em torno do Bounty Board, um quadro de contratos encontrado nas vilas. Os contratos pedem itens ou mobs abatidos e pagam recompensas.",
+  "recursos": [
+   "Bounty Board: quadro que gera contratos (Bounties) com objetivos e recompensas",
+   "Decrees: definem o tema dos contratos de um quadro, como os de armeiro; até três por quadro",
+   "Raridade dos contratos: Common, Uncommon, Rare e Epic",
+   "Reputation: entregar contratos aumenta a reputação do quadro e libera contratos mais raros"
+  ],
+  "comecar": "Encontre um Bounty Board numa vila, pegue um contrato, cumpra o pedido e clique no quadro para receber a recompensa.",
+  "thaumora": "Não tem tier fixo e dá objetivos curtos para quem gosta de metas, em paralelo à magia. Requer a biblioteca Kambrik.",
+  "fonte": "https://modrinth.com/mod/bountiful"
+ },
+ "Farmer's Delight": {
+  "sobre": "Farmer's Delight expande a agricultura e a culinária de forma suave, com um sistema simples de cozinha e muitas receitas. Também traz ferramentas, solo melhorado e decorações.",
+  "recursos": [
+   "Cooking Pot e Cutting Board para preparar refeições",
+   "Facas e outras ferramentas para caçar e colher",
+   "Solo melhorado para as plantações crescerem melhor",
+   "Plantações novas e pratos como sanduíches, saladas, ensopados, sobremesas e banquetes",
+   "Blocos decorativos para cozinhas"
+  ],
+  "comecar": "Siga as conquistas: pegue qualquer item do mod e aperte L para ver a árvore de conquistas, que explica os conceitos básicos.",
+  "thaumora": "É a base da culinária do pack, sem tier fixo. Vários addons dependem dele: Ars Delight, Occultism Delight, Iron's Spells Delight, Ender's Delight e Brewin' and Chewin'.",
+  "fonte": "https://modrinth.com/mod/farmers-delight"
+ },
+ "Ender's Delight": {
+  "sobre": "Ender's Delight é um addon do Farmer's Delight para cozinhar com ingredientes do End. Pérolas do ender, chorus fruit e até carne de Enderman e Shulker viram pratos.",
+  "recursos": [
+   "Receitas com pérolas do ender e chorus fruit",
+   "Ender Sight: olhos instáveis de Enderman que emitem luz forte",
+   "Shulker Mollusk: a criatura que vive dentro da concha do Shulker",
+   "Mite Crust: pele crocante de Endermite"
+  ],
+  "comecar": "Ao chegar no End, mate Endermen, Shulkers e Endermites para conseguir os ingredientes novos e cozinhe-os com as ferramentas do Farmer's Delight.",
+  "thaumora": "Sem tier fixo, é a culinária da fase de End. Requer o Farmer's Delight.",
+  "fonte": "https://modrinth.com/mod/enders-delight"
+ },
+ "Cooking for Blockheads": {
+  "sobre": "Cooking for Blockheads adiciona uma cozinha funcional e modular. A Cooking Table mostra o que você pode cozinhar com os ingredientes que tem e prepara a receita com um clique.",
+  "recursos": [
+   "Cooking Table: mostra as receitas possíveis com o que está disponível e cozinha com um clique",
+   "Cozinha em multibloco: armários guardam ingredientes, a pia dá água infinita e o forno cozinha melhor",
+   "Livro No Filter, que mostra todas as receitas de comida",
+   "Ordenação por valor nutritivo",
+   "Suporte ao Pam's HarvestCraft e a outros mods de comida"
+  ],
+  "comecar": "Crafte uma Cooking Table e coloque armários e geladeiras ao lado para ela enxergar os ingredientes guardados.",
+  "thaumora": "Sem tier fixo, organiza a culinária do pack num só lugar. Lê receitas do Farmer's Delight, dos addons Delight e do Pam's HarvestCraft 2 Crops.",
+  "fonte": "https://modrinth.com/mod/cooking-for-blockheads"
+ },
+ "Pam's HarvestCraft 2 Crops": {
+  "sobre": "Pam's HarvestCraft 2 Crops é o recomeço do clássico HarvestCraft, só com a parte de plantações. Adiciona 96 plantações novas que você planta com o clique direito.",
+  "recursos": [
+   "96 plantações novas que crescem em quatro estágios",
+   "As sementes vêm de seis tipos de arbusto espalhados por vários biomas",
+   "Os arbustos não se espalham sozinhos pelo mundo"
+  ],
+  "comecar": "Explore biomas diferentes, quebre os arbustos selvagens para obter os itens de comida e plante-os com clique direito.",
+  "thaumora": "É opcional e sem tier fixo; amplia a variedade de ingredientes para a culinária. O Cooking for Blockheads tem suporte a ele.",
+  "fonte": "https://modrinth.com/mod/pams-harvestcraft-2-crops"
+ },
+ "Macaw's Furniture": {
+  "sobre": "Macaw's Furniture adiciona muitos móveis em vários estilos, com foco em combinações. Você empilha e junta peças para criar móveis maiores.",
+  "recursos": [
+   "Móveis em vários estilos para casas e bases",
+   "Peças que se empilham e se juntam para ficar mais largas ou mais altas",
+   "Móveis com armazenamento",
+   "Cadeiras em que dá para sentar"
+  ],
+  "comecar": "",
+  "thaumora": "É decoração, sem tier fixo, junto com o resto da série Macaw's, Handcrafted e Supplementaries.",
+  "fonte": "https://modrinth.com/mod/macaws-furniture"
+ },
+ "Inventory Profiles Next": {
+  "sobre": "Inventory Profiles Next organiza o inventário e os baús. Ordena tudo, troca ferramentas quase quebradas e move itens com um clique.",
+  "recursos": [
+   "Ordena inventário e baús com um botão ou atalho",
+   "Troca automaticamente a ferramenta que está para quebrar",
+   "Joga tudo num baú, ou só os itens que já existem nele, com um clique",
+   "Trava slots para que a ordenação os ignore"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de conforto, só do lado do cliente. Configure os atalhos com R+C.",
+  "fonte": "https://modrinth.com/mod/inventory-profiles-next"
+ },
+ "Sophisticated Storage": {
+  "sobre": "Sophisticated Storage adiciona barris, baús e shulker boxes com vários níveis de melhoria, upgrades e personalização. Também traz um controlador que junta vários depósitos num só sistema.",
+  "recursos": [
+   "Barris, baús e shulker boxes com níveis de cobre, ferro, ouro, diamante e netherite",
+   "Limited Barrels: 1 a 4 slots com pilhas bem maiores",
+   "Upgrades que acrescentam funções aos depósitos",
+   "Controller e Storage Link: juntam vários depósitos num sistema único",
+   "Decoration Table e Paintbrush: cores e materiais para personalizar"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de armazenamento sem tier fixo. Para automação, o pack prefere magia (Corporea, espíritos, familiares) ou a logística do Create, que conseguem puxar itens desses depósitos.",
+  "fonte": "https://modrinth.com/mod/sophisticated-storage"
+ },
+ "EMI": {
+  "sobre": "EMI é um visualizador de itens e receitas, que mostra como fazer e onde usar cada item. Também calcula o caminho completo de receitas complexas.",
+  "recursos": [
+   "Busca de receitas e usos de qualquer item",
+   "Árvore de receita que mostra cada etapa e a quantidade de materiais básicos",
+   "Modo craftable e atalhos para craftar direto no inventário",
+   "Itens e receitas favoritos e exibição clara de tags"
+  ],
+  "comecar": "",
+  "thaumora": "É o livro de receitas do pack e mostra também receitas dos mods de magia, como altares e rituais. Funciona junto com o JEI, que fica escondido.",
+  "fonte": "https://modrinth.com/mod/emi"
+ },
+ "Controlling": {
+  "sobre": "Controlling melhora o menu de teclas. Você busca atalhos pelo nome e vê quais teclas estão em conflito.",
+  "recursos": [
+   "Busca de atalhos pelo nome",
+   "Botão que mostra só as teclas em conflito",
+   "Mostra quais teclas ainda estão livres"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de conforto essencial num pack com muitos mods de magia, cada um com suas teclas de feitiço.",
+  "fonte": "https://modrinth.com/mod/controlling"
+ },
+ "Explorer's Compass": {
+  "sobre": "Explorer's Compass é uma bússola que localiza estruturas em qualquer lugar do mundo. Você escolhe a estrutura numa lista e a bússola aponta para ela.",
+  "recursos": [
+   "Clique direito abre a lista de estruturas, vanilla e de mods",
+   "Informações da busca aparecem na tela",
+   "Shift e clique direito reiniciam a bússola"
+  ],
+  "comecar": "",
+  "thaumora": "Ajuda a encontrar as muitas estruturas do pack, como as de Dungeons and Taverns e When Dungeons Arise. Para biomas, use o Nature's Compass.",
+  "fonte": "https://modrinth.com/mod/explorers-compass"
+ },
+ "FastWorkbench": {
+  "sobre": "FastWorkbench melhora o desempenho do crafting. Ele guarda a última receita usada e evita travadas ao craftar pilhas inteiras com Shift.",
+  "recursos": [
+   "Crafting em massa com Shift sem travar",
+   "Menos verificações de receita a cada mudança na grade",
+   "Esconde o botão do livro de receitas (dá para reativar na configuração)"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de desempenho, invisível no jogo; importante com tantas receitas de mods.",
+  "fonte": "https://modrinth.com/mod/fastworkbench"
+ },
+ "Torchmaster": {
+  "sobre": "Torchmaster adiciona uma tocha especial que impede o spawn de mobs num raio configurável. Ela bloqueia só o spawn natural por pouca luz; spawners continuam funcionando.",
+  "recursos": [
+   "Mega Torch: impede o spawn natural de mobs num raio grande",
+   "Spawners vanilla e de mods continuam funcionando"
+  ],
+  "comecar": "",
+  "thaumora": "Protege a base sem precisar encher tudo de tochas. É útil enquanto você ainda não tem proteções mágicas, como os rituais de proteção do Eidolon.",
+  "fonte": "https://modrinth.com/mod/torchmaster"
+ },
+ "Akashic Tome": {
+  "sobre": "Akashic Tome junta os livros-guia dos mods num único item. Em vez de carregar vários livros, você guarda todos num slot e troca quando precisar.",
+  "recursos": [
+   "Feito com um livro e uma estante",
+   "Combine os livros-guia com o tomo na mesa de crafting para guardá-los",
+   "Clique direito escolhe o livro; Shift e clique direito num bloco de mod abre o livro daquele mod",
+   "Soco no ar volta para o tomo"
+  ],
+  "comecar": "",
+  "thaumora": "Essencial no Thaumora, onde quase todo mod de magia tem seu livro (Ars Nouveau, Botania, Malum, Eidolon e outros).",
+  "fonte": "https://modrinth.com/mod/akashic-tome"
+ },
+ "Inventory Essentials": {
+  "sobre": "Inventory Essentials adiciona atalhos de inventário que já viraram padrão em mods. Mover um item, mover todos de um tipo ou arrastar para transferir.",
+  "recursos": [
+   "Ctrl e clique move só um item da pilha",
+   "Shift, Ctrl e clique move todas as pilhas daquele item",
+   "Segurar Shift e passar o mouse move os itens sem clicar em cada um",
+   "Clique do meio ordena o inventário"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de conforto; complementa o Inventory Profiles Next e o Mouse Tweaks.",
+  "fonte": "https://modrinth.com/mod/inventory-essentials"
+ },
+ "Neat": {
+  "sobre": "Neat mostra uma barra em cima de cada criatura, com nome, vida e armadura. A cor da barra vai de verde a vermelho conforme a vida cai.",
+  "recursos": [
+   "Barra de vida, nome e armadura em cima dos mobs",
+   "Mostra o tipo do mob, útil para Smite e Bane of Arthropods",
+   "Tecla para ligar e desligar as barras"
+  ],
+  "comecar": "",
+  "thaumora": "Mod visual que ajuda a acompanhar as lutas contra chefes e mobs fortes do pack.",
+  "fonte": "https://modrinth.com/mod/neat"
+ },
+ "AmbientSounds": {
+  "sobre": "AmbientSounds deixa o mundo mais vivo com sons de ambiente. Os sons mudam conforme o lugar e funcionam bem com mods de geração de mundo.",
+  "recursos": [
+   "Sons de ambiente variados pelo mundo",
+   "Menu de configuração com /cmdclientconfig",
+   "Comando /ambient-debug mostra quais sons estão tocando"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de imersão que reforça o clima das florestas mágicas e cavernas. Requer CreativeCore.",
+  "fonte": "https://modrinth.com/mod/ambientsounds"
+ },
+ "FerriteCore": {
+  "sobre": "FerriteCore reduz o uso de memória do Minecraft de várias formas. O efeito é invisível no jogo, mas deixa o pack mais leve.",
+  "recursos": [
+   "Menos uso de RAM, o que é importante num pack com cerca de 155 mods",
+   "Funciona no cliente e no servidor"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de desempenho, junto com ModernFix, ImmediatelyFast, Entity Culling e Sodium.",
+  "fonte": "https://modrinth.com/mod/ferrite-core"
+ },
+ "Biomes O' Plenty": {
+  "sobre": "Biomes O' Plenty adiciona muitos biomas novos ao Overworld, ao Nether e ao End, com plantas, árvores e blocos de construção.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora: o pack usa só os biomas vanilla e os dos mods, para que os biomas mágicos sejam mais comuns e o mundo mais leve. Pode voltar depois, se faltar variedade.",
+  "fonte": "https://modrinth.com/mod/biomes-o-plenty"
+ },
+ "Epic Fight": {
+  "sobre": "Epic Fight reformula o combate com estilo soulslike, novas animações, armas e habilidades.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora porque mexe na câmera e nas animações do jogo; o Thaumora prefere manter o combate vanilla, com os feitiços dos mods de magia em destaque.",
+  "fonte": "https://modrinth.com/mod/epic-fight"
+ }
+}

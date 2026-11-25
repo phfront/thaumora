@@ -26,6 +26,21 @@
 - Erros não fatais no log: os mesmos do servidor, mais 271 loot tables que não carregam (`minecraft:root`, de compatibilidade entre mods), algumas animações GeckoLib e a config padrão do Improved Mobs para mobs do Ars. Nada impediu o jogo de rodar.
 - Um "Can't keep up" logo depois de entrar no mundo é normal enquanto os chunks são gerados.
 
+### Pack completo (mods do CurseForge instalados pelo Prism)
+- Prism instalou 16 projetos do CurseForge: Thaumaturge + 3 addons, Create: Thaumaturgy, Botania Revived, Roots Classic, Ars Elemental, **Ars Elemancy** (novo), Twilight Forest, FTB Quests/Ultimine/Library/Teams, Lodestone, OctoLib. IDs em `data/cf_prism.json`.
+- Malum e Relics voltaram (as bibliotecas deles estão instaladas).
+- ✅ **215 jars: entrou no mundo** cerca de 1 min 40 s depois de abrir. Carregou 28.112 receitas e usou cerca de 8,4 GB de RAM.
+- Nenhum erro dos mods novos. Os erros do log são as mesmas receitas/loot de compatibilidade (quase todos dos trilhos do Steam 'n' Rails).
+
+### + Guard Villagers e MVS (Moog's Voyager Structures)
+- ✅ **217 jars: entrou no mundo** 1 min 44 s depois de abrir. Carregou 28.215 receitas e usou cerca de 8,9 GB de RAM.
+- Nenhum erro dos dois mods novos (só o aviso de sempre de `refmap` do Guard Villagers, que é inofensivo).
+- Os erros do log são os mesmos de antes: 247 loot tables de compatibilidade, receitas opcionais (Malum, Unusual End, Silent Gear, Create), animações GeckoLib e a config padrão do Improved Mobs.
+- A observar: logo depois de entrar, o watchdog do **VerseWorks** registrou um travamento de 5,6 s do servidor na dimensão `thaumictinkerer:bedrock` (Thaumaturgic Tinkerer). Aconteceu uma vez só, enquanto o mundo carregava, e o jogo seguiu normal. Se repetir durante o jogo, investigar.
+
 ### Pendente
-1. Entrar de novo na conta Microsoft no Prism e testar o cliente.
-2. Baixar os 11 mods/bibliotecas do CurseForge (chave da API ou download manual).
+1. Decidir Pufferfish's Skills **ou** Project MMO: hoje os dois estão instalados e ativos ao mesmo tempo.
+2. Decidir Chipped **ou** Rechiseled (o Chipped está instalado).
+3. Instalar o MineColonies pelo Prism (já está no `mods.json`, falta na instância) e anotar os IDs em `data/cf_prism.json`.
+4. Testar Level Hearts × Hardcore Revival.
+5. Testar Nullscape × End Remastered × Unusual End.

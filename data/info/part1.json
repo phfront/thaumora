@@ -1,0 +1,473 @@
+{
+ "Ars Nouveau": {
+  "sobre": "Ars Nouveau é um mod de magia inspirado no Ars Magicka em que você monta seus próprios feitiços combinando glifos. Além dos feitiços, ele traz artefatos mágicos, rituais, máquinas movidas a Source e pequenos servos mágicos que automatizam a base.",
+  "recursos": [
+   "Spell crafting: feitiços personalizados montados com glifos de forma, efeito e aumento",
+   "Source: a energia mágica do mod, usada por máquinas, rituais e itens",
+   "Familiares e servos como os Starbuncles, que transportam itens e automatizam tarefas",
+   "Baubles e trinkets: acessórios mágicos com efeitos passivos",
+   "Rituais e máquinas mágicas alimentadas por Source",
+   "Documentação completa dentro do jogo, em um livro Patchouli"
+  ],
+  "comecar": "Crafte o Worn Notebook com um livro e 1 Lapis Lazuli: ele é o guia do mod e explica cada passo. Comece montando feitiços simples e depois parta para a geração de Source.",
+  "thaumora": "É o coração do pack, no tier II (Arcanismo), e a principal forma de automação mágica no lugar de tubos e máquinas elétricas. Tem vários addons no pack (Ars Additions, Ars Elemental, Ars Creo, Ars Delight, Ars 'n' Spells), e o Botania Revived liga a mana dele à Source do Ars Nouveau.",
+  "fonte": "https://modrinth.com/mod/ars-nouveau"
+ },
+ "Forbidden & Arcanus": {
+  "sobre": "Forbidden & Arcanus é um mod de magia, ocultismo e progressão no estilo RPG, inspirado no Thaumcraft e na mitologia. O poder cresce através de altares multibloco físicos, relíquias antigas e essências arcanas coletadas no mundo, sem menus de tecnologia nem tubos.",
+  "recursos": [
+   "Hephaestus Forge: altar-forja multibloco com 5 tiers, que canaliza Aureal, almas, sangue e experiência por pedestais",
+   "Clibano Furnace: fornalha multibloco que queima almas capturadas, funde minérios mais rápido e dobra os lingotes",
+   "Armaduras míticas Draco Arcanus e Tyr, além de armas especiais",
+   "Modificadores de itens, como deixar uma ferramenta indestrutível com a Eternal Stella",
+   "Quantum Catcher para capturar mobs",
+   "Arcane Crystal Obelisk, que gera essência Aureal de forma passiva"
+  ],
+  "comecar": "Consulte o EMI para as receitas iniciais e foque em montar a Hephaestus Forge, que é o centro do mod e sobe de tier com rituais. Os rituais e as receitas da forja aparecem no EMI.",
+  "thaumora": "Entra no tier II e acompanha o jogador até o fim, porque é na Hephaestus Forge que acontece o ritual final do pack. Seus rituais com almas e sangue combinam com o tema do Occultism e do EvilCraft.",
+  "fonte": "https://modrinth.com/mod/forbidden-arcanus"
+ },
+ "Hexerei": {
+  "sobre": "Hexerei é um mod de bruxaria com estética de covens de bruxas. Você mistura receitas em um caldeirão, decora seu próprio coven com blocos temáticos e voa de vassoura pelo mundo atrás de estruturas.",
+  "recursos": [
+   "Caldeirão para misturar receitas de bruxaria",
+   "Vassouras (broom) para voar pelo mundo",
+   "Estruturas próprias espalhadas pelo mundo, como covens",
+   "Blocos decorativos com tema de bruxaria",
+   "Book of Shadows, o livro do mod"
+  ],
+  "comecar": "Comece pelo caldeirão e pelas ervas, usando o EMI para ver as receitas. A vassoura é um ótimo primeiro objetivo para explorar e achar as estruturas do mod.",
+  "thaumora": "Fica no tier I (Naturalismo), como uma entrada leve no mundo da bruxaria. Combina com outros mods de herbalismo e bruxaria do pack, como Hexalia e Enchanted: Witchcraft.",
+  "fonte": "https://modrinth.com/mod/hexerei"
+ },
+ "Botania Revived": {
+  "sobre": "Botania Revived é um port não oficial do Botania para NeoForge 1.21.1 que mantém todo o conteúdo original. Botania é uma tech com tema de magia natural: você cultiva flores que geram e processam mana, move essa mana com spreaders e sparks e usa tudo em altares, trocas élficas e na luta contra o Gaia Guardian.",
+  "recursos": [
+   "Flores geradoras e funcionais que produzem e usam mana",
+   "Mana Spreader, Spark e Mana Pool para transportar e armazenar mana",
+   "Petal Apothecary, Runic Altar, Pure Daisy e Terrestrial Agglomeration Plate (que cria Terrasteel)",
+   "Elven Gateway, que abre o comércio com Alfheim",
+   "Boss Gaia Guardian e relíquias de fim de jogo",
+   "Corporea, uma rede de itens para automação",
+   "Wither Mana Rose, flor nova que queima Nether Stars para gerar mana"
+  ],
+  "comecar": "Crafte o Lexica Botania, o livro guia do mod, que explica tudo dentro do jogo. O começo é coletar pétalas de flores místicas, montar o Petal Apothecary e criar a primeira flor geradora de mana.",
+  "thaumora": "Cobre do tier I ao V: começa simples no Naturalismo e termina no Gaia Guardian. A integração com Ars Nouveau converte mana em Source (1 Source = 15 mana), a Corporea é uma das formas de automação do pack, e há suporte a EMI, Jade e Ponder. Por ser um port, use uma versão fixa e só atualize depois de ler o changelog.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/botania-revived"
+ },
+ "Nature's Aura": {
+  "sobre": "Nature's Aura é um mod sobre coletar, usar e repor a Aura natural presente no mundo. Cada área tem uma quantidade de Aura, e as máquinas do mod a consomem, então você precisa equilibrar o consumo plantando e devolvendo Aura ao ambiente.",
+  "recursos": [
+   "Natural Altar: coleta Aura do ambiente para criar materiais como Infused Iron",
+   "Ritual of the Forest: ritual para criar itens mágicos com o poder da natureza",
+   "Extraneous Firestarter: alimenta uma fornalha usando Aura, sem combustível",
+   "Herbivorous Absorber e outros meios de gerar Aura e devolvê-la ao mundo",
+   "Efeitos ambientais: excesso de Aura causa Vegetational Increase, e falta de Aura causa Natural Decay"
+  ],
+  "comecar": "Crafte o Book of Natural Aura combinando os itens indicados no EMI, em qualquer formato. O livro libera novas entradas conforme você ganha conquistas, e todas as outras receitas aparecem nele.",
+  "thaumora": "Fica no tier III, quando o jogador já entende de magia e pode administrar a Aura da base. O ciclo de plantar para repor energia combina com o tema naturalista do Botania e do Roots Classic.",
+  "fonte": "https://modrinth.com/mod/natures-aura"
+ },
+ "EvilCraft": {
+  "sobre": "EvilCraft é um mod de magia sombria baseado em sangue e em uma antiga fonte de maldade. O sangue dos mobs move máquinas, e os espíritos dos mortos podem ser capturados e explorados.",
+  "recursos": [
+   "Dark Ore e Dark Gems, a base de quase todas as receitas",
+   "Máquinas a sangue, como o Blood Infuser (infunde e repara itens) e o Purifier (desencanta itens e coleta efeitos)",
+   "Vengeance Spirits: espíritos deixados pelos mobs mortos, que podem ser presos em caixas e usados no Spirit Furnace",
+   "Vassouras modulares e personalizáveis para voar",
+   "Dark Temples com Environmental Accumulators para controlar o clima",
+   "Undead Trees para coletar sangue automaticamente, Entangled Chalice para transportar líquidos e Mace of Destruction"
+  ],
+  "comecar": "Minere uma Dark Ore com picareta de ferro ou melhor para obter uma Dark Gem e crafte uma Darkened Apple. Dê a maçã a um animal, espere ele morrer e jogue um livro comum na anomalia que surge: assim você ganha o livro guia, The Origins of Darkness.",
+  "thaumora": "Fica no tier V (Magia proibida) e é a principal magia de sangue do pack, junto com o Neo Vitae, no lugar do Blood Magic. Seus usos de almas e sangue conversam bem com Occultism e Forbidden & Arcanus.",
+  "fonte": "https://modrinth.com/mod/evilcraft"
+ },
+ "Ars Additions": {
+  "sobre": "Ars Additions é um addon do Ars Nouveau com pequenos ajustes, glifos novos e melhorias de qualidade de vida. Também traz estruturas com tema de teletransporte e blocos decorativos no estilo do Ars.",
+  "recursos": [
+   "Glifos novos: Retaliate (atinge quem te acertou nos últimos 5 segundos), Mark e Recall",
+   "Unstable Reliquary para guardar referências de blocos, entidades ou jogadores usadas por Mark e Recall",
+   "Warp Index e Stabilized Warp Index para acessar seus Storage Lecterns de longe, até entre dimensões",
+   "Ender Source Jar: um Ender Chest de Source para levar sua energia para qualquer lugar",
+   "Wixie Enchanting Apparatus para automatizar receitas do Enchanting Apparatus",
+   "Estruturas Ruined Warp Portals e Nexus Tower, além de lanternas, correntes e paredes decorativas"
+  ],
+  "comecar": "Use os glifos e itens novos dentro do fluxo normal do Ars Nouveau, conferindo as receitas no EMI. Explore para achar Ruined Warp Portals, que trazem um Explorer's Warp Scroll.",
+  "thaumora": "Acompanha o Ars Nouveau no tier II e reforça a automação mágica do pack, com acesso remoto ao armazenamento e encantamento automático feito por Wixies.",
+  "fonte": "https://modrinth.com/mod/ars-additions"
+ },
+ "Create": {
+  "sobre": "Create é um mod de construção e automação estética baseado em rotação mecânica. Em vez de jogar dentro de interfaces, você monta máquinas animadas com engrenagens, eixos e peças que se movem no mundo.",
+  "recursos": [
+   "Força rotacional gerada por moinhos e outras fontes mecânicas, sem eletricidade",
+   "Processamento de materiais, como moer, prensar e misturar",
+   "Contraptions: estruturas que se movem, como elevadores, pontes e máquinas móveis",
+   "Trens com trilhos e estações",
+   "Logística para transportar e organizar itens",
+   "Ponder: documentação visual animada dentro do jogo"
+  ],
+  "comecar": "Use o Ponder sobre um item do Create (segure a tecla indicada na tooltip) para ver uma cena animada explicando como ele funciona. As receitas ficam no EMI, já que o livro de receitas vanilla não basta.",
+  "thaumora": "É a única exceção tech do pack, tratada como engenharia arcana e sem energia elétrica, a partir do tier II. Tem várias integrações no pack: Create: Thaumaturgy, Create: Enchantment Industry, Ars Creo, Steam 'n' Rails, Copycats+ e Create Deco.",
+  "fonte": "https://modrinth.com/mod/create"
+ },
+ "Create Deco": {
+  "sobre": "Create Deco adiciona blocos decorativos industriais, urbanos e steampunk pensados para combinar com o Create. Serve para dar acabamento às fábricas e construções.",
+  "recursos": [
+   "Conjuntos de blocos em seis metais (Andesite, Zinc, Iron, Industrial Iron, Copper e Brass): catwalks, sheet metal, janelas, grades, portas, escadas e Cage Lamps",
+   "Shipping containers nas 16 cores, que funcionam como Item Vaults",
+   "Decals com símbolos de aviso, como risco de fogo e área restrita",
+   "Tijolos em oito cores novas, com variações, escadas e lajes"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de decoração, sem tier, para deixar as instalações de engenharia arcana do Create mais bonitas.",
+  "fonte": "https://modrinth.com/mod/create-deco"
+ },
+ "The Aether": {
+  "sobre": "The Aether é o clássico mod de dimensão celestial, com ilhas flutuantes e nuvens no céu. A dimensão tem sua própria progressão de sobrevivência, com minérios, mobs míticos e três dungeons com bosses.",
+  "recursos": [
+   "Quatro tiers de materiais: Skyroot, Holystone, Zanite e Gravitite, cada um com ferramentas de habilidades únicas",
+   "Blocos utilitários Altar, Freezer e Incubator",
+   "Moas, aves montáveis que dão vários saltos no ar",
+   "Bronze Dungeon (boss Slider), Silver Dungeon (Valkyrie Queen) e Gold Dungeon (Sun Spirit)",
+   "Sistema de acessórios com interface própria",
+   "Dia eterno, que só acaba ao vencer a última dungeon e liberar o Sun Altar",
+   "Book of Lore, com uma entrada para cada bloco e item"
+  ],
+  "comecar": "Monte um portal com moldura de Glowstone e ative-o despejando um balde de água no meio. Cuidado para não cair das ilhas, ou você volta ao Overworld.",
+  "thaumora": "É o \"paraíso arcano\" do tier III, a primeira grande dimensão de exploração. O Deep Aether, também no pack, expande a dimensão com mais conteúdo.",
+  "fonte": "https://modrinth.com/mod/aether"
+ },
+ "Deeper and Darker": {
+  "sobre": "Deeper and Darker expande o Deep Dark e adiciona uma dimensão nova, o Otherside, toda com tema de sculk. É uma área perigosa, com mobs, bosses e equipamentos próprios.",
+  "recursos": [
+   "Otherside: dimensão com oito biomas de sculk",
+   "Ancient Temple, a casa do Warden, com vasos que podem despertar um Ancient Lurker",
+   "Estruturas geradas proceduralmente com bosses mais difíceis",
+   "14 mobs novos e quatro bosses",
+   "Mais de 200 blocos e mais de 100 itens, com conjuntos de armadura, ferramentas e acessórios"
+  ],
+  "comecar": "Para entrar no Otherside, mate o Warden e use o coração dele. Outra opção é se aproximar agachado do Warden e tosquiá-lo para obter um Sculk Bone Shard, que permite craftar um Otherside Fire Striker.",
+  "thaumora": "É o \"abismo\" do tier IV (Batalha arcana), uma dimensão para quem já tem equipamento forte de combate.",
+  "fonte": "https://modrinth.com/mod/deeperdarker"
+ },
+ "Nullscape": {
+  "sobre": "Nullscape reformula o terreno do End, mantendo a dimensão vazia, desolada e opressiva. Ele aumenta a altura do End para 384 blocos e gera paisagens bem variadas.",
+  "recursos": [
+   "Terreno novo com ilhas quebradas, vales flutuantes e picos cristalizados",
+   "Regiões enormes com formatos diferentes, do terreno poroso a paisagens alienígenas esticadas",
+   "Alguns biomas novos, sem perder o clima desolado do End"
+  ],
+  "comecar": "",
+  "thaumora": "Dá o cenário do tier V (Magia proibida), onde ficam as estruturas do MES e de outros mods de End. O autor avisa que ele não deve ser adicionado a um End já existente: use um mundo novo.",
+  "fonte": "https://modrinth.com/mod/nullscape"
+ },
+ "L_Ender's Cataclysm": {
+  "sobre": "Cataclysm adiciona dungeons difíceis, lutas de boss desafiadoras e itens poderosos. Derrotar cada boss rende equipamentos fortes.",
+  "recursos": [
+   "Dungeons difíceis espalhadas pelo mundo",
+   "Bosses épicos, como Ignis, Leviathan e Ender Guardian",
+   "Armas e equipamentos poderosos obtidos dos bosses"
+  ],
+  "comecar": "Explore o mundo atrás das dungeons do mod e prepare bem o equipamento antes de cada boss.",
+  "thaumora": "É o centro do tier IV (Batalha arcana): os bosses servem de teste para a magia de combate do jogador, como os feitiços do Iron's Spells 'n Spellbooks e do Ars Nouveau.",
+  "fonte": "https://modrinth.com/mod/l_enders-cataclysm"
+ },
+ "YUNG's Better Dungeons + suíte": {
+  "sobre": "A suíte do YUNG reformula as estruturas vanilla do Minecraft. O Better Dungeons redesenha as dungeons vanilla e adiciona três novas; os outros mods da suíte fazem o mesmo com minas, fortalezas, templos e outras estruturas.",
+  "recursos": [
+   "Dungeons vanilla redesenhadas",
+   "Novas dungeons: Catacombs, Fortresses of the Undead e Spider Caves",
+   "Pequenas dungeons no Nether (opcional, ativadas na config)",
+   "Resto da suíte: Mineshafts, Strongholds, Desert e Jungle Temples, Witch Huts, Ocean Monuments, Nether Fortresses, Better End Island e Extras"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: deixa a exploração mais rica em qualquer fase. Funciona junto com o Lootr, que dá loot individual nos baús, e com o Sparse Structures, que espaça as estruturas.",
+  "fonte": "https://modrinth.com/mod/yungs-better-dungeons"
+ },
+ "MES: Moog's End Structures": {
+  "sobre": "Moog's End Structures adiciona várias estruturas novas ao End, feitas com blocos vanilla para manter o visual clássico. Elas trazem desafios, inimigos fortes e loot valioso.",
+  "recursos": [
+   "Estruturas novas espalhadas pelo End",
+   "Inimigos e desafios dentro das estruturas",
+   "Loot valioso para quem explora o End"
+  ],
+  "comecar": "",
+  "thaumora": "Faz parte do tier V e dá motivo para explorar o End reformulado pelo Nullscape. É da mesma família do MSS e do MNS, também no pack.",
+  "fonte": "https://modrinth.com/mod/mes-moogs-end-structures"
+ },
+ "Sparse Structures": {
+  "sobre": "Sparse Structures espaça todas as estruturas do mundo, inclusive as de mods e datapacks. Isso evita que o mapa fique lotado quando há muitos mods de estrutura.",
+  "recursos": [
+   "Por padrão, deixa as estruturas duas vezes mais espaçadas",
+   "Evita que estruturas diferentes apareçam amontoadas",
+   "Corrige o bug do /locate que mostrava a distância errada"
+  ],
+  "comecar": "",
+  "thaumora": "É essencial num pack com tantos mods de estrutura (YUNG's, Moog's, When Dungeons Arise, Dungeons and Taverns e outros): faz cada descoberta valer mais e incentiva a exploração.",
+  "fonte": "https://modrinth.com/mod/sparsestructures"
+ },
+ "Naturalist": {
+  "sobre": "Naturalist adiciona dezenas de animais ao mundo, com variantes, comportamentos realistas e drops próprios. Eles interagem entre si e com o ambiente, e alguns podem ser domesticados.",
+  "recursos": [
+   "Cerca de 47 animais e 66 variantes, segundo a página do mod",
+   "Exemplos: patos, tartarugas, libélulas, ursos, girafas, zebras, elefantes, leões, rinocerontes, borboletas, cascavéis e abutres",
+   "Comportamentos realistas e interações entre os animais",
+   "Alguns animais podem ser domesticados"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: deixa o mundo mais vivo e ocupa o espaço do Alex's Mobs, que não existe para 1.21.1. Combina com o tema de natureza do tier I.",
+  "fonte": "https://modrinth.com/mod/naturalist"
+ },
+ "Silent Gear": {
+  "sobre": "Silent Gear é um mod de ferramentas, armas e armaduras montadas por partes. Quase qualquer material serve, e cada um muda os atributos e as traits do equipamento.",
+  "recursos": [
+   "Muitos tipos de equipamento: picaretas, paxels, martelos, serras, katanas, adagas, arcos, bestas, armaduras e até Elytra",
+   "Blueprints (reutilizáveis) e templates (de uso único) para craftar as peças",
+   "Material Grader: dá notas aos materiais (de E até MAX) usando catalisadores",
+   "Ligas feitas no Metal Alloyer, Recrystallizer e Refabricator",
+   "Upgrades como tips, coatings, bindings e grips, além de repair kits",
+   "Minérios próprios: Crimson Iron no Nether e Azure Silver no End"
+  ],
+  "comecar": "Crafte um blueprint, faça a parte principal (cabeça ou lâmina) com os materiais e junte com uma rod, que pode ser um graveto. Você também pode converter uma ferramenta vanilla colocando-a sozinha na grade de crafting. Confira as receitas no EMI.",
+  "thaumora": "Sem tier: é o sistema de equipamento customizável do pack, útil da primeira picareta até o fim do jogo, e serve de base para o combate dos tiers IV e V.",
+  "fonte": "https://modrinth.com/mod/silent-gear"
+ },
+ "Project MMO": {
+  "sobre": "Project MMO adiciona habilidades no estilo MMO que sobem de nível conforme você faz cada atividade. Os níveis desbloqueiam itens e dão bônus especiais.",
+  "recursos": [
+   "Habilidades que ganham experiência com a atividade correspondente, como minerar e lutar",
+   "Bônus como correr mais rápido, pular mais alto, minerar mais rápido, respirar mais tempo embaixo d'água e causar mais dano",
+   "Vein mining, drops extras e drops de tesouro conforme o nível",
+   "Salvaging: desmonta itens de volta em componentes",
+   "Glossary dentro do jogo com todos os requisitos e recompensas"
+  ],
+  "comecar": "Basta jogar: cada ação dá experiência na habilidade ligada a ela. Abra o Glossary e a tela de habilidades no inventário para ver seu progresso e o que cada nível libera.",
+  "thaumora": "Sem tier: é uma camada de RPG que acompanha toda a partida. Convive com o Pufferfish's Skills e o Iron's Dynamic Skill Trees, que também estão no pack.",
+  "fonte": "https://modrinth.com/mod/project-mmo"
+ },
+ "Level Hearts": {
+  "sobre": "Level Hearts muda a progressão de vida do Minecraft: você começa com menos corações e ganha mais conforme joga. A vida máxima sobe com a experiência e com itens achados pelo mundo.",
+  "recursos": [
+   "Corações extras ao atingir certos níveis de experiência",
+   "Heart pieces e heart containers achados em baús pelo mundo",
+   "Receitas para craftar heart pieces e heart containers",
+   "Opções de config como modo hardcore e vida inicial"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: faz a vida crescer junto com a progressão do jogador. A página do mod lista o Hardcore Revival como incompatível, e ele também está no pack, então vale testar essa combinação; com HUDs como o Colorful Hearts, a config permite desligar o HUD do Level Hearts.",
+  "fonte": "https://modrinth.com/mod/levelhearts"
+ },
+ "Ars Delight": {
+  "sobre": "Ars Delight (Ars Nouveau's Flavors & Delight) adiciona mais de 49 comidas feitas com ingredientes do Ars Nouveau, no estilo do Farmer's Delight. Algumas comidas dão efeitos ligados à magia, como mais mana e mais dano de feitiço.",
+  "recursos": [
+   "Ingredientes novos: barks (Flourishing, Vexing, Cascading e Blazing), carne de Wilden e carne e chifre de Chimera",
+   "Efeitos: Blast Resistance, Freezing Spell, Flourishing, Synchronized Shield e Wilden (mais mana e dano mágico)",
+   "Feasts, tortas e gelatinas em forma de bloco, como Wilden Salad e Honey Glazed Chimera",
+   "Bebidas, sopas, espetinhos e petiscos",
+   "Fazenda de Drygmy usando faca"
+  ],
+  "comecar": "Mate um Wilden Hunter com uma faca para obter carne de Wilden e confira as receitas no EMI.",
+  "thaumora": "Sem tier: liga a culinária do Farmer's Delight à magia do Ars Nouveau, dando buffs úteis para quem usa feitiços.",
+  "fonte": "https://modrinth.com/mod/arsdelight"
+ },
+ "Brewin' and Chewin'": {
+  "sobre": "Brewin' and Chewin' é um addon do Farmer's Delight focado em fermentação. Com um barril (keg) você produz bebidas alcoólicas, queijos e doces como fudge.",
+  "recursos": [
+   "Keg: o barril que fermenta e prepara as receitas",
+   "Bebidas e licores",
+   "Queijos e fudge"
+  ],
+  "comecar": "O mod não tem livro guia: abra a tela de conquistas (tecla L) e siga a aba do Brewin' and Chewin', com ícone de cerveja.",
+  "thaumora": "Sem tier: expande a culinária do pack junto com o Farmer's Delight e seus outros addons.",
+  "fonte": "https://modrinth.com/mod/brewin-and-chewin"
+ },
+ "Farming for Blockheads": {
+  "sobre": "Farming for Blockheads adiciona um bloco de mercado para comprar sementes, mudas e outros itens de fazenda. Também traz utilidades que facilitam a criação de animais e o cultivo.",
+  "recursos": [
+   "Market: compra sementes, mudas e farinha de osso, com busca e categorias",
+   "Chicken Nest: coleta os ovos das galinhas",
+   "Feeding Trough: alimenta os animais automaticamente",
+   "Sprinklers e Fertilizers para melhorar as plantações",
+   "Shipping Bin"
+  ],
+  "comecar": "Crafte o Market e use-o para conseguir sementes e mudas que seriam difíceis de achar. As receitas ficam no EMI.",
+  "thaumora": "Sem tier: ajuda a conseguir as sementes das muitas culturas do pack. É compatível com o Pam's HarvestCraft 2 Crops, também no pack.",
+  "fonte": "https://modrinth.com/mod/farming-for-blockheads"
+ },
+ "Supplementaries": {
+  "sobre": "Supplementaries é um mod vanilla+ que preenche lacunas do jogo com blocos funcionais e decorativos. Tudo segue o visual do Minecraft e é bastante configurável.",
+  "recursos": [
+   "Jars para guardar e exibir coisas",
+   "Signposts (placas de direção), weather vanes e globos",
+   "Faucets e spring launchers para pequenas automações",
+   "Sconces, planters, safes e slingshots"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: dá detalhes e utilidades para a base em qualquer fase. Combina com o Amendments, também no pack.",
+  "fonte": "https://modrinth.com/mod/supplementaries"
+ },
+ "Chipped": {
+  "sobre": "Chipped é um mod de construção, inspirado no Chisel, com mais de 11.000 variações de blocos. As texturas são feitas à mão no estilo vanilla, muitas delas conectadas.",
+  "recursos": [
+   "Mais de 11.000 blocos decorativos, de vidro e concreto a prismarine e blackstone",
+   "Sete mesas para transformar blocos: Glassblower's, Botanist's, Shepherd's, Carpenter's, Mason's, Philosopher's e Tinkerer's Workbench",
+   "Texturas conectadas"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: é o mod de variações de blocos escolhido para o pack, no lugar do Rechiseled. Serve para quem gosta de construir torres e laboratórios de mago.",
+  "fonte": "https://modrinth.com/mod/chipped"
+ },
+ "Mouse Tweaks": {
+  "sobre": "Mouse Tweaks melhora o controle do inventário com o mouse. Roda só no cliente e não muda nada no mundo.",
+  "recursos": [
+   "Arrastar com o botão direito distribui itens nos slots",
+   "Arrastar com o botão esquerdo junta ou move itens do mesmo tipo",
+   "Shift + arrastar move vários itens de uma vez",
+   "A rolagem do mouse move itens entre inventários um por um"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier, que agiliza a organização de baús e mochilas.",
+  "fonte": "https://modrinth.com/mod/mouse-tweaks"
+ },
+ "Storage Drawers": {
+  "sobre": "Storage Drawers adiciona gavetas que guardam uma grande quantidade de um mesmo item. Elas são compactas e bonitas, e você interage clicando direto na frente do bloco.",
+  "recursos": [
+   "Gavetas que guardam muitos itens de um mesmo tipo, sem slots tradicionais",
+   "Clique direito coloca o stack da mão, e duplo clique coloca todos os stacks iguais do inventário",
+   "Clique esquerdo tira um item, e Shift + clique esquerdo tira um stack inteiro",
+   "Shift + clique direito com a mão vazia abre a tela com contagens e upgrades"
+  ],
+  "comecar": "",
+  "thaumora": "Sem tier: é a forma simples de armazenar grandes quantidades de recursos, sem precisar de sistemas elétricos.",
+  "fonte": "https://modrinth.com/mod/storagedrawers"
+ },
+ "Jade": {
+  "sobre": "Jade mostra um painel com informações sobre o bloco ou a entidade que você está olhando. É o sucessor moderno do Waila/Hwyla.",
+  "recursos": [
+   "Nome do bloco e do mod de origem",
+   "Conteúdo de armazenamento, progresso e informações de redstone",
+   "Atributos de cavalos e outras entidades",
+   "Se o bloco pode ser minerado e o progresso da mineração"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier, essencial num pack com cerca de 155 mods para descobrir de onde vem cada bloco. O Botania Revived mostra barras de mana e progresso dos altares no Jade.",
+  "fonte": "https://modrinth.com/mod/jade"
+ },
+ "Xaero's Minimap": {
+  "sobre": "Xaero's Minimap coloca um minimapa no canto da tela, mantendo o visual vanilla. Mostra o terreno, os mobs e os jogadores, e permite marcar waypoints.",
+  "recursos": [
+   "Minimapa quadrado ou redondo, com zoom e modo de cavernas automático",
+   "Waypoints ilimitados, visíveis no mapa e no mundo",
+   "Deathpoint automático no local de cada morte",
+   "Radar de entidades: mobs, jogadores e itens aparecem como pontos ou ícones"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier, que ajuda a explorar as muitas dimensões e estruturas do pack. Funciona junto com o Xaero's World Map.",
+  "fonte": "https://modrinth.com/mod/xaeros-minimap"
+ },
+ "FTB Ultimine": {
+  "sobre": "FTB Ultimine permite minerar ou colher vários blocos conectados de uma vez. Basta segurar a tecla configurada enquanto quebra um bloco.",
+  "recursos": [
+   "Segure a tecla (crase/til, por padrão) para quebrar um veio inteiro de uma vez",
+   "Contorno branco mostra quais blocos serão quebrados",
+   "Os itens coletados caem aos seus pés",
+   "Funciona também para arar terra com enxada, colher plantações e cavar túneis e escadas"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier, que poupa tempo na mineração e na fazenda.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge"
+ },
+ "Crafting Tweaks": {
+  "sobre": "Crafting Tweaks adiciona botões às mesas de crafting para girar, balancear ou limpar a grade. Também traz atalhos para craftar e compactar itens mais rápido.",
+  "recursos": [
+   "Botões para girar, balancear e limpar a grade de crafting",
+   "Shift no botão de balancear espalha um stack pela grade inteira",
+   "Clique direito no resultado crafta um stack inteiro",
+   "Atalho para compactar ou descompactar itens em blocos ou lingotes"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier, que agiliza o crafting.",
+  "fonte": "https://modrinth.com/mod/crafting-tweaks"
+ },
+ "FTB Quests": {
+  "sobre": "FTB Quests é um mod de quests leve e baseado em times. Ele cria um livro de missões com objetivos e recompensas.",
+  "recursos": [
+   "Livro de quests com capítulos, objetivos e recompensas",
+   "Sistema baseado em times",
+   "Integração com KubeJS e visualizadores de receitas por meio do FTB XMod Compat"
+  ],
+  "comecar": "Abra o livro de quests e siga os capítulos.",
+  "thaumora": "Sem tier próprio: é o livro de quests que conta a história do pack e apresenta o caminho sugerido pelos tiers I a V, sem bloquear nada.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge"
+ },
+ "Lootr": {
+  "sobre": "Lootr faz com que cada baú de estrutura tenha um loot próprio para cada jogador. Os contêineres têm visual diferente e mudam de dourado para azul depois de abertos.",
+  "recursos": [
+   "Loot individual por jogador em baús, baús com armadilha, barris, shulkers e carrinhos",
+   "Visual diferente para identificar contêineres com loot",
+   "Mudança de cor de dourado para azul depois que você abre o contêiner"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de qualidade de vida, sem tier. Mesmo jogando sozinho, ajuda a saber quais baús das muitas estruturas do pack você já abriu.",
+  "fonte": "https://modrinth.com/mod/lootr"
+ },
+ "Construction Sticks": {
+  "sobre": "Construction Sticks são varinhas que colocam vários blocos de uma vez, estendendo a construção na direção em que você olha. Elas têm tiers e podem receber upgrades.",
+  "recursos": [
+   "Cinco tiers: Wood, Copper, Iron, Diamond e Netherite, que coloca até 1024 blocos de uma vez",
+   "Templates de upgrade na Smithing Table: Angel (coloca blocos no ar), Destruction e Unbreakable",
+   "Usa blocos guardados em shulker boxes, bundles e outros contêineres",
+   "Integração com Botania: Black Hole Talisman e rods dão blocos infinitos em troca de mana"
+  ],
+  "comecar": "Crafte a varinha de madeira e use-a sobre a face de um bloco para estender a construção. Confira as receitas no EMI.",
+  "thaumora": "Sem tier: acelera as grandes construções, e a integração com o Botania funciona no pack. O template Battery usa RF, mas o pack não tem energia elétrica, então ele fica sem uso.",
+  "fonte": "https://modrinth.com/mod/construction-sticks"
+ },
+ "Legendary Tooltips": {
+  "sobre": "Legendary Tooltips deixa as tooltips dos itens mais bonitas, com bordas especiais para itens raros. É só visual e roda no cliente.",
+  "recursos": [
+   "Bordas decoradas para itens raros",
+   "Opção de borda com a cor do nome do item",
+   "Nome centralizado, sombra, separadores e prévia 3D do item"
+  ],
+  "comecar": "",
+  "thaumora": "Mod visual, sem tier, que ajuda a destacar os artefatos e relíquias raros do pack.",
+  "fonte": "https://modrinth.com/mod/legendary-tooltips"
+ },
+ "Sodium": {
+  "sobre": "Sodium substitui o motor de renderização do Minecraft por um muito mais rápido. Aumenta bastante o FPS e reduz os travamentos, sem mudar a aparência do jogo.",
+  "recursos": [
+   "FPS bem maior e menos micro-travamentos",
+   "Correções gráficas em iluminação, água e mistura de biomas",
+   "Nova tela de configurações de vídeo"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de performance, sem tier, essencial para rodar bem um pack com cerca de 155 mods. Trabalha junto com o Iris (shaders) e os outros mods de otimização do pack.",
+  "fonte": "https://modrinth.com/mod/sodium"
+ },
+ "ImmediatelyFast": {
+  "sobre": "ImmediatelyFast otimiza a parte da renderização que desenha entidades, partículas, textos e interface. Ajuda principalmente quando o processador é o gargalo.",
+  "recursos": [
+   "Agrupa os comandos de desenho para enviar dados à placa de vídeo de forma mais eficiente",
+   "Otimiza entidades, block entities, partículas, textos e HUD",
+   "Melhora muito o FPS em cenas com muitas entidades ou muitos mapas"
+  ],
+  "comecar": "",
+  "thaumora": "Mod de performance, sem tier, que complementa o Sodium. Ajuda nas bases cheias de partículas mágicas e familiares.",
+  "fonte": "https://modrinth.com/mod/immediatelyfast"
+ },
+ "Blood Magic (Port)": {
+  "sobre": "Port não oficial do Blood Magic para NeoForge 1.21.1, o clássico mod de magia de sangue. A própria página o descreve como alpha e trabalho em andamento.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora do pack porque está em alpha, o que é arriscado para um mundo longo. O papel de magia de sangue ficou com o EvilCraft e o Neo Vitae.",
+  "fonte": "https://www.curseforge.com/minecraft/mc-mods/blood-magic-unofficial-port"
+ },
+ "Alex's Mobs": {
+  "sobre": "Alex's Mobs adiciona cerca de 89 mobs, entre animais reais e criaturas fantásticas, todos com drops ou mecânicas próprias.",
+  "recursos": [],
+  "comecar": "",
+  "thaumora": "Ficou fora porque não existe versão para 1.21.1. O Naturalist ocupa o papel de fauna no pack.",
+  "fonte": "https://modrinth.com/mod/alexs-mobs"
+ }
+}

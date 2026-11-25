@@ -1,0 +1,40 @@
+{
+ "MineColonies": {
+  "sobre": "Um mod de construção e gestão de colônia: você funda uma vila própria, contrata cidadãos e os coloca para trabalhar. A colônia cresce prédio por prédio, cada um com níveis que liberam novas funções.",
+  "recursos": [
+   "Town Hall: a prefeitura, o coração da colônia",
+   "Cidadãos com profissões: Builder, Farmer, Miner, Lumberjack, Fisherman, Cook, Guard e muitas outras",
+   "Builder's Hut: o construtor ergue e melhora os prédios sozinho, desde que receba os materiais",
+   "Prédios com níveis (1 a 5) que liberam mais trabalhadores e receitas",
+   "Necessidades dos cidadãos: comida, moradia e segurança afetam a felicidade",
+   "Vários estilos de construção para escolher (medieval, nórdico, fantasia e outros)",
+   "Pesquisa da colônia (University) que libera melhorias"
+  ],
+  "comecar": "Crafte o Supply Camp (ou Supply Ship, se estiver na água) e coloque-o para ganhar o baú inicial com a Build Tool. Use a Build Tool para posicionar a Town Hall e depois a Builder's Hut; contrate o primeiro construtor e entregue os materiais que ele pedir.",
+  "thaumora": "Dá uma camada de vila viva e gestão ao pack, sem energia elétrica. Os trabalhadores podem abastecer a base com comida, madeira e minério enquanto você se dedica à magia."
+ },
+ "Guard Villagers": {
+  "sobre": "Adiciona guardas às vilas, para elas não dependerem só do golem de ferro. Também melhora o comportamento dos aldeões.",
+  "recursos": [
+   "Guardas nascem nas vilas em grupos de seis, com espada de ferro ou besta",
+   "Crie novos guardas agachando e clicando com uma espada ou besta num aldeão desempregado ou nitwit",
+   "Inventário do guarda: dê armadura, troque a arma e coloque escudo ou comida na mão secundária",
+   "Botão de patrulha para o guarda ficar de vigia num ponto",
+   "Com o efeito Hero of the Village, guardas podem seguir você e lutar ao seu lado",
+   "Bruxas atacam aldeões, e aldeões fogem de ursos polares"
+  ],
+  "comecar": "Os guardas já aparecem nas vilas. Para abrir o inventário de um guarda, você precisa de boa reputação na vila, do efeito Hero of the Village ou de ter convertido o guarda você mesmo.",
+  "thaumora": "Deixa as vilas do mundo mais seguras e vivas, combinando com Towns and Towers, Bountiful e as vilas do MVS."
+ },
+ "MVS - Moog's Voyager Structures": {
+  "sobre": "Espalha pelo mundo mais de 130 construções feitas com blocos vanilla, para preencher os espaços vazios entre vilas e estruturas grandes.",
+  "recursos": [
+   "Mais de 130 estruturas no estilo vanilla: casas, acampamentos, moinhos, ruínas e postos",
+   "Baús com loot, inimigos e aldeões amigáveis em algumas construções",
+   "Combina com o visual vanilla e com outros mods de estrutura",
+   "Tudo configurável por datapack (frequência, onde aparece)"
+  ],
+  "comecar": "",
+  "thaumora": "Mais coisas para encontrar enquanto explora. Usa a mesma biblioteca dos outros mods do Moog que já estão no pack (MES, MNS e MSS)."
+ }
+}
