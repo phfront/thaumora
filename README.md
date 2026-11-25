@@ -199,7 +199,8 @@ Artifacts · Relics · Dungeons and Taverns · Simply Swords · Naturalist · Ga
 | **Mowzie's Mobs** | Bosses e criaturas de alta qualidade. |
 | **When Dungeons Arise** | Dungeons gigantes. |
 | **Bountiful** | Quadro de contratos nas vilas. |
-| Level Hearts · Iron's Gems 'n Jewelry · Loot Journal · *(opc.)* Hardcore Revival | Progressão de vida, joias, feed de loot, reanimação. |
+| Iron's Gems 'n Jewelry · Loot Journal | Joias, feed de loot. |
+| ❌ Level Hearts · Hardcore Revival | Fora: o pack é singleplayer e não precisa de progressão de corações à parte. |
 | ❌ Epic Fight (mexe na câmera) · ❌ Champions (sem 1.21.1 — Apotheosis já cobre elites) | — |
 
 ## 3. Progressão e objetivo final

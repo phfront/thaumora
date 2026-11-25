@@ -11,7 +11,7 @@
    "Pesquisa da colônia (University) que libera melhorias"
   ],
   "comecar": "Crafte o Supply Camp (ou Supply Ship, se estiver na água) e coloque-o para ganhar o baú inicial com a Build Tool. Use a Build Tool para posicionar a Town Hall e depois a Builder's Hut; contrate o primeiro construtor e entregue os materiais que ele pedir.",
-  "thaumora": "Dá uma camada de vila viva e gestão ao pack, sem energia elétrica. Os trabalhadores podem abastecer a base com comida, madeira e minério enquanto você se dedica à magia."
+  "thaumora": "Adiado: ficou de lado por enquanto (decisão de 25/11/2026) e pode voltar depois. A ideia era dar ao pack uma vila viva, sem energia elétrica, com trabalhadores abastecendo a base de comida, madeira e minério enquanto você se dedica à magia."
  },
  "Guard Villagers": {
   "sobre": "Adiciona guardas às vilas, para elas não dependerem só do golem de ferro. Também melhora o comportamento dos aldeões.",
@@ -36,5 +36,29 @@
   ],
   "comecar": "",
   "thaumora": "Mais coisas para encontrar enquanto explora. Usa a mesma biblioteca dos outros mods do Moog que já estão no pack (MES, MNS e MSS)."
+ },
+ "Rechiseled": {
+  "sobre": "Rechiseled adiciona um cinzel que troca blocos por variações decorativas. São mais de 600 variações de blocos vanilla, quase todas com texturas conectadas, escadas e lajes.",
+  "recursos": [
+   "Cinzel com tela própria: coloque um bloco e veja todas as variações dele",
+   "Mais de 600 variações decorativas de blocos vanilla",
+   "Versão com e sem textura conectada da maioria dos blocos",
+   "Escadas e lajes das variações",
+   "Cinzelar no mundo: clique esquerdo com o cinzel muda o bloco já colocado"
+  ],
+  "comecar": "Faça o cinzel, clique com o botão direito para abrir a tela, coloque um bloco e escolha a variação. Com um bloco guardado no cinzel, o clique esquerdo transforma os blocos do mundo nessa variação.",
+  "thaumora": "Sem tier: é o mod de variações de blocos do pack (no lugar do Chipped). Serve para quem gosta de construir torres e laboratórios de mago.",
+  "fonte": "https://modrinth.com/mod/rechiseled"
+ },
+ "Rechiseled: Create": {
+  "sobre": "Rechiseled: Create liga o Rechiseled ao Create: os blocos decorativos do Create passam a ser cinzeláveis e o addon traz mais de 100 variações novas.",
+  "recursos": [
+   "Receitas de cinzel para todos os blocos decorativos do Create",
+   "Mais de 100 variações novas de blocos do Create",
+   "Cinzel Mecânico: bloco cinético, parecido com a serra mecânica, que cinzela os blocos que passam por ele, com filtro para escolher a variação"
+  ],
+  "comecar": "Use o cinzel do Rechiseled nos blocos decorativos do Create. Para automatizar, monte um Cinzel Mecânico numa linha de produção do Create.",
+  "thaumora": "Sem tier: acompanha o Create, a engenharia arcana do pack, para decorar oficinas e fábricas.",
+  "fonte": "https://modrinth.com/mod/rechiseled-create"
  }
 }

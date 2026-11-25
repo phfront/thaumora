@@ -242,7 +242,7 @@
    "Glossary dentro do jogo com todos os requisitos e recompensas"
   ],
   "comecar": "Basta jogar: cada ação dá experiência na habilidade ligada a ela. Abra o Glossary e a tela de habilidades no inventário para ver seu progresso e o que cada nível libera.",
-  "thaumora": "Sem tier: é uma camada de RPG que acompanha toda a partida. Convive com o Pufferfish's Skills e o Iron's Dynamic Skill Trees, que também estão no pack.",
+  "thaumora": "Ficou fora do pack: o Pufferfish's Skills foi escolhido no lugar dele. Os requisitos padrão do PMMO (por exemplo, Mining 60 para usar a picareta de diamante) travariam a progressão livre do Thaumora.",
   "fonte": "https://modrinth.com/mod/project-mmo"
  },
  "Level Hearts": {
@@ -254,7 +254,7 @@
    "Opções de config como modo hardcore e vida inicial"
   ],
   "comecar": "",
-  "thaumora": "Sem tier: faz a vida crescer junto com a progressão do jogador. A página do mod lista o Hardcore Revival como incompatível, e ele também está no pack, então vale testar essa combinação; com HUDs como o Colorful Hearts, a config permite desligar o HUD do Level Hearts.",
+  "thaumora": "Ficou fora do pack (25/11/2026): não precisa de uma progressão de corações à parte, e a página do mod ainda o lista como incompatível com o Hardcore Revival.",
   "fonte": "https://modrinth.com/mod/levelhearts"
  },
  "Ars Delight": {
@@ -314,7 +314,7 @@
    "Texturas conectadas"
   ],
   "comecar": "",
-  "thaumora": "Sem tier: é o mod de variações de blocos escolhido para o pack, no lugar do Rechiseled. Serve para quem gosta de construir torres e laboratórios de mago.",
+  "thaumora": "Ficou fora do pack: o Rechiseled foi escolhido no lugar dele, por ser atualizado, ter texturas conectadas e se integrar ao Create.",
   "fonte": "https://modrinth.com/mod/chipped"
  },
  "Mouse Tweaks": {

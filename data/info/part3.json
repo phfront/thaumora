@@ -251,7 +251,7 @@
    "Funciona no modo Hardcore e no Normal."
   ],
   "comecar": "",
-  "thaumora": "É opcional: como o pack é singleplayer, ele faz mais sentido se você abrir o mundo para amigos. Ao ser reanimado você fica com um pequeno debuff e muita fome.",
+  "thaumora": "Ficou fora do pack (25/11/2026): o Thaumora é singleplayer e só outro jogador consegue reanimar, então ele só atrasaria a morte.",
   "fonte": "https://modrinth.com/mod/hardcore-revival"
  },
  "Iron's Spells Delight": {
@@ -411,7 +411,7 @@
    "Compatível com AppleSkin e com os efeitos do Farmer's Delight, The Undergarden e Eidolon."
   ],
   "comecar": "",
-  "thaumora": "Não tem tier. É útil porque Level Hearts e equipamentos mágicos podem aumentar bastante a sua vida.",
+  "thaumora": "Não tem tier. É útil porque equipamentos mágicos, joias e atributos podem aumentar bastante a sua vida, e as fileiras extras de corações viram uma só.",
   "fonte": "https://modrinth.com/mod/colorful-hearts"
  },
  "Sound Physics Remastered": {

@@ -38,9 +38,27 @@
 - Os erros do log são os mesmos de antes: 247 loot tables de compatibilidade, receitas opcionais (Malum, Unusual End, Silent Gear, Create), animações GeckoLib e a config padrão do Improved Mobs.
 - A observar: logo depois de entrar, o watchdog do **VerseWorks** registrou um travamento de 5,6 s do servidor na dimensão `thaumictinkerer:bedrock` (Thaumaturgic Tinkerer). Aconteceu uma vez só, enquanto o mundo carregava, e o jogo seguiu normal. Se repetir durante o jogo, investigar.
 
+### Pufferfish's Skills fica, Rechiseled no lugar do Chipped
+- Decisões: fica o **Pufferfish's Skills** (sai o Project MMO, que por padrão exige nível para usar ferramentas e armaduras); entra o **Rechiseled + Rechiseled: Create** (sai o Chipped, parado desde out/2024).
+- Lock: saíram Chipped, Athena e PMMO; entraram Rechiseled, Rechiseled: Create, Fusion e as bibliotecas Core Lib e Config Lib do SuperMartijn642. Os jars removidos foram para `.minecraft/mods-removidos/2026-11-25/` da instância.
+- A instância confere com o lock: 203 jars do Modrinth com sha1 correto + 16 do CurseForge = 219.
+- ✅ **219 jars: entrou no mundo** 1 min 34 s depois de abrir. Carregou 28.152 receitas e usou cerca de 8,9 GB de RAM.
+- Nenhum erro dos mods novos. No mundo antigo aparecem, uma vez só, avisos de dados que sobraram dos mods removidos (`pmmo:placed_data`, receitas e conquistas do Chipped). Mundo novo não terá isso.
+- O travamento do VerseWorks em `thaumictinkerer:bedrock` não se repetiu.
+
+### Sem Level Hearts, Hardcore Revival e MineColonies
+- Saíram **Level Hearts** e **Hardcore Revival** (o pack é singleplayer; o Level Hearts ainda era listado como incompatível com o Hardcore Revival). Não deixaram dependência sobrando. Jars em `mods-removidos/2026-11-25/`.
+- **MineColonies** adiado: `s: no` no `mods.json`, pode voltar depois. Nunca chegou a ser instalado.
+- ✅ **217 jars: entrou no mundo** 1 min 44 s depois de abrir, com 28.149 receitas.
+- Só os avisos esperados de dados que sobraram do Level Hearts no mundo de teste (`levelhearts:player_data` e receitas de coração). Se a vida máxima do jogador ficou diferente de 10 corações nesse mundo: `/attribute @s minecraft:generic.max_health base set 20`.
+
+### Nullscape × Unusual End × End Remastered
+- O Nullscape troca a geração do End por uma lista fixa de biomas; a dúvida era se os biomas do Unusual End (adicionados por código) ainda apareceriam.
+- ✅ **Convivem.** `/locate` no End achou `unusualend:gloopstone_lands` (1.288 blocos), `unusualend:warped_reef` (1.838), `nullscape:crystal_peaks` (2.058), a estrutura `unusualend:flying_end_ship` (1.810) e `minecraft:end_city` (2.354).
+- O End Remastered não mexe no terreno do End, só no portal (olhos achados em dungeons). Sem conflito com os outros dois.
+- Sem erros de geração do End no log. O "Can't keep up" de 17 s logo depois é dos `/locate`, que são pesados.
+- ⚠️ O travamento do VerseWorks em `thaumictinkerer:bedrock` **voltou** (5,1 s, logo depois do teleporte). A pilha passa pelo Galosphere (`MobEvents.handleBurrowAnchorTeleporting` → carregamento síncrono de chunk). Investigar por que essa dimensão é processada sem ninguém nela.
+
 ### Pendente
-1. Decidir Pufferfish's Skills **ou** Project MMO: hoje os dois estão instalados e ativos ao mesmo tempo.
-2. Decidir Chipped **ou** Rechiseled (o Chipped está instalado).
-3. Instalar o MineColonies pelo Prism (já está no `mods.json`, falta na instância) e anotar os IDs em `data/cf_prism.json`.
-4. Testar Level Hearts × Hardcore Revival.
-5. Testar Nullscape × End Remastered × Unusual End.
+
+1. Investigar o travamento recorrente na dimensão `thaumictinkerer:bedrock` (VerseWorks/Galosphere).

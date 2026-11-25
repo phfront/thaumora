@@ -224,19 +224,6 @@
    "via": "Artifacts"
   },
   {
-   "slug": "athena-ctm",
-   "title": "Athena",
-   "version": "4.0.6",
-   "type": "release",
-   "file": "athena-neoforge-1.21.1-4.0.6.jar",
-   "url": "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/dJgL278E/athena-neoforge-1.21.1-4.0.6.jar",
-   "sha1": "4bcbdf388bd5e387beca7c627224aac33584b55b",
-   "size": 99944,
-   "client": "required",
-   "server": "unsupported",
-   "via": "dependência de Chipped"
-  },
-  {
    "slug": "atlas-api",
    "title": "Atlas Api",
    "version": "1.21.1-1.2.0",
@@ -339,19 +326,6 @@
    "client": "required",
    "server": "required",
    "via": "Carry On"
-  },
-  {
-   "slug": "chipped",
-   "title": "Chipped",
-   "version": "4.0.2",
-   "type": "release",
-   "file": "chipped-neoforge-1.21.1-4.0.2.jar",
-   "url": "https://cdn.modrinth.com/data/BAscRYKm/versions/eqVowbGc/chipped-neoforge-1.21.1-4.0.2.jar",
-   "sha1": "6f5395f58139802edfde7cb9170279f92f291971",
-   "size": 15020578,
-   "client": "required",
-   "server": "required",
-   "via": "Chipped"
   },
   {
    "slug": "cloth-config",
@@ -900,6 +874,19 @@
    "via": "dependência de Loot Journal: Pickup Notifier"
   },
   {
+   "slug": "fusion-connected-textures",
+   "title": "Fusion (Connected Textures)",
+   "version": "1.3.16-neoforge-mc1.21.1",
+   "type": "release",
+   "file": "fusion-1.3.16-neoforge-mc1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/p19vrgc2/versions/AYDaLPK8/fusion-1.3.16-neoforge-mc1.21.1.jar",
+   "sha1": "c3cd7c2718583aa5a12e8502c6b92e050bad0c19",
+   "size": 947335,
+   "client": "required",
+   "server": "unsupported",
+   "via": "dependência de Rechiseled"
+  },
+  {
    "slug": "fzzy-config",
    "title": "Fzzy Config",
    "version": "0.7.7+fix1+1.21+neoforge",
@@ -976,19 +963,6 @@
    "client": "required",
    "server": "required",
    "via": "Handcrafted"
-  },
-  {
-   "slug": "hardcore-revival",
-   "title": "Hardcore Revival",
-   "version": "21.1.22+neoforge-1.21.1",
-   "type": "release",
-   "file": "hardcorerevival-neoforge-1.21.1-21.1.22.jar",
-   "url": "https://cdn.modrinth.com/data/HqKoXaXz/versions/uz0zlIe3/hardcorerevival-neoforge-1.21.1-21.1.22.jar",
-   "sha1": "bd5078ded1d24c2ca5a8f5cf82faa739743aec7e",
-   "size": 250676,
-   "client": "required",
-   "server": "required",
-   "via": "Hardcore Revival"
   },
   {
    "slug": "harvest-with-ease",
@@ -1331,19 +1305,6 @@
    "client": "required",
    "server": "unsupported",
    "via": "Legendary Tooltips"
-  },
-  {
-   "slug": "levelhearts",
-   "title": "LevelHearts",
-   "version": "1.21.1-2.4.0+patch.2",
-   "type": "release",
-   "file": "levelhearts-1.21.1-2.4.0+patch.2.jar",
-   "url": "https://cdn.modrinth.com/data/UxFugL1L/versions/93VtOkQY/levelhearts-1.21.1-2.4.0%2Bpatch.2.jar",
-   "sha1": "ac75d440509857712b954f331bd02806bebd243f",
-   "size": 67926,
-   "client": "required",
-   "server": "required",
-   "via": "Level Hearts"
   },
   {
    "slug": "libipn",
@@ -1827,19 +1788,6 @@
    "via": "dependência de Legendary Tooltips"
   },
   {
-   "slug": "project-mmo",
-   "title": "Project MMO",
-   "version": "2.10.47",
-   "type": "release",
-   "file": "pmmo-1.21.1-2.10.47.jar",
-   "url": "https://cdn.modrinth.com/data/KFQYC1Uy/versions/9lu4zNd1/pmmo-1.21.1-2.10.47.jar",
-   "sha1": "f3ce94787a9ab22dd95f67ec7bb7c4139040465f",
-   "size": 2000305,
-   "client": "required",
-   "server": "required",
-   "via": "Project MMO"
-  },
-  {
    "slug": "psi",
    "title": "Psi",
    "version": "1.21.1-110-neoforge",
@@ -1916,6 +1864,32 @@
    "client": "required",
    "server": "required",
    "via": "Quark"
+  },
+  {
+   "slug": "rechiseled",
+   "title": "Rechiseled",
+   "version": "1.2.6-neoforge-mc1.21",
+   "type": "release",
+   "file": "rechiseled-1.2.6-neoforge-mc1.21.jar",
+   "url": "https://cdn.modrinth.com/data/B0g2vT6l/versions/6muGRqvu/rechiseled-1.2.6-neoforge-mc1.21.jar",
+   "sha1": "a7ca83d2f99520233bfa9ce769a157fe05201639",
+   "size": 11526036,
+   "client": "required",
+   "server": "required",
+   "via": "Rechiseled"
+  },
+  {
+   "slug": "rechiseled-create",
+   "title": "Rechiseled: Create",
+   "version": "1.1.1-neoforge-mc1.21",
+   "type": "release",
+   "file": "rechiseledcreate-1.1.1-neoforge-mc1.21.jar",
+   "url": "https://cdn.modrinth.com/data/E6867niZ/versions/VnOezhJR/rechiseledcreate-1.1.1-neoforge-mc1.21.jar",
+   "sha1": "6f7e53f39eb477d7cee8e21af215cd3db698deda",
+   "size": 983177,
+   "client": "required",
+   "server": "required",
+   "via": "Rechiseled: Create"
   },
   {
    "slug": "relics-mod",
@@ -2215,6 +2189,32 @@
    "client": "optional",
    "server": "required",
    "via": "Structory: Towers"
+  },
+  {
+   "slug": "supermartijn642s-config-lib",
+   "title": "SuperMartijn642's Config Lib",
+   "version": "1.1.8-neoforge-mc1.21",
+   "type": "release",
+   "file": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+   "url": "https://cdn.modrinth.com/data/LN9BxssP/versions/qKL9jM75/supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+   "sha1": "07452242e389975e8a88b97066f4bae6a4ebe574",
+   "size": 207514,
+   "client": "optional",
+   "server": "optional",
+   "via": "dependência de Rechiseled"
+  },
+  {
+   "slug": "supermartijn642s-core-lib",
+   "title": "SuperMartijn642's Core Lib",
+   "version": "1.1.26b-neoforge-mc1.21",
+   "type": "release",
+   "file": "supermartijn642corelib-1.1.26b-neoforge-mc1.21.jar",
+   "url": "https://cdn.modrinth.com/data/rOUBggPv/versions/Bmsxj5pY/supermartijn642corelib-1.1.26b-neoforge-mc1.21.jar",
+   "sha1": "ae2644cd4836e17b5ce8270d111b69e3c30c6035",
+   "size": 593501,
+   "client": "required",
+   "server": "required",
+   "via": "dependência de Rechiseled"
   },
   {
    "slug": "supplementaries",
@@ -2662,10 +2662,6 @@
   {
    "n": "The Twilight Forest",
    "cf": "the-twilight-forest"
-  },
-  {
-   "n": "MineColonies",
-   "cf": "minecolonies"
   },
   {
    "n": "FTB Ultimine",

@@ -1020,5 +1020,19 @@
   "img": "https://cdn.modrinth.com/data/OQAgZMH1/images/bab43992ab033b7e586a57771250d6f1da865a45_350.webp",
   "dl": 9256109,
   "ver": "nnnnnn"
+ },
+ "rechiseled": {
+  "id": "B0g2vT6l",
+  "icon": "https://cdn.modrinth.com/data/B0g2vT6l/b3d1c0f2ed2ec55eed1d6cd59c3ceb8f23b6eba3_96.webp",
+  "img": "https://cdn.modrinth.com/data/B0g2vT6l/images/059227f6f8721260fecac40eda30c861d0d82cb8_350.webp",
+  "dl": 9263702,
+  "ver": "nnnnnn"
+ },
+ "rechiseled-create": {
+  "id": "E6867niZ",
+  "icon": "https://cdn.modrinth.com/data/E6867niZ/160d0983c4d1af06a9f3b0100f3da0f827901f7f_96.webp",
+  "img": null,
+  "dl": 3038394,
+  "ver": "nxxxxx"
  }
 }
