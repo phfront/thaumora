@@ -1,0 +1,20 @@
+{
+ "_comentario": "Dependências que os mods exigem mas não declaram no Modrinth. Descobertas no teste do servidor.",
+ "modrinth": [
+  "playeranimator",
+  "kambrik",
+  "atlas-api"
+ ],
+ "curseforge": [
+  {
+   "n": "OctoLib",
+   "cf": "octolib",
+   "para": "Relics"
+  },
+  {
+   "n": "Lodestone (biblioteca)",
+   "cf": "lodestone",
+   "para": "Malum"
+  }
+ ]
+}

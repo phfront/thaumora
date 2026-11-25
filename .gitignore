@@ -1,0 +1,8 @@
+# gerados / grandes
+data/cf_cache.json
+dist/
+__pycache__/
+
+# nunca versionar chaves nem jars
+*.key
+*.jar

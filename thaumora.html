@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thaumora Modpack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f1ea;--bg2:#ece5d8;--surface:#fffdf9;--surface2:#f3ede3;--text:#1f1a29;--muted:#665f73;--faint:#8f879c;
+  --border:#ddd3c3;--accent:#6a3fbf;--accent2:#8a5cf0;--accent-soft:#ebe2fb;--gold:#9a6b12;--gold-soft:#f6ead0;
+  --ok:#24734a;--ok-bg:#dcf0e4;--port:#8a5d00;--port-bg:#f8ecd0;--no:#a0323a;--no-bg:#f7dfe1;--cf:#2a5a96;--cf-bg:#dfe9f7;
+  --hero1:#2a1747;--hero2:#120b20;--shadow:0 1px 2px rgba(30,20,50,.06),0 8px 24px rgba(30,20,50,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f0b17;--bg2:#150f20;--surface:#1a1426;--surface2:#221a31;--text:#ece6f6;--muted:#a69db8;--faint:#7d7491;
+  --border:#2f2642;--accent:#b18cff;--accent2:#c9adff;--accent-soft:#2a2040;--gold:#e7bb62;--gold-soft:#33280f;
+  --ok:#7fd6a2;--ok-bg:#16301f;--port:#f0c766;--port-bg:#372b10;--no:#f08b93;--no-bg:#3a181c;--cf:#8fb9f2;--cf-bg:#18283e;
+  --hero1:#2a1747;--hero2:#0b0712;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --bg:#0f0b17;--bg2:#150f20;--surface:#1a1426;--surface2:#221a31;--text:#ece6f6;--muted:#a69db8;--faint:#7d7491;
+  --border:#2f2642;--accent:#b18cff;--accent2:#c9adff;--accent-soft:#2a2040;--gold:#e7bb62;--gold-soft:#33280f;
+  --ok:#7fd6a2;--ok-bg:#16301f;--port:#f0c766;--port-bg:#372b10;--no:#f08b93;--no-bg:#3a181c;--cf:#8fb9f2;--cf-bg:#18283e;
+  --hero1:#2a1747;--hero2:#0b0712;--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+img{display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;letter-spacing:.02em;line-height:1.2}
+h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 22px;max-width:760px}
+section{padding:56px 0}
+section+section{border-top:1px solid var(--border)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#f3ecff;background:radial-gradient(1200px 500px at 70% -10%,#5b2fa8 0%,transparent 60%),radial-gradient(800px 400px at 0% 110%,#7a4a10 0%,transparent 55%),linear-gradient(180deg,var(--hero1),var(--hero2))}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.2px 1.2px at 12% 22%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 32% 68%,#fff6 50%,transparent 51%),radial-gradient(1.4px 1.4px at 58% 18%,#fff9 50%,transparent 51%),radial-gradient(1px 1px at 78% 52%,#fff7 50%,transparent 51%),radial-gradient(1.2px 1.2px at 90% 12%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 44% 40%,#fff5 50%,transparent 51%),radial-gradient(1px 1px at 22% 84%,#fff6 50%,transparent 51%),radial-gradient(1.3px 1.3px at 66% 86%,#fff7 50%,transparent 51%);pointer-events:none}
+.hero .wrap{position:relative;padding-top:72px;padding-bottom:56px}
+.hero h1{font-size:clamp(44px,9vw,92px);margin:0;letter-spacing:.08em;background:linear-gradient(90deg,#f6e3b0,#ffffff 40%,#cdb4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.tag{font-size:clamp(16px,2vw,19px);max-width:680px;color:#d9cff0;margin:12px 0 26px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:#ffffff14;border:1px solid #ffffff26;border-radius:999px;padding:6px 14px;font-size:13px;color:#efe6ff;backdrop-filter:blur(4px)}
+.pill b{color:#f6d98f;font-weight:600}
+.hero-icons{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}
+.hero-icons img{width:44px;height:44px;border-radius:10px;background:#ffffff10;border:1px solid #ffffff22;object-fit:cover}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav.top .wrap{display:flex;align-items:center;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.top .brand{font-family:Cinzel,serif;font-weight:700;color:var(--accent);margin-right:10px;white-space:nowrap}
+nav.top a{white-space:nowrap;text-decoration:none;color:var(--muted);padding:6px 10px;border-radius:8px;font-size:14px}
+nav.top a:hover{background:var(--surface2);color:var(--text)}
+#theme{margin-left:auto;flex:none;background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:5px 10px;cursor:pointer;font:inherit;font-size:13px}
+
+/* cards & grids */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.stat .v{font-family:Cinzel,serif;font-size:36px;font-weight:700;color:var(--accent);line-height:1}
+.stat .l{color:var(--muted);font-size:13px;margin-top:6px}
+.bars{display:grid;gap:8px;margin-top:4px}
+.bar{display:grid;grid-template-columns:150px 1fr 36px;gap:10px;align-items:center;font-size:14px;cursor:pointer;border-radius:8px;padding:2px 4px}
+.bar:hover{background:var(--surface2)}
+.bar .track{height:10px;background:var(--surface2);border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--gold));border-radius:99px}
+.bar .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* destaques */
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:14px}
+.fcard{position:relative;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .15s}
+.fcard:hover{transform:translateY(-3px)}
+.fcard .ph{aspect-ratio:16/9;background:linear-gradient(135deg,var(--accent-soft),var(--gold-soft));position:relative;overflow:hidden}
+.fcard .ph img.shot{width:100%;height:100%;object-fit:cover}
+.fcard .ph img.big{position:absolute;inset:0;margin:auto;width:42%;height:auto;aspect-ratio:1;border-radius:18px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.fcard .body{padding:12px 14px 14px;display:flex;gap:10px;align-items:flex-start}
+.fcard .body img{width:36px;height:36px;border-radius:8px;flex:none;object-fit:cover}
+.fcard h3{font-family:Inter,sans-serif;font-size:15px;margin:0;letter-spacing:0}
+.fcard p{margin:2px 0 0;color:var(--muted);font-size:13px;line-height:1.45}
+
+/* caminho */
+.path{display:grid;gap:12px}
+.step{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start}
+.step .num{font-family:Cinzel,serif;font-size:28px;font-weight:700;color:var(--gold);width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--gold-soft);border:1px solid var(--border)}
+.step h3{margin:0 0 4px;font-size:19px}
+.step p{margin:0 0 10px;color:var(--muted)}
+.icons{display:flex;flex-wrap:wrap;gap:6px}
+.chipmod{display:inline-flex;align-items:center;gap:6px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:3px 10px 3px 3px;font-size:13px;text-decoration:none;color:var(--text)}
+.chipmod img,.chipmod .av{width:22px;height:22px;border-radius:50%;object-fit:cover}
+
+/* objetivo final */
+.fcard .ph .av.bigav{position:absolute;inset:0;margin:auto;width:38%;height:auto;aspect-ratio:1;border-radius:18px;font-size:42px}
+.core{border-left:3px solid var(--c);padding:12px 14px;background:var(--surface);border-radius:0 12px 12px 0;border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.core h3{font-family:Inter,sans-serif;letter-spacing:0;font-size:15px;margin:0 0 2px;display:flex;align-items:center;gap:8px}
+.core h3 i{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block}
+.core p{margin:0;color:var(--muted);font-size:13px}
+.core .icons{margin-top:8px}
+.note{color:var(--faint);font-size:13px;margin-top:12px}
+
+/* decisões */
+.dec{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
+.dcard h3{font-family:Inter,sans-serif;letter-spacing:0;font-size:16px;margin:0 0 4px}
+.dcard .why{color:var(--muted);font-size:13px;margin:0 0 12px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--border);border-radius:10px;margin-top:8px;cursor:pointer;background:var(--surface)}
+.opt:hover{border-color:var(--accent)}
+.opt input{margin-top:4px;accent-color:var(--accent)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt b{display:block;font-size:14px}
+.opt small{color:var(--muted);font-size:12.5px;line-height:1.4;display:block}
+.rec{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-left:6px}
+.decided{font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--ok-bg);color:var(--ok);margin-left:8px;vertical-align:middle}
+.dec-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px}
+.btn{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:var(--surface);color:var(--text);border:1px solid var(--border)}
+#copied{color:var(--ok);font-size:13px}
+
+/* mods */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.toolbar input{flex:1 1 240px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.chip{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:5px 12px;cursor:pointer;font:inherit;font-size:13px}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip .c{opacity:.7;margin-left:4px;font-size:12px}
+.count{color:var(--muted);font-size:13px;margin:6px 0 14px}
+.mods{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:10px}
+.mod{display:grid;grid-template-columns:48px 1fr;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px;text-decoration:none;color:inherit;transition:border-color .15s}
+.mod:hover{border-color:var(--accent)}
+.mod.out{opacity:.62}
+.mod img,.mod .av{width:48px;height:48px;border-radius:10px;object-fit:cover}
+.av{display:grid;place-items:center;font-family:Cinzel,serif;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),var(--gold))}
+.chipmod .av{font-size:11px}
+.mod .top{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.mod .name{font-weight:600;font-size:14.5px}
+.mod .desc{color:var(--muted);font-size:13px;line-height:1.45;margin-top:3px}
+.mod .meta{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;font-size:11.5px;color:var(--faint)}
+.badge{font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;white-space:nowrap}
+.s-ok{background:var(--ok-bg);color:var(--ok)}.s-port{background:var(--port-bg);color:var(--port)}.s-no{background:var(--no-bg);color:var(--no)}.s-cf{background:var(--cf-bg);color:var(--cf)}
+.tierb{border:1px solid var(--border);border-radius:6px;padding:0 6px;color:var(--muted)}
+
+/* automação */
+.auto h3{font-family:Inter,sans-serif;letter-spacing:0;font-size:16px;margin:0 0 8px;display:flex;align-items:center;gap:10px}
+.auto h3 img{width:28px;height:28px;border-radius:7px}
+.auto ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+.auto li{margin:5px 0}.auto li b{color:var(--text)}
+.ae2{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:14px;background:var(--surface)}
+.ae2 div{padding:10px 14px;border-bottom:1px solid var(--border);font-size:14px}
+.ae2 .h{background:var(--surface2);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.ae2 div:nth-last-child(-n+2){border-bottom:0}
+.ae2 div:nth-child(odd){border-right:1px solid var(--border)}
+
+/* versões */
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:14px;background:var(--surface);max-height:640px}
+table.vt{border-collapse:separate;border-spacing:0;width:100%;min-width:680px;font-size:14px}
+.vt th,.vt td{padding:7px 10px;border-bottom:1px solid var(--border);text-align:center}
+.vt thead th{position:sticky;top:0;z-index:2;background:var(--surface2);font-size:12px;color:var(--muted)}
+.vt td:first-child,.vt th:first-child{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1}
+.vt thead th:first-child{z-index:3;background:var(--surface2)}
+.vt .mn{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.vt .mn img,.vt .mn .av{width:22px;height:22px;border-radius:6px;font-size:10px}
+.vt th.base{color:var(--accent)}
+.cell{display:inline-block;min-width:26px;padding:1px 6px;border-radius:6px;font-weight:700;font-size:12.5px}
+.c-n{background:var(--ok-bg);color:var(--ok)}.c-c{background:var(--cf-bg);color:var(--cf)}.c-o{background:var(--port-bg);color:var(--port)}.c-x{background:var(--no-bg);color:var(--no)}.c-u{background:var(--surface2);color:var(--faint)}
+.vsum{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:0 0 14px}
+.vsum div{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center}
+.vsum b{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.vsum span{font-family:Cinzel,serif;font-size:22px;font-weight:700}
+.vsum .best{border-color:var(--accent)}
+.vsum .best span{color:var(--accent)}
+
+.rules li{margin:6px 0}
+.check{list-style:none;padding:0;margin:0}
+.check li{padding:8px 0;border-bottom:1px solid var(--border)}
+.check li:last-child{border-bottom:0}
+.check label{display:flex;gap:10px;cursor:pointer}
+.check input{accent-color:var(--accent);margin-top:4px}
+footer{padding:32px 0 56px;color:var(--faint);font-size:13px;border-top:1px solid var(--border)}
+
+@media (max-width:820px){.vsum{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.bar{grid-template-columns:110px 1fr 30px}.step{grid-template-columns:1fr}.step .num{width:48px;height:48px;font-size:22px}.ae2{grid-template-columns:1fr}.ae2 div:nth-child(odd){border-right:0}.ae2 .h:nth-child(2){display:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#f0cf86">Modpack de magia · em desenvolvimento</div>
+    <h1>THAUMORA</h1>
+    <p class="tag">Um mundo movido a Thaum, a magia em estado bruto. Explore em qualquer ordem: bruxaria, glifos, demônios, almas, alquimia, engenharia arcana e dimensões perdidas. O objetivo final fica para depois: primeiro a gente joga.</p>
+    <div class="pills">
+      <span class="pill"><b>Minecraft</b> 1.21.1</span>
+      <span class="pill"><b>Loader</b> NeoForge</span>
+      <span class="pill"><b>Mods</b> <span id="heroCount">~</span> listados</span>
+      <span class="pill"><b>RAM</b> 12 GB</span>
+      <span class="pill"><b>Publicação</b> CurseForge</span>
+      <span class="pill"><b>Progressão</b> livre</span>
+    </div>
+    <div class="hero-icons" id="heroIcons"></div>
+  </div>
+</header>
+
+<nav class="top"><div class="wrap">
+  <span class="brand">Thaumora</span>
+  <a href="#visao">Visão geral</a><a href="#destaques">Destaques</a><a href="#caminho">Caminho</a><a href="#objetivo">Objetivo final</a><a href="#decisoes">Decisões</a><a href="#mods">Mods</a><a href="#automacao">Automação</a><a href="#versoes">Versões</a><a href="#regras">Regras</a>
+  <button id="theme" type="button">◐ Tema</button>
+</div></nav>
+
+<main>
+<section id="visao"><div class="wrap">
+  <div class="eyebrow">Visão geral</div>
+  <h2>O pack em números</h2>
+  <p class="lead">Um modpack singleplayer focado em magia. A única tecnologia permitida é o Create, que é mecânico e visual, sem eletricidade. Não há trava de progressão: você explora os mods na ordem que quiser, e o objetivo final será definido depois de jogar.</p>
+  <div class="grid g4" id="stats"></div>
+  <div class="card" style="margin-top:14px">
+    <h3 style="font-family:Inter;letter-spacing:0;font-size:15px;margin:0 0 10px">Mods por área <span style="color:var(--faint);font-weight:400">(clique para filtrar a lista)</span></h3>
+    <div class="bars" id="bars"></div>
+  </div>
+</div></section>
+
+<section id="destaques"><div class="wrap">
+  <div class="eyebrow">Destaques</div>
+  <h2>Os pilares do Thaumora</h2>
+  <p class="lead">Os mods que definem a cara do pack. As imagens vêm das páginas oficiais no Modrinth.</p>
+  <div class="feat" id="feat"></div>
+</div></section>
+
+<section id="caminho"><div class="wrap">
+  <div class="eyebrow">Caminho sugerido</div>
+  <h2>Uma ordem natural, não obrigatória</h2>
+  <p class="lead">Nada é travado. Esta é só a sequência que costuma fazer sentido, do mais simples ao endgame. O livro de quests pode sugerir esse caminho sem bloquear nada.</p>
+  <div class="path" id="path"></div>
+</div></section>
+
+<section id="objetivo"><div class="wrap">
+  <div class="eyebrow">Objetivo final · em aberto</div>
+  <h2>Decidir depois de jogar</h2>
+  <p class="lead">O endgame fica para depois. Primeiro vem a base do pack, e a ideia do final amadurece jogando. Estas são as ideias guardadas até agora, só como rascunho.</p>
+  <div class="grid g3">
+    <div class="card"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px">★ Portal para uma dimensão própria</h3><p style="margin:0;color:var(--muted);font-size:14px">A ideia favorita até agora. Um ou mais itens feitos com o endgame dos mods abrem um portal para uma dimensão nova, criada num mod nosso, feito do zero. Dá para jogar o pack enquanto o mod é desenvolvido.</p></div>
+    <div class="card"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px">Item no estilo ATM Star</h3><p style="margin:0;color:var(--muted);font-size:14px">Um item final montado a partir de núcleos, em que cada núcleo junta o endgame de uma área. Pode virar a "chave" do portal.</p></div>
+    <div class="card"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px">✦ Explorar o universo, do jeito mágico</h3><p style="margin:0;color:var(--muted);font-size:14px">Os mods de espaço são quase todos de tecnologia, com foguete e combustível. A ideia é uma alternativa mágica: astrolábio, observatório, constelações ou um navio celestial que leva a outros planetas e dimensões. Provavelmente vai virar outro mod nosso. Combina com a ideia de ir saindo da dimensão padrão e passando por várias outras.</p></div>
+    <div class="card"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px">Outras ideias</h3><p style="margin:0;color:var(--muted);font-size:14px">Codex Primordial (um grimório que se completa com cada escola), Coração de Thaum (um monumento na base) e Cetro do Arquimago (um item de poder).</p></div>
+  </div>
+  <h3 style="font-family:Inter;letter-spacing:0;font-size:15px;margin:24px 0 10px;color:var(--muted)">Rascunho: os 6 núcleos e os mods de cada um</h3>
+  <div class="grid g3" id="cores"></div>
+</div></section>
+
+<section id="decisoes"><div class="wrap">
+  <div class="eyebrow">Decisões</div>
+  <h2>O que ainda falta decidir</h2>
+  <p class="lead">Marque suas escolhas. Elas ficam salvas neste navegador. Depois clique em <b>Copiar escolhas</b> e cole no chat para eu aplicar.</p>
+  <div class="dec" id="dec"></div>
+  <div class="dec-actions">
+    <button class="btn" id="copyBtn" type="button">Copiar escolhas</button>
+    <button class="btn ghost" id="resetBtn" type="button">Usar recomendadas</button>
+    <span id="copied" role="status"></span>
+  </div>
+</div></section>
+
+<section id="mods"><div class="wrap">
+  <div class="eyebrow">Lista completa</div>
+  <h2>Todos os mods</h2>
+  <p class="lead">Clique em um mod para abrir a página dele. Os que estão em "Fora do pack" foram avaliados e descartados.</p>
+  <div class="toolbar"><input id="q" type="search" placeholder="Buscar por nome ou descrição…" aria-label="Buscar mods"></div>
+  <div class="chips" id="catChips"></div>
+  <div class="chips" id="stChips"></div>
+  <div class="count" id="count"></div>
+  <div class="mods" id="modList"></div>
+</div></section>
+
+<section id="automacao"><div class="wrap">
+  <div class="eyebrow">Automação</div>
+  <h2>Automação sem eletricidade</h2>
+  <p class="lead">Criaturas, rituais e flores fazem o trabalho, e o Create entra como reforço mecânico.</p>
+  <div class="grid g3" id="auto"></div>
+  <h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:26px 0 0">O "AE2" do Thaumora</h3>
+  <div class="ae2">
+    <div class="h">Função no AE2</div><div class="h">No Thaumora</div>
+    <div>Rede de armazenamento + terminal</div><div><b>Occultism Dimensional Storage</b>: terminal, busca, crafting grid, acesso remoto e Stable Wormhole.</div>
+    <div>Pedir um item e ele ser fabricado</div><div><b>Logística do Create 6</b>: Stock Keeper, Packager e Factory Gauge.</div>
+    <div>Manter estoque de um item</div><div><b>Wixies</b> do Ars Nouveau, fabricando sem parar a partir dos baús ligados.</div>
+    <div>Pedir item pelo nome</div><div><b>Corporea</b> do Botania, com Crafty Crate.</div>
+  </div>
+</div></section>
+
+<section id="versoes"><div class="wrap">
+  <div class="eyebrow">Compatibilidade</div>
+  <h2>1.21.1 × versões mais novas</h2>
+  <p class="lead">Mostra se cada mod tem versão para NeoForge em cada versão do Minecraft. A mais recente hoje é a 26.3; desde 2026 a numeração segue o ano.</p>
+  <div class="vsum" id="vsum"></div>
+  <div class="chips"><button class="chip on" id="onlyCore" type="button">Só magia e Create</button></div>
+  <div class="tablewrap"><table class="vt" id="vt"></table></div>
+  <p class="note"><span class="cell c-n">✔</span> tem para NeoForge · <span class="cell c-c">✔*</span> confirmado no CurseForge · <span class="cell c-o">≈</span> só Fabric/Forge · <span class="cell c-x">✕</span> não existe · <span class="cell c-u">?</span> só no CurseForge, não verificado. Dados do Modrinth em 25/11/2026.</p>
+  <div class="card" style="margin-top:12px"><b>Conclusão:</b> a 1.21.1 é a única versão em que o pack inteiro existe. Nas 26.x ainda faltam Ars Nouveau, Iron's Spells, Malum, Create e Hexerei. Uma migração só vai fazer sentido quando o Create e o Ars Nouveau forem atualizados.</div>
+</div></section>
+
+<section id="regras"><div class="wrap">
+  <div class="eyebrow">Regras e próximos passos</div>
+  <h2>Como o pack é pensado</h2>
+  <div class="grid g3" style="margin-top:18px">
+    <div class="card rules"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px;color:var(--ok)">✔ Pode</h3><ul style="margin:0;padding-left:18px">
+      <li>Automação mágica com criaturas, rituais e flores.</li>
+      <li>Create e Embers, porque são mecânicos e visuais.</li>
+      <li>Explorar os mods em qualquer ordem.</li>
+    </ul></div>
+    <div class="card rules"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px;color:var(--no)">✕ Não pode</h3><ul style="margin:0;padding-left:18px">
+      <li>Mods elétricos: Mekanism, Thermal, Immersive Engineering, AE2, Refined Storage.</li>
+      <li>Addons do Create que usam eletricidade (FE).</li>
+      <li>Mods que mexem na câmera.</li>
+    </ul></div>
+    <div class="card"><h3 style="font-family:Inter;letter-spacing:0;font-size:16px;margin:0 0 6px">Próximos passos</h3><ul class="check" id="steps"></ul></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Thaumora · página gerada por <code>tools/build_page.py</code> em 25/11/2026 · os ícones e imagens pertencem aos autores de cada mod (Modrinth).</div></footer>
+
+<script>
+const MODS = [{"n": "Ars Nouveau", "mr": "ars-nouveau", "cat": "magia", "s": "ok", "t": "II", "core": 1, "star": 1, "d": "Feitiços montados com glifos, familiares, rituais e automação mágica com Source e Starbuncles. É o coração do pack.", "icon": "https://cdn.modrinth.com/data/TKB6INcv/7ccd369857b70b16e0fbd3f10e5278b0f75c7772_96.webp", "img": null, "dl": 4098407, "ver": "nxxxxx", "url": "https://modrinth.com/mod/ars-nouveau"}, {"n": "Iron's Spells 'n Spellbooks", "mr": "irons-spells-n-spellbooks", "cat": "magia", "s": "ok", "t": "IV", "core": 1, "star": 1, "d": "Magia de combate estilo RPG, com escolas de feitiço, pergaminhos, armaduras de mago, bosses e estruturas.", "icon": "https://cdn.modrinth.com/data/s4OWxYQQ/6a1f5c6adb434a6c56c1975af6f4fbde3ba907ff.png", "img": null, "dl": 6168261, "ver": "nxxxxx", "url": "https://modrinth.com/mod/irons-spells-n-spellbooks"}, {"n": "Occultism", "mr": "occultism", "cat": "magia", "s": "ok", "t": "III", "core": 1, "star": 1, "d": "Demônios e djinns que trabalham para você. O Dimensional Storage é o \"AE2\" do pack.", "icon": "https://cdn.modrinth.com/data/sbJh4AZw/682613d6915cc19cee17a95b73f954ae6353a515_96.webp", "img": "https://cdn.modrinth.com/data/sbJh4AZw/images/44a3d5ac7e0d3a5bb82310fef7ca9deaf0cbfcd1_350.webp", "dl": 931090, "ver": "nxxnnn", "url": "https://modrinth.com/mod/occultism"}, {"n": "Malum", "mr": "malum", "cat": "magia", "s": "ok", "t": "III", "core": 1, "star": 1, "d": "Magia de almas e espíritos, com transmutação, totens e rituais. Visual muito bonito.", "icon": "https://cdn.modrinth.com/data/jgzwYsAN/ca6c59690727d39fd048b22a9be183f96c5d4d81_96.webp", "img": "https://cdn.modrinth.com/data/jgzwYsAN/images/7249d913ef451a41ae965e6fca5a728626405ac9_350.webp", "dl": 622153, "ver": "nxxxxx", "url": "https://modrinth.com/mod/malum"}, {"n": "Forbidden & Arcanus", "mr": "forbidden-arcanus", "cat": "magia", "s": "ok", "t": "II", "core": 1, "star": 1, "d": "Artefatos, Hephaestus Forge e rituais. É onde acontece o ritual final.", "icon": "https://cdn.modrinth.com/data/MdlnLS7Q/icon.png", "img": null, "dl": 555970, "ver": "nxxnnx", "url": "https://modrinth.com/mod/forbidden-arcanus"}, {"n": "Thaumaturge", "cf": "thaumaturge", "cat": "magia", "s": "port", "t": "II", "core": 1, "ver": "cuucuu", "d": "Releitura moderna do Thaumcraft, com vis, cristais e pesquisa. Tem addons de infusão, brewing e tinkerer.", "url": "https://www.curseforge.com/minecraft/mc-mods/thaumaturge"}, {"n": "Theurgy", "mr": "theurgy", "cat": "magia", "s": "ok", "t": "III", "core": 1, "d": "Alquimia com destilação, calcinação e divisão de matéria. Permite duplicar minérios com magia.", "icon": "https://cdn.modrinth.com/data/uOVMgoil/e24ffb3c0c0018fb6845943d144da833aa0aace0.png", "img": "https://cdn.modrinth.com/data/uOVMgoil/images/89581ff6268dcc1bf8da68dea522dec15b07c19a_350.webp", "dl": 232921, "ver": "nnxnnn", "url": "https://modrinth.com/mod/theurgy"}, {"n": "Mahou Tsukai", "mr": "mahou-tsukai", "cat": "magia", "s": "ok", "t": "IV", "core": 1, "d": "Magia inspirada em anime: projeção, reforço e selamento.", "icon": "https://cdn.modrinth.com/data/7jOxn6qJ/977651191d12b60563e2ab7f8b5a10283a9231b0_96.webp", "img": "https://cdn.modrinth.com/data/7jOxn6qJ/images/c77d63945f0ad133a6d56d398a51a25177293e51_350.webp", "dl": 455977, "ver": "nxxnxx", "url": "https://modrinth.com/mod/mahou-tsukai"}, {"n": "Hexerei", "mr": "hexerei", "cat": "magia", "s": "ok", "t": "I", "core": 1, "star": 1, "d": "Bruxaria com caldeirão, mesa de mistura, vassouras voadoras e herbalismo.", "icon": "https://cdn.modrinth.com/data/IQSOHVhI/3d2817f9902ce28a7bd5396eccbcc9061067c8c8_96.webp", "img": "https://cdn.modrinth.com/data/IQSOHVhI/images/480b3e78c7f9901a8bb2a76cec6520ef40181cae_350.webp", "dl": 463340, "ver": "nxxxxx", "url": "https://modrinth.com/mod/hexerei"}, {"n": "Hexalia", "mr": "hexalia", "cat": "magia", "s": "ok", "t": "I", "core": 1, "d": "Herbalismo e magia natural.", "icon": "https://cdn.modrinth.com/data/bkz5C0dQ/74babb7a89589b71c8ebd07fa126b929481087ac_96.webp", "img": "https://cdn.modrinth.com/data/bkz5C0dQ/images/acdbd5fc34bca8eab954412fbe0dfe17264426a5_350.webp", "dl": 686587, "ver": "nxxxxx", "url": "https://modrinth.com/mod/hexalia"}, {"n": "Enchanted: Witchcraft", "mr": "enchanted-witchcraft", "cat": "magia", "s": "ok", "t": "I", "core": 1, "d": "Bruxaria clássica com altar, destilaria, poppets e familiares.", "icon": "https://cdn.modrinth.com/data/HsbpdVo9/9b2dab091e47d10b87bd988b8f178b27b2419d8c.png", "img": "https://cdn.modrinth.com/data/HsbpdVo9/images/44c90ba895823cf58c0292ea08631125e9cf0bf4_350.webp", "dl": 537134, "ver": "nxxxxx", "url": "https://modrinth.com/mod/enchanted-witchcraft"}, {"n": "Eidolon: Repraised", "mr": "eidolonrepraised", "cat": "magia", "s": "port", "t": "III", "core": 1, "d": "Necromancia, devoção a divindades e cânticos. Está em beta.", "icon": "https://cdn.modrinth.com/data/eWX2m1eM/6d2c24728d5e7e7ae20414f07d83f8de2a678a77.png", "img": null, "dl": 276440, "ver": "nxxxxx", "url": "https://modrinth.com/mod/eidolonrepraised"}, {"n": "Botania Revived", "cf": "botania-revived", "cat": "magia", "s": "port", "t": "I–V", "core": 1, "ver": "cuuuuu", "d": "Magia natural técnica com flores de mana, Elven Gateway, Terrasteel, relíquias e o boss Gaia Guardian. Port não oficial e muito ativo. Use versão fixa e só atualize depois de ler o changelog. O port oficial para 1.21.1 está em andamento.", "url": "https://www.curseforge.com/minecraft/mc-mods/botania-revived"}, {"n": "Neo Vitae", "mr": "neovitae", "cat": "magia", "s": "port", "t": "V", "core": 1, "d": "Magia de sangue inspirada no Blood Magic, com altar, sacrifício e rituais. Experimental, mas existe para 1.21.1 e 26.1. Entra no lugar do port do Blood Magic.", "icon": "https://cdn.modrinth.com/data/rvaW4C93/d84892237c18b5a8d21456aeb9672075c01fdaab_96.webp", "img": "https://cdn.modrinth.com/data/rvaW4C93/images/c96033ffdee5d413b4f7f5d3e3ee5efd3073d006_350.webp", "dl": 31593, "ver": "nxxnxx", "url": "https://modrinth.com/mod/neovitae"}, {"n": "Roots Classic", "cf": "roots-classic", "cat": "magia", "s": "port", "t": "I", "core": 1, "ver": "cuuuuu", "d": "Port do Roots clássico (0.107): cajado druídico, ervas, pós mágicos e pedras rituais. Mod pequeno, que complementa o Naturalismo.", "url": "https://www.curseforge.com/minecraft/mc-mods/roots-classic"}, {"n": "Embers Re-Ignited", "mr": "embers-re-ignited", "cat": "magia", "s": "port", "t": "III", "core": 1, "star": 1, "d": "Magia-tecnologia anã movida a ember, com fornalhas, bombas e a liga Dawnstone. Integra com o Create.", "icon": "https://cdn.modrinth.com/data/8znVCTxA/ad80e11e7bbedd391ee207a29d5580a5622760a1_96.webp", "img": "https://cdn.modrinth.com/data/8znVCTxA/images/20f52e7b21dcd01041ca3d098dfb5bb07d399449_350.webp", "dl": 4805, "ver": "nxxxxx", "url": "https://modrinth.com/mod/embers-re-ignited"}, {"n": "Nature's Aura", "mr": "natures-aura", "cat": "magia", "s": "ok", "t": "III", "core": 1, "d": "Máquinas que consomem a aura natural da região, que precisa ser reposta plantando.", "icon": "https://cdn.modrinth.com/data/4cJkN3aF/d2edf7ab7b8048f3a92df7a4963dc2ce3e3ad803.png", "img": null, "dl": 159112, "ver": "nxxxxx", "url": "https://modrinth.com/mod/natures-aura"}, {"n": "Apotheosis", "mr": "apotheosis", "cat": "magia", "s": "ok", "t": "IV", "core": 1, "d": "Gemas, afixos, mobs de elite e loot de bosses. Na 1.21.1 vem separado em módulos: Apothic Enchanting, Apothic Attributes e Apothic Spawners.", "extra": ["apothic-enchanting"], "icon": "https://cdn.modrinth.com/data/rqFWfVlz/28988b67466cf077778c12c7798fbbb0bad97e03_96.webp", "img": "https://cdn.modrinth.com/data/rqFWfVlz/images/db664026366182372928c5e24d366d79998a6366_350.webp", "dl": 418710, "ver": "nxxnxx", "url": "https://modrinth.com/mod/apotheosis"}, {"n": "Apothic Spawners", "mr": "apothic-spawners", "cat": "magia", "s": "ok", "t": "IV", "core": 1, "d": "O antigo módulo de spawners do Apotheosis: você pega spawners com Silk Touch e modifica velocidade, quantidade e condições de spawn com itens. É a base das mob traps.", "icon": "https://cdn.modrinth.com/data/DfxVkOAO/f0dc99bf2e049057f26141eb0b3bb504e2c0047a_96.webp", "img": null, "dl": 133702, "ver": "nxxnxx", "url": "https://modrinth.com/mod/apothic-spawners"}, {"n": "Reliquary Reincarnations", "mr": "reliquary-reincarnations", "cat": "magia", "s": "ok", "t": "V", "core": 1, "d": "Relíquias e itens mágicos clássicos.", "icon": "https://cdn.modrinth.com/data/fQO83PId/69fd8e7d651c25c42b32585d882ac2d8459c2631.png", "img": "https://cdn.modrinth.com/data/fQO83PId/images/314ce30cfb28588343be50b534d0721d2e3934ae_350.webp", "dl": 152429, "ver": "nnnnnn", "url": "https://modrinth.com/mod/reliquary-reincarnations"}, {"n": "EvilCraft", "mr": "evilcraft", "cat": "magia", "s": "ok", "t": "V", "core": 1, "d": "Magia sombria com sangue e Dark Gems.", "icon": "https://cdn.modrinth.com/data/3ANq2btA/4a3de92c4cab2b622027d46b5de67862ce5ef6cc_96.webp", "img": null, "dl": 133421, "ver": "nnnnnn", "url": "https://modrinth.com/mod/evilcraft"}, {"n": "Psi", "mr": "psi", "cat": "magia", "s": "ok", "t": "IV", "core": 1, "d": "Feitiços programados com blocos de lógica, como programação visual. Opcional.", "icon": "https://cdn.modrinth.com/data/pOeA0exL/786f8c14e1955f4c4be51c0701d0e7ff58eba33b_96.webp", "img": null, "dl": 92751, "ver": "nxxxxx", "url": "https://modrinth.com/mod/psi"}, {"n": "Ars Elemental", "cf": "ars-elemental", "cat": "addons", "s": "ok", "t": "II", "core": 1, "ver": "cuuuuu", "d": "Escolas elementais, focos e armaduras para o Ars Nouveau.", "url": "https://www.curseforge.com/minecraft/mc-mods/ars-elemental"}, {"n": "Ars Additions", "mr": "ars-additions", "cat": "addons", "s": "ok", "t": "II", "core": 1, "d": "Glifos e utilidades extras para o Ars Nouveau.", "icon": "https://cdn.modrinth.com/data/GYK6Gk8R/248e49588dd7e85e9ec8ca66fe4d23d832935af6.png", "img": "https://cdn.modrinth.com/data/GYK6Gk8R/images/308cf23b8ec89b63ce4792487ee4504e7b4991a0.png", "dl": 401776, "ver": "nxxxxx", "url": "https://modrinth.com/mod/ars-additions"}, {"n": "Ars 'n' Spells", "mr": "ars-n-spells", "cat": "addons", "s": "ok", "t": "IV", "core": 1, "d": "Junta a barra de mana do Ars Nouveau com a do Iron's Spells.", "icon": "https://cdn.modrinth.com/data/NlMT8pQt/45d4a894cc73bfeea55db671050b63f5c992b55a.png", "img": null, "dl": 28341, "ver": "nxxxxx", "url": "https://modrinth.com/mod/ars-n-spells"}, {"n": "Iron's Gems 'n Jewelry", "mr": "irons-jewelry", "cat": "addons", "s": "ok", "t": "IV", "d": "Joias com atributos para o Iron's Spells.", "icon": "https://cdn.modrinth.com/data/cTagjDuu/86b433beb057a7fa71946d67369d35b99bbf5d4e_96.webp", "img": "https://cdn.modrinth.com/data/cTagjDuu/images/cd0ce8d33166752d7c33774851239610deeee55b_350.webp", "dl": 26958, "ver": "nxxnxx", "url": "https://modrinth.com/mod/irons-jewelry"}, {"n": "Thaumaturgic Infusion / Brewing / Tinkerer", "cf": "thaumaturgic-infusion", "cat": "addons", "s": "port", "t": "II", "d": "Ports dos clássicos addons do Thaumcraft para o Thaumaturge.", "url": "https://www.curseforge.com/minecraft/mc-mods/thaumaturgic-infusion"}, {"n": "Create", "mr": "create", "cat": "create", "s": "ok", "t": "II", "core": 1, "star": 1, "d": "Rotação, processamento, contraptions, trens e logística. É a única exceção tech do pack.", "icon": "https://cdn.modrinth.com/data/LNytGWDc/61d716699bcf1ec42ed4926a9e1c7311be6087e2_96.webp", "img": null, "dl": 28468608, "ver": "nxxxxx", "url": "https://modrinth.com/mod/create"}, {"n": "Ars Creo", "mr": "ars-creo", "cat": "create", "s": "ok", "t": "II", "core": 1, "d": "Liga o Ars Nouveau ao Create.", "icon": "https://cdn.modrinth.com/data/fZ324GMc/31b96eea911803df8192de94e1f7d42b2ce3f8f3_96.webp", "img": "https://cdn.modrinth.com/data/fZ324GMc/images/1d0fa305141552ccaf6f77f1403775befcf73361.gif", "dl": 368699, "ver": "nxxxxx", "url": "https://modrinth.com/mod/ars-creo"}, {"n": "Create: Thaumaturgy", "cf": "create-thaumaturgy", "cat": "create", "s": "port", "t": "III", "d": "Liga o Thaumaturge ao Create.", "url": "https://www.curseforge.com/minecraft/mc-mods/create-thaumaturgy"}, {"n": "Create: Enchantment Industry", "mr": "create-enchantment-industry", "cat": "create", "s": "ok", "t": "IV", "core": 1, "d": "Experiência líquida e encantamento automático.", "icon": "https://cdn.modrinth.com/data/JWGBpFUP/9571cd419c5eee9f2017f0b6f7cf6e81c665723b_96.webp", "img": null, "dl": 6414101, "ver": "nxooxx", "url": "https://modrinth.com/mod/create-enchantment-industry"}, {"n": "Create Deco", "mr": "create-deco", "cat": "create", "s": "ok", "t": "—", "d": "Blocos decorativos industriais e medievais.", "icon": "https://cdn.modrinth.com/data/sMvUb4Rb/b60e1330b10bd1d7b1f2c0b7337a25f73b0eb555_96.webp", "img": "https://cdn.modrinth.com/data/sMvUb4Rb/images/ee4b157259d55e63ad672155e859f9320c10484b_350.webp", "dl": 8157981, "ver": "nxxxxx", "url": "https://modrinth.com/mod/create-deco"}, {"n": "Copycats+", "mr": "copycats", "cat": "create", "s": "ok", "t": "—", "d": "Blocos copycat para decoração.", "icon": "https://cdn.modrinth.com/data/UT2M39wf/17960b56556c644249686a22172eda0924f8bbe0_96.webp", "img": "https://cdn.modrinth.com/data/UT2M39wf/images/02d8da8b0947b7bc7f69697ffcfaef2439187804.png", "dl": 11335747, "ver": "nxxxxx", "url": "https://modrinth.com/mod/copycats"}, {"n": "Steam 'n' Rails", "mr": "create-steam-n-rails-1.21.1", "cat": "create", "s": "ok", "t": "—", "d": "Mais opções de trens. Opcional.", "icon": "https://cdn.modrinth.com/data/L3Jv0QZI/179182a054901029eecf4ec5b15d414ed5bfddc6_96.webp", "img": null, "dl": 2737909, "ver": "nxxxxx", "url": "https://modrinth.com/mod/create-steam-n-rails-1.21.1"}, {"n": "The Twilight Forest", "cf": "the-twilight-forest", "cat": "dimensoes", "s": "ok", "t": "II", "star": 1, "ver": "cuuuuu", "d": "Floresta mágica eterna com progressão de bosses própria. É a dimensão do tier II.", "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest"}, {"n": "The Aether", "mr": "aether", "cat": "dimensoes", "s": "ok", "t": "III", "star": 1, "d": "Dimensão celestial, o \"paraíso arcano\".", "icon": "https://cdn.modrinth.com/data/YhmgMVyu/f76fada67156fdeab0974f5f791f936be524d5d3_96.webp", "img": "https://cdn.modrinth.com/data/YhmgMVyu/images/6bcfa05c5228af0eaa3abb567cea8072720f2fc1_350.webp", "dl": 10572841, "ver": "nxxxxx", "url": "https://modrinth.com/mod/aether"}, {"n": "Deep Aether", "mr": "deep-aether", "cat": "dimensoes", "s": "ok", "t": "III", "d": "Expande o Aether com biomas, mobs e um boss.", "icon": "https://cdn.modrinth.com/data/gcHIih5B/4c6fe24090f1f247b0ae0fcbcd3f532329d4e9ea_96.webp", "img": "https://cdn.modrinth.com/data/gcHIih5B/images/290b8381def344d0cb09eed08e720eadda816b1a_350.webp", "dl": 3534454, "ver": "nxxxxx", "url": "https://modrinth.com/mod/deep-aether"}, {"n": "Eternal Starlight", "mr": "eternal-starlight", "cat": "dimensoes", "s": "ok", "t": "III", "star": 1, "d": "Dimensão mística estrelada, com bosses e equipamentos mágicos.", "icon": "https://cdn.modrinth.com/data/XvcfUGfB/2c38d40c2f387adb8b406afd8c1f78f218a7e599_96.webp", "img": "https://cdn.modrinth.com/data/XvcfUGfB/images/6293911cde95c347d8f652d2de52aceb640163f7_350.webp", "dl": 766076, "ver": "nxxxxx", "url": "https://modrinth.com/mod/eternal-starlight"}, {"n": "The Undergarden", "mr": "the-undergarden", "cat": "dimensoes", "s": "ok", "t": "III", "d": "Dimensão subterrânea sombria.", "icon": "https://cdn.modrinth.com/data/Ejfl5qDL/443e97da9d964660d4e7dca17fc8e28a8e9e667f_96.webp", "img": "https://cdn.modrinth.com/data/Ejfl5qDL/images/eb7488d59a80a5025b91e85fba4b1b2b070a4159_350.webp", "dl": 3127975, "ver": "nxxnxx", "url": "https://modrinth.com/mod/the-undergarden"}, {"n": "Deeper and Darker", "mr": "deeperdarker", "cat": "dimensoes", "s": "ok", "t": "IV", "d": "A dimensão do Warden, o \"abismo\".", "icon": "https://cdn.modrinth.com/data/fnAffV0n/be8023f374038c6bd8a52a0e5b2cbc4eb1a37746_96.webp", "img": "https://cdn.modrinth.com/data/fnAffV0n/images/a9ce7eaea1d40e592ad4b8d408343ea83bcd517e_350.webp", "dl": 16529515, "ver": "noxxxx", "url": "https://modrinth.com/mod/deeperdarker"}, {"n": "The Bumblezone", "mr": "the-bumblezone", "cat": "dimensoes", "s": "ok", "t": "—", "d": "Dimensão das abelhas. Opcional.", "icon": "https://cdn.modrinth.com/data/38tpSycf/df51606c81b979611259890f4a9bb68e4c45aeb9.png", "img": "https://cdn.modrinth.com/data/38tpSycf/images/3464447833c325173d65b7c946deb53a333f0764_350.webp", "dl": 4320903, "ver": "nxxnxx", "url": "https://modrinth.com/mod/the-bumblezone"}, {"n": "Incendium", "mr": "incendium", "cat": "dimensoes", "s": "ok", "t": "IV", "d": "Reformula o Nether com biomas e estruturas perigosas.", "icon": "https://cdn.modrinth.com/data/ZVzW5oNS/65c8dcaaf260e5b2182c228a1a442c792a7c4782.jpeg", "img": null, "dl": 10737127, "ver": "nnnnnn", "url": "https://modrinth.com/mod/incendium"}, {"n": "Nether Depths Upgrade", "mr": "nether-depths-upgrade", "cat": "dimensoes", "s": "ok", "t": "—", "d": "Vida marinha no Nether.", "icon": "https://cdn.modrinth.com/data/vI1QKJro/e64111a7ee741940fdc5329b666a3b76845e461e_96.webp", "img": "https://cdn.modrinth.com/data/vI1QKJro/images/7c1ced85ae8505ef0d730ef61bde7f79c2f7e01e_350.webp", "dl": 3387527, "ver": "nxxxxx", "url": "https://modrinth.com/mod/nether-depths-upgrade"}, {"n": "Nullscape", "mr": "nullscape", "cat": "dimensoes", "s": "ok", "t": "V", "d": "Reformula o terreno do End.", "icon": "https://cdn.modrinth.com/data/LPjGiSO4/30249e0548b8643b1559889eab585683cb397f3a_96.webp", "img": null, "dl": 6005387, "ver": "nnnnnn", "url": "https://modrinth.com/mod/nullscape"}, {"n": "Unusual End", "mr": "unusual_end", "cat": "dimensoes", "s": "ok", "t": "V", "d": "Biomas e estruturas novas no End.", "icon": "https://cdn.modrinth.com/data/WKsNOKFh/cfcd36dc00ac144237c2b65b0a8e985659592a3a_96.webp", "img": "https://cdn.modrinth.com/data/WKsNOKFh/images/641bd1aaa0b8d2c52d88212f098733d8be07f3e1_350.webp", "dl": 1585693, "ver": "nxxxxx", "url": "https://modrinth.com/mod/unusual_end"}, {"n": "End Remastered", "mr": "endrem", "cat": "dimensoes", "s": "ok", "t": "V", "d": "O portal do End passa a exigir olhos achados em dungeons. É o marco do tier V.", "icon": "https://cdn.modrinth.com/data/ZJTGwAND/c3ef9ecaecdf6ebe10623afbf60e25da211fe235_96.webp", "img": null, "dl": 6452812, "ver": "nnnnnn", "url": "https://modrinth.com/mod/endrem"}, {"n": "VerseWorks", "mr": "verseworks", "cat": "dimensoes", "s": "port", "t": "—", "d": "Opcional e experimental. Você cria dimensões escrevendo livros, inspirado no Mystcraft. Uma forma mágica de ir para outras dimensões.", "icon": "https://cdn.modrinth.com/data/rNaI55Kl/7f25ebd0287e9db36fac952fde70aa76f4ff26d6_96.webp", "img": "https://cdn.modrinth.com/data/rNaI55Kl/images/e66bfd88666439dd998b2f0e9e4d33ee6276e4f9_350.webp", "dl": 9436, "ver": "nxonxx", "url": "https://modrinth.com/mod/verseworks"}, {"n": "L_Ender's Cataclysm", "mr": "l_enders-cataclysm", "cat": "aventura", "s": "ok", "t": "IV", "star": 1, "d": "Bosses épicos como Ignis, Leviathan e Ender Guardian.", "icon": "https://cdn.modrinth.com/data/46KJle7n/4de43b519c4b4ce09c5a3155e908da446dbf455a_96.webp", "img": "https://cdn.modrinth.com/data/46KJle7n/images/04cc6a87394c250a764687524c40f07013ece1de_350.webp", "dl": 19569487, "ver": "nnxxxx", "url": "https://modrinth.com/mod/l_enders-cataclysm"}, {"n": "Mowzie's Mobs", "mr": "mowzies-mobs", "cat": "aventura", "s": "ok", "t": "III", "d": "Bosses e criaturas muito bem feitos.", "icon": "https://cdn.modrinth.com/data/BFbX9xcm/9a003725e2cf1cbe4e42807d394b87710b5c3e4d.png", "img": "https://cdn.modrinth.com/data/BFbX9xcm/images/062ff3f4f31061329115e82db45d881a1fcb6d9b_350.webp", "dl": 8978052, "ver": "nxxxxx", "url": "https://modrinth.com/mod/mowzies-mobs"}, {"n": "When Dungeons Arise", "mr": "when-dungeons-arise", "cat": "aventura", "s": "ok", "t": "—", "d": "Dungeons gigantes com loot forte.", "icon": "https://cdn.modrinth.com/data/8DfbfASn/4240773f6aa5f8c69f44a5e2e0ff313f98ff3389_96.webp", "img": "https://cdn.modrinth.com/data/8DfbfASn/images/49d30adf89cbbfff2c4bd41c8bc0d8ea96a9c6ab_350.webp", "dl": 11575730, "ver": "nxxxxx", "url": "https://modrinth.com/mod/when-dungeons-arise"}, {"n": "Dungeons and Taverns", "mr": "dungeons-and-taverns", "cat": "aventura", "s": "ok", "t": "—", "d": "Tavernas, torres e dungeons.", "icon": "https://cdn.modrinth.com/data/tpehi7ww/429ba22d212868940cdd82465df949ac51c9791e_96.webp", "img": "https://cdn.modrinth.com/data/tpehi7ww/images/93dc2790ee15a172f5e7a9100790dedde9ea6b35_350.webp", "dl": 22443780, "ver": "nnnnnn", "url": "https://modrinth.com/mod/dungeons-and-taverns"}, {"n": "YUNG's Better Dungeons + suíte", "mr": "yungs-better-dungeons", "cat": "aventura", "s": "ok", "t": "—", "d": "Suíte completa do YUNG's: Dungeons, Mineshafts, Strongholds, Desert e Jungle Temples, Witch Huts, Ocean Monuments, Nether Fortresses, Better End Island e Extras.", "extra": ["yungs-better-mineshafts", "yungs-better-strongholds", "yungs-better-desert-temples", "yungs-better-jungle-temples", "yungs-better-witch-huts", "yungs-better-ocean-monuments", "yungs-better-nether-fortresses", "yungs-better-end-island", "yungs-extras"], "icon": "https://cdn.modrinth.com/data/o1C1Dkj5/9b54b2d932a5a5b6565c93814935c04902f3179b_96.webp", "img": "https://cdn.modrinth.com/data/o1C1Dkj5/images/1a3ee86e7269bd3703d8ece03cf897b70d2188df_350.webp", "dl": 23509289, "ver": "nnxnxx", "url": "https://modrinth.com/mod/yungs-better-dungeons"}, {"n": "Structory", "mr": "structory", "cat": "aventura", "s": "ok", "t": "—", "d": "Ruínas e construções abandonadas com cara de civilização perdida.", "pin": "1.3.6", "icon": "https://cdn.modrinth.com/data/aKCwCJlY/81c79a9d58c605ad79c4a8da15c865902bec8d42_96.webp", "img": "https://cdn.modrinth.com/data/aKCwCJlY/images/45b042b8b47a8884b54c5ae7a35b17773cbe44d8_350.webp", "dl": 9511636, "ver": "nnnnnn", "url": "https://modrinth.com/mod/structory"}, {"n": "Structory: Towers", "mr": "structory-towers", "cat": "aventura", "s": "ok", "t": "—", "d": "Torres abandonadas espalhadas pelo mundo.", "pin": "1.0.8", "icon": "https://cdn.modrinth.com/data/j3FONRYr/e7d6877a7b7a03680383fd1a1fdd3496604e372a_96.webp", "img": "https://cdn.modrinth.com/data/j3FONRYr/images/b4f8eb693c6679fa4dc075028fff5b3b19c5fdb8_350.webp", "dl": 10133001, "ver": "nnnnnn", "url": "https://modrinth.com/mod/structory-towers"}, {"n": "MSS: Moog's Soaring Structures", "mr": "mss-moogs-soaring-structures", "cat": "aventura", "s": "ok", "t": "—", "d": "Ilhas e estruturas flutuantes.", "icon": "https://cdn.modrinth.com/data/RJCLIx7k/3714d8b2f318d6cb6a134f4fcaf1b12729c8fc35.gif", "img": "https://cdn.modrinth.com/data/RJCLIx7k/images/4c9403c9548d5d34f14b3d8d7201f6744ff8a93e.webp", "dl": 3747762, "ver": "nnnnnn", "url": "https://modrinth.com/mod/mss-moogs-soaring-structures"}, {"n": "MES: Moog's End Structures", "mr": "mes-moogs-end-structures", "cat": "aventura", "s": "ok", "t": "V", "d": "Estruturas novas no End.", "icon": "https://cdn.modrinth.com/data/r4PuRGfV/d6eddee27d7863a8bae92c5d0a91a80b8e89f537.gif", "img": "https://cdn.modrinth.com/data/r4PuRGfV/images/ea16add0f91d65183b8a9d46a809a71b1e235698_350.webp", "dl": 11369071, "ver": "nnnnnn", "url": "https://modrinth.com/mod/mes-moogs-end-structures"}, {"n": "MNS: Moog's Nether Structures", "mr": "mns-moogs-nether-structures", "cat": "aventura", "s": "ok", "t": "IV", "d": "Estruturas novas no Nether.", "icon": "https://cdn.modrinth.com/data/nGUXvjTa/c984888c9c8451cf0f2b6d8d3d16d4dfe07cf570.gif", "img": "https://cdn.modrinth.com/data/nGUXvjTa/images/81e9209d4ac93bc24852d26b18b0385768bdf9a0_350.webp", "dl": 4915781, "ver": "nnnnnn", "url": "https://modrinth.com/mod/mns-moogs-nether-structures"}, {"n": "Explorify", "mr": "explorify", "cat": "aventura", "s": "ok", "t": "—", "d": "Estruturas pequenas no estilo vanilla espalhadas pelo mundo.", "icon": "https://cdn.modrinth.com/data/HSfsxuTo/e036a417f857abd937326db5c131296ad88bad5b_96.webp", "img": "https://cdn.modrinth.com/data/HSfsxuTo/images/ca1549848b1aa4ecfdd8c2d750c7b25a762f6131_350.webp", "dl": 10177495, "ver": "nnnnnn", "url": "https://modrinth.com/mod/explorify"}, {"n": "Illager Warship", "mr": "illager-warship", "cat": "aventura", "s": "ok", "t": "—", "d": "Navio voador dos illagers. Um desafio divertido.", "icon": "https://cdn.modrinth.com/data/tUpIHo95/ce8075956c4838784be73141aa9d260f882d54f9_96.webp", "img": "https://cdn.modrinth.com/data/tUpIHo95/images/973abdcc26b0a26c2fed05ce4fd9ea061f0f06fd_350.webp", "dl": 305899, "ver": "nnnnnn", "url": "https://modrinth.com/mod/illager-warship"}, {"n": "Sparse Structures", "mr": "sparsestructures", "cat": "aventura", "s": "ok", "t": "—", "d": "Espaça as estruturas para o mundo não ficar lotado com tantos mods de estrutura.", "icon": "https://cdn.modrinth.com/data/qwvI41y9/d43aa4806e99283b3bcee05005f7cdc86b63e59e.png", "img": "https://cdn.modrinth.com/data/qwvI41y9/images/865c031a555cca15b4336f5f789feef4252a3037_350.webp", "dl": 8711479, "ver": "nnnnnn", "url": "https://modrinth.com/mod/sparsestructures"}, {"n": "Towns and Towers", "mr": "towns-and-towers", "cat": "aventura", "s": "ok", "t": "—", "d": "Vilas e torres para explorar.", "icon": "https://cdn.modrinth.com/data/DjLobEOy/f7f552ec019c9ad8b777c9ab5eecbb95da8707a0_96.webp", "img": "https://cdn.modrinth.com/data/DjLobEOy/images/8ce9ac746afca0fd371ea95e39ade1b3e3aeb0a5_350.webp", "dl": 19060244, "ver": "nnnnnn", "url": "https://modrinth.com/mod/towns-and-towers"}, {"n": "Tectonic", "mr": "tectonic", "cat": "aventura", "s": "ok", "t": "—", "d": "Muda só o formato do terreno (montanhas enormes, vales, rios e penhascos), sem criar biomas novos. Os biomas mágicos dos mods continuam fáceis de achar.", "icon": "https://cdn.modrinth.com/data/lWDHr9jE/d8b3413f797479dcc0d8764756613e449a358a2e_96.webp", "img": "https://cdn.modrinth.com/data/lWDHr9jE/images/f58d0d6af34191ac2fc45e13d080f64696ea11ba_350.webp", "dl": 17965416, "ver": "nnnnnn", "url": "https://modrinth.com/mod/tectonic"}, {"n": "Galosphere", "mr": "galosphere", "cat": "aventura", "s": "ok", "t": "—", "d": "Cavernas de cristal.", "icon": "https://cdn.modrinth.com/data/Kn7xyQ1v/25ef8a727b9b1d7da6c021b5104d4a186918d54a_96.webp", "img": "https://cdn.modrinth.com/data/Kn7xyQ1v/images/cf3929e5db44fdc291921c583eda41dc3dea789b_350.webp", "dl": 7268008, "ver": "nnxxxx", "url": "https://modrinth.com/mod/galosphere"}, {"n": "Naturalist", "mr": "naturalist", "cat": "aventura", "s": "ok", "t": "—", "d": "Animais realistas.", "icon": "https://cdn.modrinth.com/data/F8BQNPWX/e52917ba0f5ecc1d827f0d4465a15422e0584bf5_96.webp", "img": "https://cdn.modrinth.com/data/F8BQNPWX/images/d497ec6f4c79966582083d319aebf1c64330e315_350.webp", "dl": 11861748, "ver": "nxxxnn", "url": "https://modrinth.com/mod/naturalist"}, {"n": "Waystones", "mr": "waystones", "cat": "aventura", "s": "ok", "t": "—", "d": "Teleporte mágico entre pedras.", "icon": "https://cdn.modrinth.com/data/LOpKHB2A/d56c030a875582aff5bab477ddcfec317a1610f0_96.webp", "img": "https://cdn.modrinth.com/data/LOpKHB2A/images/6f91f54ef37b6b19c06685231d81f03d28601e6d_350.webp", "dl": 28376010, "ver": "nnnnnn", "url": "https://modrinth.com/mod/waystones"}, {"n": "Artifacts", "mr": "artifacts", "cat": "aventura", "s": "ok", "t": "—", "d": "Artefatos achados em baús e mimics.", "icon": "https://cdn.modrinth.com/data/P0Mu4wcQ/icon.png", "img": "https://cdn.modrinth.com/data/P0Mu4wcQ/images/2a60a264a5e4eedee4a4632631d8e1c1a77f2deb_350.webp", "dl": 14536735, "ver": "nxnnxx", "url": "https://modrinth.com/mod/artifacts"}, {"n": "Relics", "mr": "relics-mod", "cat": "aventura", "s": "ok", "t": "—", "d": "Relíquias que sobem de nível com o uso.", "cfdeps": ["octolib"], "icon": "https://cdn.modrinth.com/data/OCJRPujW/abd5b9d7ed74ec3260e5807cfa1e9c7e28285450.gif", "img": "https://cdn.modrinth.com/data/OCJRPujW/images/471fa66be7ce970fa8e1faf5810db12c1087f593_350.webp", "dl": 3349367, "ver": "nxxxxx", "url": "https://modrinth.com/mod/relics-mod"}, {"n": "Silent Gear", "mr": "silent-gear", "cat": "aventura", "s": "ok", "t": "—", "d": "Ferramentas, armas e armaduras montadas por partes, no estilo Tinkers' Construct. Cada material dá traits diferentes, e as peças podem ser trocadas.", "icon": "https://cdn.modrinth.com/data/73mSSnCf/206ca5fd84455ca3a12987599425c8ede2b842a9.png", "img": "https://cdn.modrinth.com/data/73mSSnCf/images/2b38f9ae72c451a9d58536a8ce38b540d0d0d0a8_350.webp", "dl": 521425, "ver": "nxnnnx", "url": "https://modrinth.com/mod/silent-gear"}, {"n": "Simply Swords", "mr": "simply-swords", "cat": "aventura", "s": "ok", "t": "—", "d": "Armas únicas com habilidades.", "icon": "https://cdn.modrinth.com/data/bK3Ubu9p/9d244d5a3b7a3a15ffa749d941fb6c40445afcdd_96.webp", "img": "https://cdn.modrinth.com/data/bK3Ubu9p/images/161381ffe5ad814adebcbc14e5d8b75be334d825_350.webp", "dl": 10494914, "ver": "nxxxxx", "url": "https://modrinth.com/mod/simply-swords"}, {"n": "Jonn's Trophies", "mr": "jonns-trophies", "cat": "aventura", "s": "ok", "t": "—", "d": "Troféus dos mobs e bosses que você derrota, para decorar a base.", "icon": "https://cdn.modrinth.com/data/pK0Ko6yV/d33c9cadec8ce53f12c1783cd4a5bfd7e29c5608_96.webp", "img": "https://cdn.modrinth.com/data/pK0Ko6yV/images/cafd6bdcbac452acc548edab118ee1d5092fe211_350.webp", "dl": 7380, "ver": "nxxnxx", "url": "https://modrinth.com/mod/jonns-trophies"}, {"n": "Pufferfish's Skills", "mr": "skills", "cat": "rpg", "s": "ok", "t": "—", "d": "Árvores de habilidade configuráveis, uma por ordem de magia. Escolha entre ele e o Project MMO.", "icon": "https://cdn.modrinth.com/data/hqQqvaa4/03ee8cc78c05ab021cfc96664741dd66fc69e515.png", "img": "https://cdn.modrinth.com/data/hqQqvaa4/images/fd7674a84d1f7f832b601a5b2640eb6a3f22917a_350.webp", "dl": 4781311, "ver": "nnnnnn", "url": "https://modrinth.com/mod/skills"}, {"n": "Project MMO", "mr": "project-mmo", "cat": "rpg", "s": "ok", "t": "—", "d": "Alternativa ao Pufferfish: você sobe de nível em cada habilidade fazendo a atividade.", "icon": "https://cdn.modrinth.com/data/KFQYC1Uy/d13b3237c1bc6739932f3591d037ec648f80ca3e_96.webp", "img": "https://cdn.modrinth.com/data/KFQYC1Uy/images/5c72158dd495824f56941ce10438fca2987af026_350.webp", "dl": 145256, "ver": "nxnnnn", "url": "https://modrinth.com/mod/project-mmo"}, {"n": "Iron's Dynamic Skill Trees", "mr": "irons-spells-n-spellbooks-dynamic-skill-trees", "cat": "rpg", "s": "ok", "t": "IV", "d": "Árvores de habilidade para as escolas do Iron's Spells.", "icon": "https://cdn.modrinth.com/data/cdEXZLO4/2ef9a7db281b8c0a73354a6fdbdfd8a9afed31fb_96.webp", "img": "https://cdn.modrinth.com/data/cdEXZLO4/images/a115dbb355a9d6f983045262c35a2e582f130edc_350.webp", "dl": 157036, "ver": "nxxxxx", "url": "https://modrinth.com/mod/irons-spells-n-spellbooks-dynamic-skill-trees"}, {"n": "Improved Mobs", "mr": "improved-mobs", "cat": "rpg", "s": "ok", "t": "—", "d": "Mobs ficam mais fortes com o tempo e a distância, e usam equipamento.", "icon": "https://cdn.modrinth.com/data/23MovWyi/2633906867d1bc82ea96c421a6de165e3bf8ae01_96.webp", "img": null, "dl": 655184, "ver": "nxxxxx", "url": "https://modrinth.com/mod/improved-mobs"}, {"n": "Bountiful", "mr": "bountiful", "cat": "rpg", "s": "ok", "t": "—", "d": "Quadro de contratos nas vilas.", "icon": "https://cdn.modrinth.com/data/BpwWFOVM/icon.png", "img": "https://cdn.modrinth.com/data/BpwWFOVM/images/66cb4f05c0399fc23e3c7d66b0dc968f92a2455c_350.webp", "dl": 7930318, "ver": "nxxxxx", "url": "https://modrinth.com/mod/bountiful"}, {"n": "Level Hearts", "mr": "levelhearts", "cat": "rpg", "s": "ok", "t": "—", "d": "Corações extras conforme você sobe de nível.", "icon": "https://cdn.modrinth.com/data/UxFugL1L/b349f63241fbf14a3aa8dd68bdb9c751dc82c77e_96.webp", "img": "https://cdn.modrinth.com/data/UxFugL1L/images/4ea7591531c4745873a7773aabd21ac55f86f98d_350.webp", "dl": 49075, "ver": "nxxnnn", "url": "https://modrinth.com/mod/levelhearts"}, {"n": "Loot Journal", "mr": "loot-journal", "cat": "rpg", "s": "ok", "t": "—", "d": "Mostra os itens que você pega, como um feed de RPG.", "icon": "https://cdn.modrinth.com/data/OJ6ZYz5L/36cf7ac32d67b6088711da16d68185021194188b_96.webp", "img": "https://cdn.modrinth.com/data/OJ6ZYz5L/images/65306bb742de8e40a58cbcbd8872196345e8c66d_350.webp", "dl": 1088715, "ver": "nxnnxx", "url": "https://modrinth.com/mod/loot-journal"}, {"n": "Hardcore Revival", "mr": "hardcore-revival", "cat": "rpg", "s": "ok", "t": "—", "d": "Você cai e pode ser reanimado em vez de morrer na hora. Opcional.", "icon": "https://cdn.modrinth.com/data/HqKoXaXz/37f51593b0a4b81c66f6843c35010e5acc6ee08a_96.webp", "img": "https://cdn.modrinth.com/data/HqKoXaXz/images/acc41a08e6f9794037f4900316dc8582a124f615_350.webp", "dl": 10214221, "ver": "nnnnnn", "url": "https://modrinth.com/mod/hardcore-revival"}, {"n": "Farmer's Delight", "mr": "farmers-delight", "cat": "fazenda", "s": "ok", "t": "—", "d": "Base de culinária, com facas, panela, tábua e novas plantações.", "icon": "https://cdn.modrinth.com/data/R2OftAxM/8e7aa38ab94d94bb0a2894a218b69beb49002b34.png", "img": "https://cdn.modrinth.com/data/R2OftAxM/images/cae99b4488deda3ba6c3ad25fabbddd0dff154fc_350.webp", "dl": 26147793, "ver": "nxxxxx", "url": "https://modrinth.com/mod/farmers-delight"}, {"n": "Ars Delight", "mr": "arsdelight", "cat": "fazenda", "s": "ok", "t": "—", "d": "Comidas mágicas do Ars Nouveau.", "icon": "https://cdn.modrinth.com/data/BwbT0OZE/67bde05717d6b46b70e169e09152604cb928e4fb.png", "img": "https://cdn.modrinth.com/data/BwbT0OZE/images/e581924fcf599a65f4acc810653d7874cd2a4a2a_350.webp", "dl": 3859554, "ver": "nxxxxx", "url": "https://modrinth.com/mod/arsdelight"}, {"n": "Occultism Delight", "mr": "occult-delight", "cat": "fazenda", "s": "ok", "t": "—", "d": "Culinária com ingredientes do Occultism.", "icon": "https://cdn.modrinth.com/data/PfuNPzWe/1fc841acb51c9300250411238a65437173486d9f_96.webp", "img": null, "dl": 1363, "ver": "nxxxxx", "url": "https://modrinth.com/mod/occult-delight"}, {"n": "Iron's Spells Delight", "mr": "irons-spells-delight", "cat": "fazenda", "s": "ok", "t": "—", "d": "Comidas que recuperam mana.", "icon": "https://cdn.modrinth.com/data/Ne9jukgU/dff6b43ae8b0148b2ab7cae12b14d4a0e19f59b6_96.webp", "img": null, "dl": 59707, "ver": "nxxxxx", "url": "https://modrinth.com/mod/irons-spells-delight"}, {"n": "Ender's Delight", "mr": "enders-delight", "cat": "fazenda", "s": "ok", "t": "—", "d": "Culinária com ingredientes do End.", "icon": "https://cdn.modrinth.com/data/2uEhdGKt/0cf9c0392fdec68443e8c1136f78a5a5485d2cbb_96.webp", "img": "https://cdn.modrinth.com/data/2uEhdGKt/images/1441bdfdaf34828279460d73b0aaac8c844d2d71_350.webp", "dl": 5985365, "ver": "nxxxxx", "url": "https://modrinth.com/mod/enders-delight"}, {"n": "Brewin' and Chewin'", "mr": "brewin-and-chewin", "cat": "fazenda", "s": "ok", "t": "—", "d": "Barris de fermentação, bebidas e queijos.", "icon": "https://cdn.modrinth.com/data/hIu9KJTT/f7c591a80046859d3d45c04ecbbc54d264483d5e.png", "img": null, "dl": 3838181, "ver": "nxxxxx", "url": "https://modrinth.com/mod/brewin-and-chewin"}, {"n": "Serene Seasons", "mr": "serene-seasons", "cat": "fazenda", "s": "ok", "t": "—", "d": "Estações do ano que afetam as plantações.", "icon": "https://cdn.modrinth.com/data/e0bNACJD/f8b292ea53e0a0ea908570defddc48673d16d7d6.png", "img": "https://cdn.modrinth.com/data/e0bNACJD/images/bce5d81d4c69d4f41c33c4a427ed81e706437c9f_350.webp", "dl": 7861742, "ver": "nnnnnn", "url": "https://modrinth.com/mod/serene-seasons"}, {"n": "Mystical Agriculture", "mr": "mystical-agriculture", "cat": "fazenda", "s": "ok", "t": "III", "d": "Sementes mágicas que fazem crescer minérios e essências.", "icon": "https://cdn.modrinth.com/data/C95ReXie/2bddd50d346a470536319c9c1ae6c21f6a5b3e72_96.webp", "img": "https://cdn.modrinth.com/data/C95ReXie/images/905df0baa810e976e55a013eff7c9ddcec104328_350.webp", "dl": 1350659, "ver": "nxxnxx", "url": "https://modrinth.com/mod/mystical-agriculture"}, {"n": "Cooking for Blockheads", "mr": "cooking-for-blockheads", "cat": "fazenda", "s": "ok", "t": "—", "d": "Cozinha integrada com livro de receitas.", "icon": "https://cdn.modrinth.com/data/vJnhuDde/811d0c55230d84d9e182df1b0bd631ddebecc0ad_96.webp", "img": "https://cdn.modrinth.com/data/vJnhuDde/images/1d7722a940789ab17c741891c5fc71bac06de2c1_350.webp", "dl": 1247345, "ver": "nnnnnn", "url": "https://modrinth.com/mod/cooking-for-blockheads"}, {"n": "Farming for Blockheads", "mr": "farming-for-blockheads", "cat": "fazenda", "s": "ok", "t": "—", "d": "Mercado para comprar sementes e mudas.", "icon": "https://cdn.modrinth.com/data/4WJZr8JU/066c84672d99120ae5b54e555875340d50bd5cb6_96.webp", "img": "https://cdn.modrinth.com/data/4WJZr8JU/images/9124a26a906909ef3c9d442756b7a2015c337a69_350.webp", "dl": 577525, "ver": "nnnnnn", "url": "https://modrinth.com/mod/farming-for-blockheads"}, {"n": "Aquaculture 2", "mr": "aquaculture", "cat": "fazenda", "s": "ok", "t": "—", "d": "Pesca expandida.", "icon": "https://cdn.modrinth.com/data/Vl1uNAuy/87cba3f170e925af5e1f1af22c27dfc891409ae7.png", "img": "https://cdn.modrinth.com/data/Vl1uNAuy/images/64ac4d55e13fa4f996b4f4aba7e5c7845a363c2c.png", "dl": 1326628, "ver": "nnnnnn", "url": "https://modrinth.com/mod/aquaculture"}, {"n": "Easy Villagers", "mr": "easy-villagers", "cat": "fazenda", "s": "ok", "t": "—", "d": "Aldeões em blocos compactos.", "icon": "https://cdn.modrinth.com/data/Kaov2qgi/ceb583c0f27eaca42f6dfbe79ddec5e6142f1766_96.webp", "img": null, "dl": 1734546, "ver": "nnnnnn", "url": "https://modrinth.com/mod/easy-villagers"}, {"n": "Pam's HarvestCraft 2 Crops", "mr": "pams-harvestcraft-2-crops", "cat": "fazenda", "s": "ok", "t": "—", "d": "Muitas plantações novas. Opcional.", "icon": "https://cdn.modrinth.com/data/5xO6VNlk/3df1f06d8fdb0931b6143f8ce33d1a2af919199e.png", "img": null, "dl": 67448, "ver": "nxxxxx", "url": "https://modrinth.com/mod/pams-harvestcraft-2-crops"}, {"n": "Supplementaries", "mr": "supplementaries", "cat": "decoracao", "s": "ok", "t": "—", "d": "Jarros, placas, sinos e muitos detalhes vanilla+.", "icon": "https://cdn.modrinth.com/data/fFEIiSDQ/e9f5f66fa3b67e54acb91258a1428d68311c58bc_96.webp", "img": "https://cdn.modrinth.com/data/fFEIiSDQ/images/4e4ac09fa26c21994de1bdec0b2951b9800a6f13_350.webp", "dl": 29654521, "ver": "nxxxxx", "url": "https://modrinth.com/mod/supplementaries"}, {"n": "Amendments", "mr": "amendments", "cat": "decoracao", "s": "ok", "t": "—", "d": "Complemento do Supplementaries.", "icon": "https://cdn.modrinth.com/data/6iTJugQR/46e156f1c798bfc3c18bd2a55567af1086674f02_96.webp", "img": "https://cdn.modrinth.com/data/6iTJugQR/images/e76f2136f337ce381b9f996ca5f4a7d8818bc45e_350.webp", "dl": 20607386, "ver": "nxxnxx", "url": "https://modrinth.com/mod/amendments"}, {"n": "Handcrafted", "mr": "handcrafted", "cat": "decoracao", "s": "ok", "t": "—", "d": "Móveis.", "icon": "https://cdn.modrinth.com/data/pJmCFF0p/e89faefc522d601db2a5fd70136f37ef7ce18569.png", "img": "https://cdn.modrinth.com/data/pJmCFF0p/images/8dd04177f45621764f1ea745624de62b2fd01743_350.webp", "dl": 28018701, "ver": "nxxxxx", "url": "https://modrinth.com/mod/handcrafted"}, {"n": "Macaw's Furniture", "mr": "macaws-furniture", "cat": "decoracao", "s": "ok", "t": "—", "d": "Móveis (com o resto da série Macaw's).", "icon": "https://cdn.modrinth.com/data/dtWC90iB/2d2fdc39e9ab4c1cc56c6ce2785b6d60343bb86d_96.webp", "img": "https://cdn.modrinth.com/data/dtWC90iB/images/00275eaec6105c2402595be3b4c8e9f99a5e08fb_350.webp", "dl": 7595180, "ver": "nnnnnn", "url": "https://modrinth.com/mod/macaws-furniture"}, {"n": "Chipped", "mr": "chipped", "cat": "decoracao", "s": "ok", "t": "—", "d": "Variações de blocos. Escolha entre ele e o Rechiseled.", "icon": "https://cdn.modrinth.com/data/BAscRYKm/4faa514b4824672a0877d026bcd5a94bc8aad985_96.webp", "img": "https://cdn.modrinth.com/data/BAscRYKm/images/0c00e1552db6d8d33ac5a0b86483b84486d82ee7_350.webp", "dl": 24235623, "ver": "nxxxxx", "url": "https://modrinth.com/mod/chipped"}, {"n": "Arcane Lanterns", "mr": "arcane-lanterns", "cat": "decoracao", "s": "ok", "t": "—", "d": "Lanternas mágicas.", "icon": "https://cdn.modrinth.com/data/NvlReHlC/03d90793e7640ffe6981c42cc50b4de2b11d737a_96.webp", "img": "https://cdn.modrinth.com/data/NvlReHlC/images/2d5b8b2a3277bd275ec1da8f9473b6d56dd9a8c5_350.webp", "dl": 118392, "ver": "nnnnnn", "url": "https://modrinth.com/mod/arcane-lanterns"}, {"n": "Quark", "mr": "quark", "cat": "decoracao", "s": "ok", "t": "—", "d": "Conteúdo vanilla+ em módulos que podem ser desligados.", "icon": "https://cdn.modrinth.com/data/qnQsVE2z/aef2119751d026421b9e9dc83d4470eec9f91a16_96.webp", "img": null, "dl": 26626296, "ver": "nxxxxx", "url": "https://modrinth.com/mod/quark"}, {"n": "Inventory Profiles Next", "mr": "inventory-profiles-next", "cat": "qol", "s": "ok", "t": "—", "d": "Ordena baú e inventário com um botão.", "icon": "https://cdn.modrinth.com/data/O7RBXm3n/04cdecd37b4c7409f70d36fcdc85722ebf14aab8_96.webp", "img": null, "dl": 42836364, "ver": "nnnnnn", "url": "https://modrinth.com/mod/inventory-profiles-next"}, {"n": "Mouse Tweaks", "mr": "mouse-tweaks", "cat": "qol", "s": "ok", "t": "—", "d": "Move e distribui itens arrastando o mouse.", "icon": "https://cdn.modrinth.com/data/aC3cM3Vq/6c0eaa4e60a9c87f4766f222ff63286f09da32c0_96.webp", "img": null, "dl": 65742942, "ver": "nnnnnn", "url": "https://modrinth.com/mod/mouse-tweaks"}, {"n": "Carry On", "mr": "carry-on", "cat": "qol", "s": "ok", "t": "—", "d": "Carrega um baú cheio sem esvaziar.", "icon": "https://cdn.modrinth.com/data/joEfVgkn/d7750a532cd45c9020bf4d07f304191de6e98c19_96.webp", "img": "https://cdn.modrinth.com/data/joEfVgkn/images/f5680a9c61d2832a006a4deb368943da5447ca8f_350.webp", "dl": 28418317, "ver": "nnnnnn", "url": "https://modrinth.com/mod/carry-on"}, {"n": "Sophisticated Backpacks", "mr": "sophisticated-backpacks", "cat": "qol", "s": "ok", "t": "—", "d": "Mochilas com upgrades.", "icon": "https://cdn.modrinth.com/data/TyCTlI4b/e31c7e2f8769d317339e25b2a8d1b40fbf312729_96.webp", "img": null, "dl": 21364905, "ver": "nnnnnn", "url": "https://modrinth.com/mod/sophisticated-backpacks"}, {"n": "Sophisticated Storage", "mr": "sophisticated-storage", "cat": "qol", "s": "ok", "t": "—", "d": "Baús com upgrades e ordenação.", "icon": "https://cdn.modrinth.com/data/hMlaZH8f/8c041db5cf8062e7471d5e239836c8b807853def_96.webp", "img": null, "dl": 5886994, "ver": "nnnnnn", "url": "https://modrinth.com/mod/sophisticated-storage"}, {"n": "Storage Drawers", "mr": "storagedrawers", "cat": "qol", "s": "ok", "t": "—", "d": "Gavetas para guardar muito de um mesmo item.", "icon": "https://cdn.modrinth.com/data/guitPqEi/58b4229c52876eff66c9f98a5d2a1e9b9f648501.png", "img": "https://cdn.modrinth.com/data/guitPqEi/images/10def3b1d36d91f77f940477a7c1cb026e5e27d7_350.webp", "dl": 4406060, "ver": "nnnnnn", "url": "https://modrinth.com/mod/storagedrawers"}, {"n": "Tom's Simple Storage", "mr": "toms-storage", "cat": "qol", "s": "ok", "t": "—", "d": "Liga os baús a um terminal com busca e crafting, usando só madeira e ferro. É a organização do começo de jogo, antes do Occultism.", "icon": "https://cdn.modrinth.com/data/XZNI4Cpy/1949d7adbf962ac86912608edfb93fa5342bffd6_96.webp", "img": null, "dl": 21501869, "ver": "nnnnnn", "url": "https://modrinth.com/mod/toms-storage"}, {"n": "Trash Slot", "mr": "trashslot", "cat": "qol", "s": "ok", "t": "—", "d": "Lixeira no inventário.", "icon": "https://cdn.modrinth.com/data/vRYk0bv7/f700e747710e4d485c79617fe993cc53887a3da6.png", "img": "https://cdn.modrinth.com/data/vRYk0bv7/images/f8e721d1ed1b29a5032c7170ed8adec9dbff044a.png", "dl": 6846371, "ver": "nnnnnn", "url": "https://modrinth.com/mod/trashslot"}, {"n": "EMI", "mr": "emi", "cat": "qol", "s": "ok", "t": "—", "d": "Receitas e uso de itens.", "icon": "https://cdn.modrinth.com/data/fRiHVvU7/395fe5302b2bab612ef0623509f768f3c5a5ee0f.webp", "img": "https://cdn.modrinth.com/data/fRiHVvU7/images/f2b77d788411f94dbd81e503d3be70426cbe12d6_350.webp", "dl": 31353674, "ver": "nxxxxx", "url": "https://modrinth.com/mod/emi"}, {"n": "Jade", "mr": "jade", "cat": "qol", "s": "ok", "t": "—", "d": "Mostra informações do bloco que você está olhando.", "icon": "https://cdn.modrinth.com/data/nvQzSEkH/b04217bc2b7dc524c4d12f81ff42cc1cefb9b0fc_96.webp", "img": "https://cdn.modrinth.com/data/nvQzSEkH/images/4b47304960861088536652dfcc9dbf42ef59ce5e.png", "dl": 75117999, "ver": "nnnnnn", "url": "https://modrinth.com/mod/jade"}, {"n": "Polymorph", "mr": "polymorph", "cat": "qol", "s": "ok", "t": "—", "d": "Resolve receitas iguais de mods diferentes.", "icon": "https://cdn.modrinth.com/data/tagwiZkJ/ed244c5829bde539763c7fffb55cb3194a349d66.png", "img": "https://cdn.modrinth.com/data/tagwiZkJ/images/d6122b7dd0dc7283795513be933a544aa49c3c8d.gif", "dl": 26925110, "ver": "nxxxxx", "url": "https://modrinth.com/mod/polymorph"}, {"n": "AppleSkin", "mr": "appleskin", "cat": "qol", "s": "ok", "t": "—", "d": "Mostra a saturação da comida.", "icon": "https://cdn.modrinth.com/data/EsAfCjCV/icon.png", "img": null, "dl": 100630255, "ver": "nnnnnn", "url": "https://modrinth.com/mod/appleskin"}, {"n": "Controlling", "mr": "controlling", "cat": "qol", "s": "ok", "t": "—", "d": "Busca nas configurações de teclas.", "icon": "https://cdn.modrinth.com/data/xv94TkTM/bdb6feb3d04ca37da4ed5aa73fef062a39d8b3e5_96.webp", "img": null, "dl": 43280150, "ver": "nnnnnn", "url": "https://modrinth.com/mod/controlling"}, {"n": "Xaero's Minimap", "mr": "xaeros-minimap", "cat": "qol", "s": "ok", "t": "—", "d": "Minimapa.", "icon": "https://cdn.modrinth.com/data/1bokaNcj/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp", "img": null, "dl": 122168012, "ver": "nnnnnn", "url": "https://modrinth.com/mod/xaeros-minimap"}, {"n": "Xaero's World Map", "mr": "xaeros-world-map", "cat": "qol", "s": "ok", "t": "—", "d": "Mapa-múndi.", "icon": "https://cdn.modrinth.com/data/NcUtCpym/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp", "img": null, "dl": 107310091, "ver": "nnnnnn", "url": "https://modrinth.com/mod/xaeros-world-map"}, {"n": "Nature's Compass", "mr": "natures-compass", "cat": "qol", "s": "ok", "t": "—", "d": "Aponta para o bioma que você escolher.", "icon": "https://cdn.modrinth.com/data/fPetb5Kh/95e4110a4cf600843c4ba9d545cc1b60e2c00eaa.png", "img": "https://cdn.modrinth.com/data/fPetb5Kh/images/5040466f2a4552e12a317ee0030de06619b71c46_350.webp", "dl": 27980065, "ver": "nnnnnn", "url": "https://modrinth.com/mod/natures-compass"}, {"n": "Explorer's Compass", "mr": "explorers-compass", "cat": "qol", "s": "ok", "t": "—", "d": "Aponta para a estrutura que você escolher.", "icon": "https://cdn.modrinth.com/data/RV1qfVQ8/8f36254e98a4caa95684fcf4dbe72c2264c98cfc.png", "img": "https://cdn.modrinth.com/data/RV1qfVQ8/images/4e701b15485b8739871047de1cf81f75920d3b7c_350.webp", "dl": 12784323, "ver": "nnnnnn", "url": "https://modrinth.com/mod/explorers-compass"}, {"n": "FTB Ultimine", "cf": "ftb-ultimine-forge", "cat": "qol", "s": "ok", "t": "—", "ver": "cuuuuu", "d": "Minera um veio inteiro de uma vez.", "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge"}, {"n": "FallingTree", "mr": "fallingtree", "cat": "qol", "s": "ok", "t": "—", "d": "Derruba a árvore inteira.", "icon": "https://cdn.modrinth.com/data/Fb4jn8m6/02610e2f41e1a4ea06b36ad5034be2b3d03b8f88_96.webp", "img": null, "dl": 13340026, "ver": "nnnnnn", "url": "https://modrinth.com/mod/fallingtree"}, {"n": "Clumps", "mr": "clumps", "cat": "qol", "s": "ok", "t": "—", "d": "Junta os orbs de XP.", "icon": "https://cdn.modrinth.com/data/Wnxd13zP/6a965bb7974c3e759a53a1c89c35de4acd4cf86a_96.webp", "img": null, "dl": 43721567, "ver": "nnnnnn", "url": "https://modrinth.com/mod/clumps"}, {"n": "FastWorkbench", "mr": "fastworkbench", "cat": "qol", "s": "ok", "t": "—", "d": "Crafting sem lag.", "icon": "https://cdn.modrinth.com/data/5NYPwQRn/70ab92df539e20898489cbbf126605df581bf90d_96.webp", "img": null, "dl": 329866, "ver": "nxxnxx", "url": "https://modrinth.com/mod/fastworkbench"}, {"n": "Crafting Tweaks", "mr": "crafting-tweaks", "cat": "qol", "s": "ok", "t": "—", "d": "Gira, balanceia e limpa a grade de crafting.", "icon": "https://cdn.modrinth.com/data/DMu0oBKf/32bc48587e2c1b0457698a9f4f9ecf3bbda6b42b_96.webp", "img": "https://cdn.modrinth.com/data/DMu0oBKf/images/e54c4b20a8644d3674fd8c7814a99a2da42f4a60.gif", "dl": 10787239, "ver": "nnnnnn", "url": "https://modrinth.com/mod/crafting-tweaks"}, {"n": "Corpse", "mr": "corpse", "cat": "qol", "s": "ok", "t": "—", "d": "Seus itens ficam num corpo quando você morre.", "icon": "https://cdn.modrinth.com/data/WrpuIfhw/032925a79197e9e23be2c6a07d994b17e3363912.png", "img": null, "dl": 4831524, "ver": "nnnnnn", "url": "https://modrinth.com/mod/corpse"}, {"n": "Comforts", "mr": "comforts", "cat": "qol", "s": "ok", "t": "—", "d": "Saco de dormir e rede.", "icon": "https://cdn.modrinth.com/data/SaCpeal4/ed4840f0c9a30e04ad88413bd82cd762dd6ec95d.png", "img": "https://cdn.modrinth.com/data/SaCpeal4/images/a9837c941a4ea462ea017de1d8e14902f67a020e_350.webp", "dl": 24669694, "ver": "nnnnnx", "url": "https://modrinth.com/mod/comforts"}, {"n": "Torchmaster", "mr": "torchmaster", "cat": "qol", "s": "ok", "t": "—", "d": "Impede o spawn de mobs numa área.", "icon": "https://cdn.modrinth.com/data/Tl8ESrhX/icon.png", "img": null, "dl": 3487654, "ver": "nnnxxx", "url": "https://modrinth.com/mod/torchmaster"}, {"n": "FTB Quests", "cf": "ftb-quests-forge", "cat": "qol", "s": "ok", "t": "—", "ver": "cuuuuu", "d": "Livro de quests com a história e a progressão.", "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge"}, {"n": "KubeJS", "mr": "kubejs", "cat": "qol", "s": "ok", "t": "—", "d": "Scripts de receitas, gating e itens custom.", "icon": "https://cdn.modrinth.com/data/umyGl7zF/ced768ee05e293837a24eacf00838061e02964a0_96.webp", "img": null, "dl": 23200576, "ver": "nxxnxx", "url": "https://modrinth.com/mod/kubejs"}, {"n": "Simple Backups", "mr": "simple-backups", "cat": "qol", "s": "ok", "t": "—", "d": "Backup automático do mundo em intervalos. Essencial com ports no pack.", "icon": "https://cdn.modrinth.com/data/fzSKSXVK/d50c9ce03f47f141941339cf4d54f8cb6d81b6cf_96.webp", "img": null, "dl": 1075663, "ver": "nnnnnn", "url": "https://modrinth.com/mod/simple-backups"}, {"n": "Akashic Tome", "mr": "akashic-tome", "cat": "qol", "s": "ok", "t": "—", "d": "Junta todos os livros-guia dos mods num único livro.", "icon": "https://cdn.modrinth.com/data/JBthPdnp/f31b97209d7973f2975c9162d6bf20a2f8488837_96.webp", "img": null, "dl": 470750, "ver": "nxxxxx", "url": "https://modrinth.com/mod/akashic-tome"}, {"n": "Lootr", "mr": "lootr", "cat": "qol", "s": "ok", "t": "—", "d": "Baús de estruturas com loot individual para cada jogador.", "icon": "https://cdn.modrinth.com/data/EltpO5cN/3dc915eb1bbcd65654c17eb3870de4aba055d0c6_96.webp", "img": "https://cdn.modrinth.com/data/EltpO5cN/images/68da93cce6eaae588fe29b6d6db859538825433d_350.webp", "dl": 24580989, "ver": "nnnnnn", "url": "https://modrinth.com/mod/lootr"}, {"n": "Harvest with ease", "mr": "harvest-with-ease", "cat": "qol", "s": "ok", "t": "—", "d": "Colhe e replanta com o botão direito.", "icon": "https://cdn.modrinth.com/data/W4Ajthd2/48a3f265729a1ae47b00fb3d4c310ef378562393_96.webp", "img": "https://cdn.modrinth.com/data/W4Ajthd2/images/94e6bc7541863103e2b2ee4760f0adbb6c8d5190_350.webp", "dl": 4203360, "ver": "nnnnnn", "url": "https://modrinth.com/mod/harvest-with-ease"}, {"n": "Better Advancements", "mr": "better-advancements", "cat": "qol", "s": "ok", "t": "—", "d": "Tela de conquistas maior e mais organizada.", "icon": "https://cdn.modrinth.com/data/Q2OqKxDG/b1519a191e62135647f66394d526d179ab5b598d.png", "img": "https://cdn.modrinth.com/data/Q2OqKxDG/images/e7f7cd30464e7b5d9e42870876cb86405e8edfcf.png", "dl": 28117798, "ver": "nnnnnn", "url": "https://modrinth.com/mod/better-advancements"}, {"n": "Inventory Essentials", "mr": "inventory-essentials", "cat": "qol", "s": "ok", "t": "—", "d": "Atalhos para mover pilhas de itens de uma vez.", "icon": "https://cdn.modrinth.com/data/Boon8xwi/12b8c77a7db7ebe5a41caf3e0a185bfce6397e3a_96.webp", "img": null, "dl": 2339594, "ver": "nnnnnn", "url": "https://modrinth.com/mod/inventory-essentials"}, {"n": "Construction Sticks", "mr": "construction-sticks", "cat": "qol", "s": "ok", "t": "—", "d": "Varinhas que colocam vários blocos de uma vez para construir.", "icon": "https://cdn.modrinth.com/data/ooyjDLZt/b39b29217caaedb6364d4d0670dfdefe83fd73ff_96.webp", "img": "https://cdn.modrinth.com/data/ooyjDLZt/images/423f7c413a635332783cb197d4839dfacb1a34bc_350.webp", "dl": 711639, "ver": "nnnnnn", "url": "https://modrinth.com/mod/construction-sticks"}, {"n": "Just Enough Professions", "mr": "just-enough-professions-jep", "cat": "qol", "s": "ok", "t": "—", "d": "Mostra no EMI qual bloco dá cada profissão de aldeão.", "icon": "https://cdn.modrinth.com/data/kB56GtWA/2be012ae2466e6b9d454eaeb5ed2e00f1985cd63_96.webp", "img": null, "dl": 5315648, "ver": "nnnnnn", "url": "https://modrinth.com/mod/just-enough-professions-jep"}, {"n": "Colorful Hearts", "mr": "colorful-hearts", "cat": "qol", "s": "ok", "t": "—", "d": "Corações extras em fileiras coloridas, sem encher a tela.", "icon": "https://cdn.modrinth.com/data/wQfMUdZT/2f9f0ab9d03f7fa24d817942278f0f1fb0658006.png", "img": null, "dl": 4782162, "ver": "nnnnnx", "url": "https://modrinth.com/mod/colorful-hearts"}, {"n": "Neat", "mr": "neat", "cat": "visual", "s": "ok", "t": "—", "d": "Barra de vida em cima dos mobs.", "icon": "https://cdn.modrinth.com/data/Ins7SzzR/a2b99cc9bc355ae461f71dff13f9a6808827d399_96.webp", "img": null, "dl": 10890617, "ver": "nnxnnx", "url": "https://modrinth.com/mod/neat"}, {"n": "Legendary Tooltips", "mr": "legendary-tooltips", "cat": "visual", "s": "ok", "t": "—", "d": "Tooltips com borda por raridade.", "icon": "https://cdn.modrinth.com/data/atHH8NyV/bd47257c8d4aca0e04c43269e5beb7af680b144b_96.webp", "img": "https://cdn.modrinth.com/data/atHH8NyV/images/2ec71690fa88977d699e984223c62d19a430718d.png", "dl": 11132352, "ver": "nnnnnn", "url": "https://modrinth.com/mod/legendary-tooltips"}, {"n": "LambDynamicLights", "mr": "lambdynamiclights", "cat": "visual", "s": "ok", "t": "—", "d": "O item na mão ilumina ao redor.", "icon": "https://cdn.modrinth.com/data/yBW8D80W/d4f5c3ff8df7caf024178b04eca6d69f95979cfe_96.webp", "img": "https://cdn.modrinth.com/data/yBW8D80W/images/a8c9753d003884bd17efe3f1dea3a2bd074b66b8_350.webp", "dl": 64902986, "ver": "nnnnnn", "url": "https://modrinth.com/mod/lambdynamiclights"}, {"n": "Sound Physics Remastered", "mr": "sound-physics-remastered", "cat": "visual", "s": "ok", "t": "—", "d": "Eco e abafamento realistas.", "icon": "https://cdn.modrinth.com/data/qyVF9oeo/798fbfae58ec95ad51f3e1d522b43227306c326c.png", "img": null, "dl": 57828706, "ver": "nnnnnn", "url": "https://modrinth.com/mod/sound-physics-remastered"}, {"n": "AmbientSounds", "mr": "ambientsounds", "cat": "visual", "s": "ok", "t": "—", "d": "Sons de ambiente por bioma.", "icon": "https://cdn.modrinth.com/data/fM515JnW/9a8eca9c055ec1dd753a7209210fcb22a2d40ff7_96.webp", "img": null, "dl": 41895902, "ver": "nnnnnn", "url": "https://modrinth.com/mod/ambientsounds"}, {"n": "Sodium", "mr": "sodium", "cat": "performance", "s": "ok", "t": "—", "d": "Renderização muito mais rápida.", "icon": "https://cdn.modrinth.com/data/AANobbMI/295862f4724dc3f78df3447ad6072b2dcd3ef0c9_96.webp", "img": "https://cdn.modrinth.com/data/AANobbMI/images/d84313e6f57dc9e7896961dbd2dfc2689d482758_350.webp", "dl": 256573192, "ver": "nnnnnn", "url": "https://modrinth.com/mod/sodium"}, {"n": "Iris", "mr": "iris", "cat": "performance", "s": "ok", "t": "—", "d": "Shaders.", "icon": "https://cdn.modrinth.com/data/YL57xq9U/18d0e7f076d3d6ed5bedd472b853909aac5da202_96.webp", "img": "https://cdn.modrinth.com/data/YL57xq9U/images/f47cea26f135d74c2d69df0a1806751818d705d3_350.webp", "dl": 197620006, "ver": "nnnnnn", "url": "https://modrinth.com/mod/iris"}, {"n": "ModernFix", "mr": "modernfix", "cat": "performance", "s": "ok", "t": "—", "d": "Menos RAM e carregamento mais rápido.", "icon": "https://cdn.modrinth.com/data/nmDcB62a/2af94de5e08ae54567ee86b968fc7ce076d9fee5_96.webp", "img": "https://cdn.modrinth.com/data/nmDcB62a/images/2decaf4ab22bd38aa4ca39424bc1ec007fb70366_350.webp", "dl": 85382562, "ver": "nnxnxx", "url": "https://modrinth.com/mod/modernfix"}, {"n": "FerriteCore", "mr": "ferrite-core", "cat": "performance", "s": "ok", "t": "—", "d": "Economia de memória.", "icon": "https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp", "img": null, "dl": 170345771, "ver": "nnnnnn", "url": "https://modrinth.com/mod/ferrite-core"}, {"n": "ImmediatelyFast", "mr": "immediatelyfast", "cat": "performance", "s": "ok", "t": "—", "d": "Otimização de renderização.", "icon": "https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp", "img": null, "dl": 140313665, "ver": "nnnnnn", "url": "https://modrinth.com/mod/immediatelyfast"}, {"n": "Entity Culling", "mr": "entityculling", "cat": "performance", "s": "ok", "t": "—", "d": "Não renderiza o que está fora da vista.", "icon": "https://cdn.modrinth.com/data/NNAgCjsB/7873452d6cede4daed12da3d7d8c193ab88b4fd6_96.webp", "img": "https://cdn.modrinth.com/data/NNAgCjsB/images/65781fbd7cda31b8c8e4a8def40bf445c10a1562.gif", "dl": 192710824, "ver": "nnnnnn", "url": "https://modrinth.com/mod/entityculling"}, {"n": "Distant Horizons", "mr": "distanthorizons", "cat": "fora", "s": "no", "t": "—", "d": "Ficou fora: pesa bastante na CPU, no disco e na RAM, e o pack não precisa de uma distância de visão tão grande. Quem quiser pode instalar por conta própria.", "icon": "https://cdn.modrinth.com/data/uCdwusMi/e716cda9bb568b5373ff76e363fb4c6d7278fba6_96.webp", "img": "https://cdn.modrinth.com/data/uCdwusMi/images/fd8a1d3aad9b543bc07967478e7f9e269764c4ac_350.webp", "dl": 38457450, "ver": "nnnnnn", "url": "https://modrinth.com/mod/distanthorizons"}, {"n": "Biomes O' Plenty", "mr": "biomes-o-plenty", "cat": "fora", "s": "no", "t": "—", "d": "Ficou fora: o pack usa só os biomas vanilla e os dos mods, para os biomas mágicos serem mais comuns e o mundo mais leve. Pode voltar depois, se faltar variedade.", "icon": "https://cdn.modrinth.com/data/HXF82T3G/ffb870e12c325b795d54833f8f899126553ef06f.png", "img": "https://cdn.modrinth.com/data/HXF82T3G/images/0e0646c3b6c103b40e9028b132970f42751a5c57_350.webp", "dl": 39203536, "ver": "nnnnnn", "url": "https://modrinth.com/mod/biomes-o-plenty"}, {"n": "Blood Magic (Port)", "cf": "blood-magic-unofficial-port", "cat": "fora", "s": "no", "t": "—", "d": "Port em alpha, arriscado para um mundo longo. Foi substituído por EvilCraft e Neo Vitae.", "url": "https://www.curseforge.com/minecraft/mc-mods/blood-magic-unofficial-port"}, {"n": "Thavma", "mr": "thavma", "cat": "fora", "s": "no", "t": "—", "d": "Ficou fora porque o pack usa o Thaumaturge.", "icon": "https://cdn.modrinth.com/data/pGCxoM3B/77b17577cb9b6f42645c4bf5cbe1086091a31fde_96.webp", "img": "https://cdn.modrinth.com/data/pGCxoM3B/images/1f98a12ef6fe7e555430a66580d968f0ee9ae85a_350.webp", "dl": 2030, "ver": "nxxxxx", "url": "https://modrinth.com/mod/thavma"}, {"n": "Create Crafts & Additions", "mr": "createaddition", "cat": "fora", "s": "no", "t": "—", "d": "Adiciona eletricidade (FE), que é proibida.", "icon": "https://cdn.modrinth.com/data/kU1G12Nn/d8d1ec226747a800ba175f70ad00a80f37047cb6_96.webp", "img": "https://cdn.modrinth.com/data/kU1G12Nn/images/cf8302e146a4073891eb5355e1b11380a6a8098d.png", "dl": 11600418, "ver": "nxxxxx", "url": "https://modrinth.com/mod/createaddition"}, {"n": "Epic Fight", "mr": "epic-fight", "cat": "fora", "s": "no", "t": "—", "d": "Mexe na câmera e nas animações.", "icon": "https://cdn.modrinth.com/data/vu3NZ5Ma/5a7173ca96b8f4bd655b71ba54b599d19d6b9b7c_96.webp", "img": "https://cdn.modrinth.com/data/vu3NZ5Ma/images/59f2673b64d5444da1bb9fafbc462d82e52682b8.png", "dl": 4035131, "ver": "nxxxxx", "url": "https://modrinth.com/mod/epic-fight"}, {"n": "Alex's Mobs", "mr": "alexs-mobs", "cat": "fora", "s": "no", "t": "—", "d": "Não existe para 1.21.1.", "icon": "https://cdn.modrinth.com/data/2cMuAZAp/fbe04602fb0fb336be05e7c40378156b49d50156_96.webp", "img": "https://cdn.modrinth.com/data/2cMuAZAp/images/f08f7391834a3e1e85bde334f85259664a7960a9_350.webp", "dl": 15828133, "ver": "xxxxxx", "url": "https://modrinth.com/mod/alexs-mobs"}, {"n": "Blue Skies", "mr": "blue-skies", "cat": "fora", "s": "no", "t": "—", "d": "Não existe para NeoForge 1.21.1.", "icon": "https://cdn.modrinth.com/data/DOSy3C4M/9b070737ed6c944d8a4378851b9c8377323e4e80.png", "img": "https://cdn.modrinth.com/data/DOSy3C4M/images/941416aa567e18a896076f0f57c251040f8dff4f_350.webp", "dl": 2767493, "ver": "xxxxxx", "url": "https://modrinth.com/mod/blue-skies"}, {"n": "The Midnight", "mr": "the-midnight", "cat": "fora", "s": "no", "t": "—", "d": "Não existe para NeoForge 1.21.1.", "icon": "https://cdn.modrinth.com/data/f12ixI8d/d6c2bfdbac47358da62067bf3680c961cfe4031a.png", "img": "https://cdn.modrinth.com/data/f12ixI8d/images/0c571575a1cdbc61aa0da049a3b12c0d9a34a01c_350.webp", "dl": 329566, "ver": "xxxxxx", "url": "https://modrinth.com/mod/the-midnight"}];
+
+const CATS = {
+  magia:["Magia","✦"], addons:["Addons de magia","✧"], create:["Create","⚙"], dimensoes:["Dimensões","◎"],
+  aventura:["Mundo e aventura","⚔"], rpg:["RPG e desafios","♜"], fazenda:["Fazenda e culinária","❦"],
+  decoracao:["Decoração","⌂"], qol:["Qualidade de vida","☰"], visual:["Visual","◐"], performance:["Performance","⚡"], fora:["Fora do pack","✕"]
+};
+const STATUS = {ok:["estável","s-ok"],port:["port/beta","s-port"],no:["fora","s-no"]};
+const byName = Object.fromEntries(MODS.map(m => [m.n, m]));
+const inPack = MODS.filter(m => m.s !== "no");
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => n >= 1e6 ? (n/1e6).toFixed(1).replace(".",",")+" mi" : n >= 1e3 ? Math.round(n/1e3)+" mil" : String(n||"");
+function icon(m, cls=""){
+  const init = esc(m.n.replace(/[^A-Za-z]/g,"").slice(0,2) || "?");
+  if (!m.icon) return `<span class="av ${cls}">${init}</span>`;
+  return `<img class="${cls}" src="${esc(m.icon)}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;av ${cls}&quot;>${init}</span>'">`;
+}
+function chipMod(name){
+  const m = byName[name]; if (!m) return `<span class="chipmod">${esc(name)}</span>`;
+  return `<a class="chipmod" href="${esc(m.url)}" target="_blank" rel="noopener">${icon(m)}${esc(m.n)}</a>`;
+}
+
+/* hero */
+$("#heroCount").textContent = inPack.length;
+$("#heroIcons").innerHTML = MODS.filter(m => m.star && m.icon).map(m => `<img src="${esc(m.icon)}" alt="${esc(m.n)}" title="${esc(m.n)}">`).join("");
+
+/* stats */
+const cnt = c => inPack.filter(m => m.cat === c).length;
+$("#stats").innerHTML = [
+  [inPack.length, "mods no pack"],
+  [cnt("magia") + cnt("addons"), "mods de magia e addons"],
+  [cnt("dimensoes"), "mods de dimensões novas e reformulações"],
+  [inPack.filter(m => m.s === "port").length, "ports ou betas (requerem backup)"],
+].map(([v,l]) => `<div class="card stat"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+const maxC = Math.max(...Object.keys(CATS).filter(c=>c!=="fora").map(cnt));
+$("#bars").innerHTML = Object.entries(CATS).filter(([c]) => c !== "fora").map(([c,[l,g]]) =>
+  `<div class="bar" data-cat="${c}" role="button" tabindex="0"><span>${g} ${l}</span><div class="track"><div class="fill" style="width:${cnt(c)/maxC*100}%"></div></div><span class="n">${cnt(c)}</span></div>`).join("");
+$("#bars").addEventListener("click", e => { const b = e.target.closest(".bar"); if (b) { setCat(b.dataset.cat); location.hash = "#mods"; } });
+
+/* destaques */
+$("#feat").innerHTML = MODS.filter(m => m.star).map(m => `
+  <a class="fcard" href="${esc(m.url)}" target="_blank" rel="noopener">
+    <div class="ph">${m.img ? `<img class="shot" src="${esc(m.img)}" alt="" loading="lazy">` : (m.icon ? `<img class="big" src="${esc(m.icon)}" alt="" loading="lazy">` : `<span class="av bigav">${esc(m.n.replace(/^The /,"").slice(0,1))}</span>`)}</div>
+    <div class="body">${icon(m)}<div><h3>${esc(m.n)}</h3><p>${esc(m.d)}</p></div></div>
+  </a>`).join("");
+
+/* caminho */
+const PATH = [
+  ["I","Naturalismo","Ervas, caldeirões, poções e vassouras voadoras. Um bom começo sem precisar de combate.",["Hexerei","Hexalia","Enchanted: Witchcraft","Roots Classic","Botania Revived","Farmer's Delight"]],
+  ["II","Arcanismo","Glifos, feitiços customizados, artefatos e a primeira dimensão mágica. O Create entra aqui como engenharia arcana.",["Ars Nouveau","Forbidden & Arcanus","Thaumaturge","Create","The Twilight Forest"]],
+  ["III","Ocultismo e alquimia","Demônios, almas, alquimia e máquinas movidas a ember. Aqui começa a automação de verdade.",["Occultism","Malum","Eidolon: Repraised","Theurgy","Embers Re-Ignited","Mystical Agriculture","The Aether","Eternal Starlight"]],
+  ["IV","Batalha arcana","Escolas de combate, encantamento profundo e os grandes bosses.",["Iron's Spells 'n Spellbooks","Apotheosis","L_Ender's Cataclysm","Mowzie's Mobs","Deeper and Darker","Incendium"]],
+  ["V","Magia proibida","Sangue, relíquias, o Gaia Guardian e o End. Depois disso vem o objetivo final, ainda a definir.",["Neo Vitae","EvilCraft","Reliquary Reincarnations","End Remastered","Nullscape"]],
+];
+$("#path").innerHTML = PATH.map(([n,t,d,mods]) => `
+  <div class="card step"><div class="num">${n}</div><div><h3>${t}</h3><p>${d}</p><div class="icons">${mods.map(chipMod).join("")}</div></div></div>`).join("");
+
+/* objetivo final */
+const CORES = [
+  ["Núcleo Arcano","#a77bff","Endgame do Ars Nouveau, Eternal Stella do Forbidden & Arcanus, infusão máxima do Thaumaturge e livro de feitiços lendário do Iron's.",["Ars Nouveau","Forbidden & Arcanus","Thaumaturge","Iron's Spells 'n Spellbooks"]],
+  ["Núcleo Natural","#4cc38a","Gaia Spirit e Terrasteel do Botania, essência suprema do Mystical Agriculture, bruxaria do Hexerei e do Enchanted, e aura do Nature's Aura.",["Botania Revived","Mystical Agriculture","Hexerei","Nature's Aura"]],
+  ["Núcleo Oculto","#d0566a","Essência de Afrit do Occultism, ligas de alma do Malum, necromancia do Eidolon e o endgame de sangue do Neo Vitae.",["Occultism","Malum","Eidolon: Repraised","Neo Vitae"]],
+  ["Núcleo Artífice","#e0a23c","Mecanismos de precisão do Create, Dawnstone do Embers, alquimia avançada do Theurgy e XP líquido do Create: Enchantment Industry.",["Create","Embers Re-Ignited","Theurgy","Create: Enchantment Industry"]],
+  ["Núcleo Bélico","#e8743b","Drops de bosses do Cataclysm, do Mowzie's e do Iron's, mais uma gema mítica do Apotheosis.",["L_Ender's Cataclysm","Mowzie's Mobs","Apotheosis","EvilCraft"]],
+  ["Núcleo Dimensional","#4aa3df","Troféus da Twilight Forest, bosses do Aether e do Eternal Starlight, o coração do Warden e o Dragon Egg.",["The Twilight Forest","The Aether","Eternal Starlight","Deeper and Darker"]],
+];
+$("#cores").innerHTML = CORES.map(([n,c,d,mods]) => `
+  <div class="core" style="--c:${c}"><h3><i></i>${n}</h3><p>${d}</p><div class="icons">${mods.map(chipMod).join("")}</div></div>`).join("");
+
+
+/* decisões */
+const DECISIONS = [
+  {id:"endgame", t:"Objetivo final", w:"Fica para depois de jogar.", done:1, o:[
+    ["Adiado","As ideias estão guardadas na seção Objetivo final.",1]]},
+  {id:"quests", t:"Livro de quests", w:"FTB Quests.", o:[
+    ["Guia de todos os mods","Um capítulo por mod com dicas e recompensas, sem travar nada.",1],
+    ["Só o básico","Poucas quests de introdução."],
+    ["Sem quests",""]]},
+  {id:"skills", t:"Sistema de skills", w:"Escolher um.", o:[
+    ["Pufferfish's Skills","Árvores configuráveis, com pontos ganhos por XP ou pelas quests.",1],
+    ["Project MMO","Você sobe de nível fazendo a atividade."],
+    ["Nenhum",""]]},
+  {id:"blocos", t:"Variações de blocos", w:"Os dois fazem a mesma coisa.", o:[
+    ["Chipped","Mais variações.",1],["Rechiseled","Mais leve, com estilo mais vanilla."]]},
+  {id:"progressao", t:"Trava de progressão", w:"Você já decidiu: progressão livre.", done:1, o:[
+    ["Livre","Sem receitas travadas. O caminho só aparece como sugestão.",1]]},
+];
+const DKEY = "thaumora-decisions";
+let choices = {};
+try { choices = JSON.parse(localStorage.getItem(DKEY)) || {}; } catch(e) {}
+function recOf(d){ return d.o.findIndex(o => o[2]); }
+function renderDec(){
+  $("#dec").innerHTML = DECISIONS.map(d => {
+    const cur = choices[d.id] ?? recOf(d);
+    return `<div class="card dcard"><h3>${esc(d.t)}${d.done?'<span class="decided">decidido</span>':""}</h3><p class="why">${esc(d.w)}</p>
+      ${d.o.map((o,i) => `<label class="opt ${cur===i?"sel":""}"><input type="radio" name="d-${d.id}" value="${i}" ${cur===i?"checked":""}>
+        <span><b>${esc(o[0])}${o[2]&&!d.done?'<span class="rec">recomendado</span>':""}</b>${o[1]?`<small>${esc(o[1])}</small>`:""}</span></label>`).join("")}
+    </div>`;}).join("");
+}
+$("#dec").addEventListener("change", e => {
+  const [, id] = e.target.name.split("d-"); choices[id] = +e.target.value;
+  try { localStorage.setItem(DKEY, JSON.stringify(choices)); } catch(_) {}
+  renderDec();
+});
+$("#resetBtn").addEventListener("click", () => { choices = {}; try { localStorage.removeItem(DKEY); } catch(_) {} renderDec(); });
+$("#copyBtn").addEventListener("click", async () => {
+  const txt = "Decisões do Thaumora:\n" + DECISIONS.map(d => `- ${d.t}: ${d.o[choices[d.id] ?? recOf(d)][0]}`).join("\n");
+  try { await navigator.clipboard.writeText(txt); $("#copied").textContent = "Copiado! Cole no chat."; }
+  catch(_) { prompt("Copie o texto abaixo:", txt); }
+  setTimeout(() => $("#copied").textContent = "", 3000);
+});
+renderDec();
+
+/* mods */
+let cat = "all", stOn = new Set(["ok","port","no"]);
+function setCat(c){ cat = c; renderChips(); renderMods(); }
+function renderChips(){
+  const all = `<button class="chip ${cat==="all"?"on":""}" data-c="all">Todos<span class="c">${MODS.length}</span></button>`;
+  $("#catChips").innerHTML = all + Object.entries(CATS).map(([c,[l,g]]) =>
+    `<button class="chip ${cat===c?"on":""}" data-c="${c}">${g} ${l}<span class="c">${MODS.filter(m=>m.cat===c).length}</span></button>`).join("");
+  $("#stChips").innerHTML = Object.entries(STATUS).map(([k,[l]]) => `<button class="chip ${stOn.has(k)?"on":""}" data-s="${k}">${l}</button>`).join("");
+}
+$("#catChips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) setCat(b.dataset.c); });
+$("#stChips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; const s=b.dataset.s; stOn.has(s)?stOn.delete(s):stOn.add(s); renderChips(); renderMods(); });
+$("#q").addEventListener("input", renderMods);
+function renderMods(){
+  const q = $("#q").value.trim().toLowerCase();
+  const list = MODS.filter(m => (cat==="all"||m.cat===cat) && stOn.has(m.s) && (!q || (m.n+" "+m.d).toLowerCase().includes(q)));
+  $("#count").textContent = `${list.length} de ${MODS.length} mods`;
+  $("#modList").innerHTML = list.map(m => `
+    <a class="mod ${m.s==="no"?"out":""}" href="${esc(m.url)}" target="_blank" rel="noopener">${icon(m)}
+      <div><div class="top"><span class="name">${esc(m.n)}</span><span class="badge ${STATUS[m.s][1]}">${STATUS[m.s][0]}</span>${m.cf?'<span class="badge s-cf">CurseForge</span>':""}</div>
+      <div class="desc">${esc(m.d)}</div>
+      <div class="meta">${m.t&&m.t!=="—"?`<span class="tierb">Tier ${esc(m.t)}</span>`:""}<span>${CATS[m.cat][0]}</span>${m.dl?`<span>· ${fmt(m.dl)} downloads</span>`:""}</div></div>
+    </a>`).join("") || `<p style="color:var(--muted)">Nenhum mod encontrado.</p>`;
+}
+renderChips(); renderMods();
+
+/* automação */
+const AUTO = [
+  ["Ars Nouveau",["<b>Starbuncle</b> leva itens de um baú para outro, como um cano vivo.","<b>Wixie</b> faz crafting e poções automaticamente.","<b>Whirlisprig</b> cuida da plantação.","<b>Drygmy</b> gera drops de mobs sem precisar matar.","Source Relays levam mana pela base."]],
+  ["Occultism",["<b>Dimensional Storage</b> é o armazenamento central.","Demônios mineram numa dimensão própria.","Espíritos transportam e organizam itens.","Crusher spirits dobram o rendimento dos minérios."]],
+  ["Botania Revived",["Flores que plantam, colhem e movem itens.","A rede <b>Corporea</b> faz armazenamento e pedidos de crafting.","Spreaders levam mana de um ponto a outro."]],
+  ["Embers Re-Ignited",["Fornalhas, bombas e canos movidos a ember.","Produz ligas e processa materiais em série.","Integra com o Create."]],
+  ["Create",["Linhas de produção mecânicas.","Logística com Stock Keeper para pedidos sob demanda.","Ligado ao Ars Nouveau pelo Ars Creo."]],
+  ["Mystical Agriculture",["Plantações que produzem minérios e essências.","Junto com o Theurgy, duplica minérios por alquimia."]],
+];
+$("#auto").innerHTML = AUTO.map(([n,li]) => { const m = byName[n]; return `<div class="card auto"><h3>${m?icon(m):""}${esc(n)}</h3><ul>${li.map(x=>`<li>${x}</li>`).join("")}</ul></div>`; }).join("");
+
+/* versões */
+const VCOLS = ["1.21.1","1.21.2–8","1.21.9–11","26.1","26.2","26.3"];
+const VSYM = {n:"✔",c:"✔*",o:"≈",x:"✕",u:"?"};
+let onlyCore = true;
+function renderVer(){
+  const rows = inPack.filter(m => m.ver && (!onlyCore || m.core));
+  $("#vsum").innerHTML = VCOLS.map((c,i) => {
+    const ok = rows.filter(m => "nc".includes(m.ver[i])).length;
+    return `<div class="${i===0?"best":""}"><b>${c}</b><span>${ok}</span><b>de ${rows.length}</b></div>`; }).join("");
+  let h = `<thead><tr><th>Mod</th>${VCOLS.map((c,i)=>`<th class="${i===0?"base":""}">${c}</th>`).join("")}</tr></thead><tbody>`;
+  let last = "";
+  rows.forEach(m => {
+    if (m.cat !== last) { h += `<tr><td colspan="7" style="background:var(--surface2);font-family:Cinzel,serif;color:var(--gold);font-weight:700">${CATS[m.cat][1]} ${CATS[m.cat][0]}</td></tr>`; last = m.cat; }
+    h += `<tr><td><span class="mn">${icon(m)}${esc(m.n)}</span></td>${[...m.ver].map(s=>`<td><span class="cell c-${s}">${VSYM[s]}</span></td>`).join("")}</tr>`;
+  });
+  $("#vt").innerHTML = h + "</tbody>";
+}
+$("#onlyCore").addEventListener("click", e => { onlyCore = !onlyCore; e.currentTarget.classList.toggle("on", onlyCore); renderVer(); });
+renderVer();
+
+/* passos */
+const STEPS = ["Fechar as decisões desta página","Criar a instância NeoForge 1.21.1 (CurseForge ou Prism)","Adicionar os mods em lotes e testar se carregam","Jogar e decidir o objetivo final","Montar o FTB Quests","Ajustar configs, performance e RAM","Testar um mundo do começo ao fim","Publicar no CurseForge"];
+const SKEY = "thaumora-steps"; let done = [];
+try { done = JSON.parse(localStorage.getItem(SKEY)) || []; } catch(_) {}
+$("#steps").innerHTML = STEPS.map((s,i) => `<li><label><input type="checkbox" data-i="${i}" ${done.includes(i)?"checked":""}><span>${s}</span></label></li>`).join("");
+$("#steps").addEventListener("change", e => { const i=+e.target.dataset.i; done = e.target.checked ? [...done,i] : done.filter(x=>x!==i); try { localStorage.setItem(SKEY, JSON.stringify(done)); } catch(_) {} });
+
+/* auto-recarregar quando a página for atualizada (só quando servida por http) */
+if (location.protocol.startsWith("http")) {
+  let ver = null;
+  setInterval(async () => {
+    try {
+      const v = await (await fetch("/__version", {cache:"no-store"})).text();
+      if (ver && v !== ver) { try { sessionStorage.setItem("thaumora-scroll", String(scrollY)); } catch(_) {} location.reload(); }
+      ver = v;
+    } catch(_) {}
+  }, 4000);
+  try {
+    const y = sessionStorage.getItem("thaumora-scroll");
+    if (y) { sessionStorage.removeItem("thaumora-scroll"); addEventListener("load", () => scrollTo(0, +y)); }
+  } catch(_) {}
+}
+
+/* tema */
+$("#theme").addEventListener("click", () => {
+  const r = document.documentElement;
+  const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+});
+</script>
+</body>
+</html>
