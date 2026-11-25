@@ -1,0 +1,1938 @@
+{
+ "_comentario": "Projeto/arquivo no CurseForge de cada jar do pack. Gerado sem chave da API (export do Prism por fingerprint + API pública do site; jars conferidos: só muda o META-INF/MANIFEST.MF). O cf_sync.py regera este arquivo quando a chave chegar.",
+ "minecraft": "1.21.1",
+ "neoforge": "21.1.267",
+ "files": [
+  {
+   "n": "Akashic Tome",
+   "projectID": 250577,
+   "fileID": 7773841,
+   "file": "AkashicTome-1.8-30.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "AmbientSounds",
+   "projectID": 254284,
+   "fileID": 9254776,
+   "file": "AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Amendments",
+   "projectID": 896746,
+   "fileID": 9751471,
+   "file": "amendments-1.21-2.3.0-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Apotheosis",
+   "projectID": 313970,
+   "fileID": 8993983,
+   "file": "Apotheosis-1.21.1-8.9.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Apothic Attributes",
+   "projectID": 898963,
+   "fileID": 9006294,
+   "file": "ApothicAttributes-1.21.1-2.11.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Apothic-Enchanting",
+   "projectID": 1063926,
+   "fileID": 9095862,
+   "file": "ApothicEnchanting-1.21.1-1.6.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Apothic-Spawners",
+   "projectID": 986583,
+   "fileID": 8469405,
+   "file": "ApothicSpawners-1.21.1-1.4.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "AppleSkin",
+   "projectID": 248787,
+   "fileID": 7854442,
+   "file": "appleskin-neoforge-mc1.21-3.0.9.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Aquaculture 2",
+   "projectID": 60028,
+   "fileID": 9426623,
+   "file": "Aquaculture-1.21.1-2.7.22.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Arcane Lanterns",
+   "projectID": 852666,
+   "fileID": 5765534,
+   "file": "ArcaneLanterns-v21.1.0-1.21.1-NeoForge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Architectury API",
+   "projectID": 419699,
+   "fileID": 9608861,
+   "file": "architectury-13.0.12-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ars 'n Spells",
+   "projectID": 1447914,
+   "fileID": 9009833,
+   "file": "ars_n_spells-3.3.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ars Additions",
+   "projectID": 974408,
+   "fileID": 7646325,
+   "file": "ars_additions-1.21.1-21.3.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ars Creo",
+   "projectID": 575698,
+   "fileID": 8139067,
+   "file": "ars_creo-1.21.1-5.4.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ars Elemancy",
+   "projectID": 1153666,
+   "fileID": 8349780,
+   "file": "ars_elemancy-1.21.1-1.18.3.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Ars Elemental",
+   "projectID": 561470,
+   "fileID": 9716535,
+   "file": "ars_elemental-1.21.1-0.7.11.3.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Ars Nouveau",
+   "projectID": 401955,
+   "fileID": 9521184,
+   "file": "ars_nouveau-1.21.1-5.13.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ars Nouveau's Flavors & Delight",
+   "projectID": 1131668,
+   "fileID": 9075472,
+   "file": "arsdelight-2.2.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Artifacts",
+   "projectID": 312353,
+   "fileID": 8791899,
+   "file": "artifacts-neoforge-13.2.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Atlas Api",
+   "projectID": 1145462,
+   "fileID": 6880789,
+   "file": "atlas_api-1.21.1-1.2.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Balm",
+   "projectID": 531761,
+   "fileID": 9406246,
+   "file": "balm-neoforge-1.21.1-21.0.67.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Better Advanced Tooltips",
+   "projectID": 1637623,
+   "fileID": 8576077,
+   "file": "better-advanced-tooltips-2101.1.0-build.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Better Advancements",
+   "projectID": 272515,
+   "fileID": 5850587,
+   "file": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Blueprint",
+   "projectID": 382216,
+   "fileID": 8819375,
+   "file": "blueprint-1.21.1-8.2.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Botania Revived",
+   "projectID": 1725641,
+   "fileID": 9695259,
+   "file": "Botania-Revived-1.21.1-2.0.4-NeoForge.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Bountiful",
+   "projectID": 309516,
+   "fileID": 7919197,
+   "file": "bountiful-neoforge-8.0.0-beta.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Brewin' And Chewin'",
+   "projectID": 637808,
+   "fileID": 8309583,
+   "file": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Carry On",
+   "projectID": 274259,
+   "fileID": 8512888,
+   "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Cloth Config API",
+   "projectID": 348521,
+   "fileID": 5729127,
+   "file": "cloth-config-15.0.140-neoforge.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Clumps",
+   "projectID": 256717,
+   "fileID": 5623731,
+   "file": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Cobweb",
+   "projectID": 968456,
+   "fileID": 7186943,
+   "file": "cobweb-neoforge-1.21-1.4.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Colorful Hearts",
+   "projectID": 854213,
+   "fileID": 6830399,
+   "file": "colorfulhearts-neoforge-1.21.1-10.5.9.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Comforts",
+   "projectID": 276951,
+   "fileID": 7515858,
+   "file": "comforts-neoforge-9.0.5+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Construction Sticks",
+   "projectID": 1156098,
+   "fileID": 8763707,
+   "file": "ConstructionSticks-1.21.1-1.5.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Controlling",
+   "projectID": 250398,
+   "fileID": 6368976,
+   "file": "Controlling-neoforge-1.21.1-19.0.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Cooking for Blockheads",
+   "projectID": 231484,
+   "fileID": 9647375,
+   "file": "cookingforblockheads-neoforge-1.21.1-21.1.25.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Corpse",
+   "projectID": 316582,
+   "fileID": 9289316,
+   "file": "corpse-neoforge-1.21.1-1.1.22.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Crafting Tweaks",
+   "projectID": 233071,
+   "fileID": 8697050,
+   "file": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Create",
+   "projectID": 328085,
+   "fileID": 7963363,
+   "file": "create-1.21.1-6.0.10.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Create Deco",
+   "projectID": 509285,
+   "fileID": 7943181,
+   "file": "createdeco-2.1.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Create: Copycats+",
+   "projectID": 968398,
+   "fileID": 9504789,
+   "file": "copycats-3.0.11+mc.1.21.1-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required",
+   "cf_file": "copycats-3.0.11-mc.1.21.1-neoforge.jar"
+  },
+  {
+   "n": "Create: Dragons Plus",
+   "projectID": 1216624,
+   "fileID": 8900055,
+   "file": "CreateDragonsPlus-1.11.9.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Create: Enchantment Industry",
+   "projectID": 688768,
+   "fileID": 8241347,
+   "file": "create-enchantment-industry-2.4.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Create: Thaumaturgy",
+   "projectID": 1741015,
+   "fileID": 9809372,
+   "file": "create_thaumaturgy-1.21.1-0.15.0.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "CreativeCore",
+   "projectID": 257814,
+   "fileID": 9788664,
+   "file": "CreativeCore_NEOFORGE_v2.13.56_mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "Cristel Lib",
+   "projectID": 856996,
+   "fileID": 8241767,
+   "file": "cristellib-neoforge-1.21.1-3.1.7.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Cucumber Library",
+   "projectID": 272335,
+   "fileID": 8035802,
+   "file": "Cucumber-1.21.1-8.0.16.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Curios API",
+   "projectID": 309927,
+   "fileID": 9806453,
+   "file": "curios-neoforge-9.6.1+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required",
+   "cf_file": "curios-neoforge-9.6.1-1.21.1.jar"
+  },
+  {
+   "n": "Cyclops Core",
+   "projectID": 232758,
+   "fileID": 9626282,
+   "file": "cyclopscore-1.21.1-neoforge-1.30.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Deep Aether",
+   "projectID": 852465,
+   "fileID": 7843283,
+   "file": "deep_aether-1.21.1-1.1.5.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Deeper and Darker",
+   "projectID": 659011,
+   "fileID": 8201775,
+   "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Dungeons and Taverns",
+   "projectID": 853794,
+   "fileID": 5768823,
+   "file": "dungeons-and-taverns-v4.4.4.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required",
+   "cf_file": "dungeons-and-taverns-v4.4.4 [NeoForge].jar"
+  },
+  {
+   "n": "Easy Villagers",
+   "projectID": 400514,
+   "fileID": 9289481,
+   "file": "easy-villagers-neoforge-1.21.1-1.1.49.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Eidolon:Repraised",
+   "projectID": 870250,
+   "fileID": 9332315,
+   "file": "eidolon_repraised-1.21.1-0.5.0.8.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Embers Re-Ignited",
+   "projectID": 1579725,
+   "fileID": 9130942,
+   "file": "embers-reignited-1.21.1-1.5.9.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "EMI",
+   "projectID": 580555,
+   "fileID": 8081408,
+   "file": "emi-1.1.24+1.21.1+neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "Enchanted: Witchcraft",
+   "projectID": 560363,
+   "fileID": 8055168,
+   "file": "enchanted-neoforge-1.21.1-4.2.7.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "End Remastered",
+   "projectID": 404183,
+   "fileID": 8503446,
+   "file": "endrem-neoforge-1.21.1-6.3.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Ender's Delight",
+   "projectID": 827163,
+   "fileID": 8570814,
+   "file": "endersdelight-1.3.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Entity Culling",
+   "projectID": 448233,
+   "fileID": 9752280,
+   "file": "entityculling-neoforge-1.12.2-mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Eternal Starlight",
+   "projectID": 1080592,
+   "fileID": 8931080,
+   "file": "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "EvilCraft",
+   "projectID": 74610,
+   "fileID": 9775993,
+   "file": "evilcraft-1.21.1-neoforge-1.2.103.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Explorer's Compass",
+   "projectID": 491794,
+   "fileID": 7892943,
+   "file": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Explorify",
+   "projectID": 698309,
+   "fileID": 9509145,
+   "file": "Explorify v1.6.6.mod.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required",
+   "cf_file": "Explorify-v1.6.6.mod.jar"
+  },
+  {
+   "n": "FallingTree",
+   "projectID": 349559,
+   "fileID": 6835168,
+   "file": "FallingTree-1.21.1-1.21.1.11.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Farmer's Delight",
+   "projectID": 398521,
+   "fileID": 8765184,
+   "file": "FarmersDelight-1.21.1-1.3.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Farming for Blockheads",
+   "projectID": 261924,
+   "fileID": 8969759,
+   "file": "farmingforblockheads-neoforge-1.21.1-21.1.14.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "FastWorkbench",
+   "projectID": 288885,
+   "fileID": 6751534,
+   "file": "FastWorkbench-1.21.1-9.1.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "FerriteCore",
+   "projectID": 429235,
+   "fileID": 7524151,
+   "file": "ferritecore-7.0.3-neoforge.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Forbidden and Arcanus ",
+   "projectID": 309858,
+   "fileID": 6875895,
+   "file": "forbidden_arcanus-2.6.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Fragmentum",
+   "projectID": 1123977,
+   "fileID": 9202578,
+   "file": "fragmentum-5.4.0+1.21.1-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "FTB Library (NeoForge)",
+   "projectID": 404465,
+   "fileID": 9650381,
+   "file": "ftb-library-neoforge-2101.1.40.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "FTB Quests (NeoForge)",
+   "projectID": 289412,
+   "fileID": 9650792,
+   "file": "ftb-quests-neoforge-2101.1.39.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "FTB Teams (NeoForge)",
+   "projectID": 404468,
+   "fileID": 9434081,
+   "file": "ftb-teams-neoforge-2101.1.12.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "FTB Ultimine (NeoForge)",
+   "projectID": 386134,
+   "fileID": 8231400,
+   "file": "ftb-ultimine-neoforge-2101.1.15.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Fusion (Connected Textures)",
+   "projectID": 854949,
+   "fileID": 9070353,
+   "file": "fusion-1.3.16-neoforge-mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Fzzy Config",
+   "projectID": 1005914,
+   "fileID": 9326327,
+   "file": "fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Galosphere",
+   "projectID": 631098,
+   "fileID": 8242886,
+   "file": "Galosphere-1.21.1-1.5.5-NeoForge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Geckolib",
+   "projectID": 388172,
+   "fileID": 9748637,
+   "file": "geckolib-neoforge-1.21.1-4.9.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "GlitchCore",
+   "projectID": 955399,
+   "fileID": 8109792,
+   "file": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Guard Villagers",
+   "projectID": 360203,
+   "fileID": 8767509,
+   "file": "guardvillagers-2.4.12-1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Handcrafted",
+   "projectID": 538214,
+   "fileID": 6330030,
+   "file": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Harvest with ease",
+   "projectID": 602171,
+   "fileID": 5968872,
+   "file": "harvest-with-ease-neoforge-1.21-9.4.0.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Hexalia",
+   "projectID": 962878,
+   "fileID": 9355770,
+   "file": "hexalia-1.3.8.2-1.21.1+neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required",
+   "cf_file": "hexalia-1.3.8.2-1.21.1-neoforge.jar"
+  },
+  {
+   "n": "Hexerei",
+   "projectID": 548599,
+   "fileID": 6376510,
+   "file": "hexerei-0.5.0.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Iceberg",
+   "projectID": 520110,
+   "fileID": 6423863,
+   "file": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Illager Warship",
+   "projectID": 1091632,
+   "fileID": 6561660,
+   "file": "illagerwarship-1.0.1-neoforge-1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "ImmediatelyFast",
+   "projectID": 686911,
+   "fileID": 9165518,
+   "file": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Improved Mobs",
+   "projectID": 282639,
+   "fileID": 9703675,
+   "file": "improvedmobs-1.21.1-1.16.1-neoforge.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Incendium Legacy",
+   "projectID": 591388,
+   "fileID": 5962249,
+   "file": "Incendium_1.21.x_v5.4.4.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Inventory Essentials",
+   "projectID": 368825,
+   "fileID": 9035078,
+   "file": "inventoryessentials-neoforge-1.21.1-21.1.20.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Inventory Profiles Next",
+   "projectID": 495267,
+   "fileID": 7810574,
+   "file": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Iris Shaders",
+   "projectID": 455508,
+   "fileID": 8242804,
+   "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Iron's Gems 'n Jewelry",
+   "projectID": 1101111,
+   "fileID": 8365016,
+   "file": "irons_jewelry-1.21.1-2.0.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Iron's Lib",
+   "projectID": 1492763,
+   "fileID": 9687938,
+   "file": "irons_lib-1.21.1-2.4.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Iron's Spells 'n Spellbooks",
+   "projectID": 855414,
+   "fileID": 9702219,
+   "file": "irons_spellbooks-1.21.1-3.16.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Iron's Spells 'n Spellbooks Dynamic Skill Trees",
+   "projectID": 1238317,
+   "fileID": 6486273,
+   "file": "irons_spells_dynamic_skilltree_1.1.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Iron's Spells Delight",
+   "projectID": 1094462,
+   "fileID": 5863118,
+   "file": "ironsspellsdelight-1.0.2.4-1.21.x.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Jade 🔍",
+   "projectID": 324717,
+   "fileID": 8591319,
+   "file": "Jade-1.21.1-NeoForge-15.10.6.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Jonn's Trophies",
+   "projectID": 510170,
+   "fileID": 9756409,
+   "file": "trophymanager-1.21.1-3.1.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Just Enough Items (JEI)",
+   "projectID": 238222,
+   "fileID": 9205121,
+   "file": "jei-1.21.1-neoforge-19.64.0.455.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Just Enough Professions (JEP)",
+   "projectID": 417645,
+   "fileID": 7966681,
+   "file": "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "Kambrik",
+   "projectID": 455585,
+   "fileID": 7919192,
+   "file": "kambrik-neoforge-8.0.0-beta.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Kotlin for Forge",
+   "projectID": 351264,
+   "fileID": 9641139,
+   "file": "kotlinforforge-5.13.0-all.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "KubeJS",
+   "projectID": 238086,
+   "fileID": 9396059,
+   "file": "kubejs-neoforge-2101.7.2-build.381.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "L_Ender's Cataclysm",
+   "projectID": 551586,
+   "fileID": 8931182,
+   "file": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "LambDynamicLights - Dynamic Lights",
+   "projectID": 393442,
+   "fileID": 8780227,
+   "file": "lambdynamiclights-4.8.11+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Legendary Tooltips",
+   "projectID": 532127,
+   "fileID": 6400660,
+   "file": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "libIPN",
+   "projectID": 679177,
+   "fileID": 7810552,
+   "file": "libIPN-neoforge-1.21.1-6.6.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Lionfish-API",
+   "projectID": 1001614,
+   "fileID": 8345326,
+   "file": "lionfishapi-3.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Lithostitched",
+   "projectID": 936015,
+   "fileID": 9170709,
+   "file": "lithostitched-1.8.1-neoforge-21.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Lodestone",
+   "projectID": 616457,
+   "fileID": 7264731,
+   "file": "lodestone-1.21.1-1.8.2.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Loot Journal: Pickup Notifier",
+   "projectID": 1120395,
+   "fileID": 8922056,
+   "file": "loot_journal-neoforge-1.21.1-6.2.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Lootr",
+   "projectID": 361276,
+   "fileID": 8968561,
+   "file": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Macaw's Furniture",
+   "projectID": 359540,
+   "fileID": 7255584,
+   "file": "mcw-furniture-3.4.1-mc1.21.1neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Mahou Tsukai",
+   "projectID": 342543,
+   "fileID": 9396719,
+   "file": "mahoutsukai-1.21.1-v1.36.31.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Malum",
+   "projectID": 484064,
+   "fileID": 7307339,
+   "file": "malum-1.21.1-1.8.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "MES - Moog's End Structures",
+   "projectID": 892382,
+   "fileID": 8902211,
+   "file": "MoogsEndStructures-universal-1.21-2.1.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "MezzConfig",
+   "projectID": 1689768,
+   "fileID": 9527937,
+   "file": "mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "MNS - Moog's Nether Structures",
+   "projectID": 967466,
+   "fileID": 8902210,
+   "file": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "ModernFix",
+   "projectID": 790626,
+   "fileID": 9309399,
+   "file": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Modonomicon",
+   "projectID": 538392,
+   "fileID": 9646793,
+   "file": "modonomicon-1.21.1-neoforge-1.123.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Modopedia",
+   "projectID": 1132038,
+   "fileID": 8043293,
+   "file": "modopedia-neoforge-1.21.1-1.1.11.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Moog's Structure Lib (moogs_structures)",
+   "projectID": 1337167,
+   "fileID": 9047179,
+   "file": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Moonlight Lib",
+   "projectID": 499980,
+   "fileID": 9780727,
+   "file": "moonlight-1.21.1-3.8.5-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Mouse Tweaks",
+   "projectID": 60089,
+   "fileID": 5637846,
+   "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Mowzie's Mobs",
+   "projectID": 250498,
+   "fileID": 7760267,
+   "file": "mowziesmobs-1.21.1-1.8.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "MSS - Moog's Soaring Structures",
+   "projectID": 1040210,
+   "fileID": 8931330,
+   "file": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "MVS - Moog's Voyager Structures",
+   "projectID": 656977,
+   "fileID": 8970306,
+   "file": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Mystical Agriculture",
+   "projectID": 246640,
+   "fileID": 9291239,
+   "file": "MysticalAgriculture-1.21.1-8.0.29.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Naturalist",
+   "projectID": 627986,
+   "fileID": 9280587,
+   "file": "naturalist-2.0.7-neoforge-1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Nature's Aura",
+   "projectID": 306626,
+   "fileID": 8809415,
+   "file": "NaturesAura-41.10.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Nature's Compass",
+   "projectID": 252848,
+   "fileID": 7892954,
+   "file": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Neat",
+   "projectID": 238372,
+   "fileID": 7774002,
+   "file": "Neat-1.21-47-NEOFORGE.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Neo Vitae",
+   "projectID": 1404763,
+   "fileID": 9687147,
+   "file": "neovitae-1.21.1-1.1.54.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Nether Depths Upgrade",
+   "projectID": 670011,
+   "fileID": 8940364,
+   "file": "netherdepthsupgrade-3.3-1.21.1-NeoForge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Nullscape",
+   "projectID": 570354,
+   "fileID": 7078265,
+   "file": "Nullscape_1.21.x_v1.2.14.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Occult Delight",
+   "projectID": 1632803,
+   "fileID": 8544996,
+   "file": "occultdelight-1.0.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Occultism",
+   "projectID": 361026,
+   "fileID": 9554025,
+   "file": "occultism-1.21.1-neoforge-1.227.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "oωo (owo-lib)",
+   "projectID": 532610,
+   "fileID": 9215303,
+   "file": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Pam's HarvestCraft 2: Crops",
+   "projectID": 361385,
+   "fileID": 6221524,
+   "file": "pamhc2crops-NEOFORGE-1.21.1-1.0.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Patchouli",
+   "projectID": 306770,
+   "fileID": 7730942,
+   "file": "Patchouli-1.21.1-93-NEOFORGE.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Placebo",
+   "projectID": 283644,
+   "fileID": 9153039,
+   "file": "Placebo-1.21.1-9.9.4.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "playerAnimator",
+   "projectID": 658587,
+   "fileID": 7389814,
+   "file": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Polymorph",
+   "projectID": 388800,
+   "fileID": 6794589,
+   "file": "polymorph-neoforge-1.1.0+1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Prism",
+   "projectID": 638111,
+   "fileID": 6372979,
+   "file": "Prism-1.21.1-neoforge-1.0.11.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Psi",
+   "projectID": 241665,
+   "fileID": 8786571,
+   "file": "Psi-neoforge-1.21.1-110.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Pufferfish's Attributes",
+   "projectID": 991341,
+   "fileID": 9780058,
+   "file": "puffish_attributes-0.8.4-1.21-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Pufferfish's Skills",
+   "projectID": 835091,
+   "fileID": 9101377,
+   "file": "puffish_skills-0.19.2-1.21-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Pufferfish's Unofficial Additions",
+   "projectID": 935166,
+   "fileID": 7389968,
+   "file": "pufferfish_unofficial_additions-1.21.1-2.2.8.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Puzzles Lib",
+   "projectID": 495476,
+   "fileID": 9331322,
+   "file": "puzzleslib-v21.1.66-mc1.21.1+neoforge.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Quark",
+   "projectID": 243121,
+   "fileID": 9804438,
+   "file": "Quark-4.1-489.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Rechiseled",
+   "projectID": 558998,
+   "fileID": 8875899,
+   "file": "rechiseled-1.2.6-neoforge-mc1.21.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Rechiseled: Create",
+   "projectID": 888624,
+   "fileID": 8302843,
+   "file": "rechiseledcreate-1.1.1-neoforge-mc1.21.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Relics",
+   "projectID": 445274,
+   "fileID": 7586568,
+   "file": "relics-1.21.1-0.10.7.8.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Reliquary Reincarnations",
+   "projectID": 241319,
+   "fileID": 9806968,
+   "file": "reliquary-1.21.1-2.0.87.1606.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Resourceful Lib",
+   "projectID": 570073,
+   "fileID": 5973188,
+   "file": "resourcefullib-neoforge-1.21-3.0.12.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Rhino",
+   "projectID": 416294,
+   "fileID": 8218748,
+   "file": "rhino-2101.2.7-build.85.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Roots Classic",
+   "projectID": 295780,
+   "fileID": 8860609,
+   "file": "RootsClassic-1.21.1-1.5.10.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Searchables",
+   "projectID": 858542,
+   "fileID": 5831692,
+   "file": "Searchables-neoforge-1.21.1-1.0.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Serene Seasons",
+   "projectID": 291874,
+   "fileID": 6182596,
+   "file": "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "ShatterLib | OctoLib",
+   "projectID": 916747,
+   "fileID": 9809320,
+   "file": "OctoLib-NEOFORGE-0.6.3.3-1.21.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Silent Gear",
+   "projectID": 297039,
+   "fileID": 8095210,
+   "file": "silent-gear-1.21.1-neoforge-4.2.1.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Silent Lib",
+   "projectID": 242998,
+   "fileID": 7935618,
+   "file": "silent-lib-1.21.1-neoforge-10.6.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Simple Backups",
+   "projectID": 583228,
+   "fileID": 7151913,
+   "file": "SimpleBackups-1.21-4.0.21.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "Simply Swords",
+   "projectID": 659887,
+   "fileID": 8746001,
+   "file": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Simply Tooltips",
+   "projectID": 1475755,
+   "fileID": 8715141,
+   "file": "SimplyTooltips-neoforge-0.1.5.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "SmartBrainLib",
+   "projectID": 661293,
+   "fileID": 7055149,
+   "file": "SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Sodium",
+   "projectID": 394468,
+   "fileID": 8756580,
+   "file": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "unsupported"
+  },
+  {
+   "n": "Sophisticated Backpacks",
+   "projectID": 422301,
+   "fileID": 9758733,
+   "file": "sophisticatedbackpacks-1.21.1-3.26.23.2263.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Sophisticated Core",
+   "projectID": 618298,
+   "fileID": 9806995,
+   "file": "sophisticatedcore-1.21.1-1.5.43.2504.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Sophisticated Storage",
+   "projectID": 619320,
+   "fileID": 9806975,
+   "file": "sophisticatedstorage-1.21.1-1.6.22.2244.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Sound Physics Remastered",
+   "projectID": 535489,
+   "fileID": 9279974,
+   "file": "sound-physics-remastered-neoforge-1.21.1-1.5.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "Sparse Structures",
+   "projectID": 911437,
+   "fileID": 6456912,
+   "file": "sparsestructures-neoforge-1.21.1-3.0.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "StateObserver",
+   "projectID": 701213,
+   "fileID": 7357057,
+   "file": "stateobserver-neoforge-1.21.1-1.6.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Steam 'n' Rails Neoforge",
+   "projectID": 1414670,
+   "fileID": 8243336,
+   "file": "railways-0.2.1+neoforge-mc1.21.1.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Storage Drawers",
+   "projectID": 223852,
+   "fileID": 6995432,
+   "file": "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Structory",
+   "projectID": 636540,
+   "fileID": 5800612,
+   "file": "Structory_1.21.x_v1.3.6.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "Structory: Towers",
+   "projectID": 783522,
+   "fileID": 5800614,
+   "file": "Structory_Towers_1.21_v1.0.8.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required",
+   "cf_file": "Structory_Towers_1.21.x_v1.0.8.jar"
+  },
+  {
+   "n": "SuperMartijn642's Config Lib",
+   "projectID": 438332,
+   "fileID": 5546996,
+   "file": "supermartijn642configlib-1.1.8-neoforge-mc1.21.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "optional"
+  },
+  {
+   "n": "SuperMartijn642's Core Lib",
+   "projectID": 454372,
+   "fileID": 9689805,
+   "file": "supermartijn642corelib-1.1.26b-neoforge-mc1.21.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Supplementaries",
+   "projectID": 412082,
+   "fileID": 9724360,
+   "file": "supplementaries-1.21.1-4.1.4-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Tectonic",
+   "projectID": 686836,
+   "fileID": 8855043,
+   "file": "tectonic-3.0.28-neoforge-21.1.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "TenshiLib",
+   "projectID": 312040,
+   "fileID": 9690639,
+   "file": "tenshilib-1.21.1-2.4.0-neoforge.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "TerraBlender",
+   "projectID": 940057,
+   "fileID": 6054947,
+   "file": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Thaumaturge",
+   "projectID": 1628024,
+   "fileID": 9815157,
+   "file": "thaumaturge-1.21.1-NeoForge-1.1.1.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Thaumaturgic Brewing",
+   "projectID": 1798272,
+   "fileID": 9660295,
+   "file": "thaumaturgicbrewing-1.21.1-0.2.1.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Thaumaturgic Infusion",
+   "projectID": 1798279,
+   "fileID": 9660293,
+   "file": "thaumaturgicinfusion-1.21.1-0.8.4.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "Thaumaturgic Tinkerer",
+   "projectID": 1802868,
+   "fileID": 9719010,
+   "file": "thaumaturgictinkerer-1.21.1-1.1.0.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "The Aether",
+   "projectID": 255308,
+   "fileID": 7043502,
+   "file": "aether-1.21.1-1.5.10-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "The Bumblezone - NeoForge/Forge",
+   "projectID": 362479,
+   "fileID": 9772787,
+   "file": "the_bumblezone-7.20.0+1.21.1-neoforge.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required",
+   "cf_file": "the_bumblezone-7.20.0-1.21.1-neoforge.jar"
+  },
+  {
+   "n": "The Twilight Forest",
+   "projectID": 227639,
+   "fileID": 7797302,
+   "file": "twilightforest-1.21.1-4.8.3345-universal.jar",
+   "origem": "curseforge"
+  },
+  {
+   "n": "The Undergarden",
+   "projectID": 379849,
+   "fileID": 7862546,
+   "file": "The_Undergarden-1.21.1-0.9.6.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Theurgy",
+   "projectID": 430636,
+   "fileID": 9647611,
+   "file": "theurgy-1.21.1-neoforge-1.80.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Tom's Simple Storage Mod",
+   "projectID": 378609,
+   "fileID": 8769956,
+   "file": "toms_storage-1.21-2.4.2.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "TorchMaster",
+   "projectID": 254268,
+   "fileID": 8949981,
+   "file": "torchmaster-neoforge-1.21.1-21.1.13.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Towns and Towers",
+   "projectID": 626761,
+   "fileID": 8657120,
+   "file": "t_and_t-fabric-neoforge-1.13.11.jar",
+   "origem": "modrinth",
+   "client": "optional",
+   "server": "required"
+  },
+  {
+   "n": "TrashSlot",
+   "projectID": 235577,
+   "fileID": 8163135,
+   "file": "trashslot-neoforge-1.21.1-21.1.11.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Unusual End",
+   "projectID": 617757,
+   "fileID": 8856390,
+   "file": "unusualend-2.3.1b.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Valhelsia Core",
+   "projectID": 416935,
+   "fileID": 5847440,
+   "file": "valhelsia_core-neoforge-1.21.1-1.1.4.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "VerseWorks: A Mystcraft Inspired Mod",
+   "projectID": 1484933,
+   "fileID": 8333457,
+   "file": "verseworks-1.3.8.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "Waystones",
+   "projectID": 245755,
+   "fileID": 9626089,
+   "file": "waystones-neoforge-1.21.1-21.1.47.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "When Dungeons Arise",
+   "projectID": 442508,
+   "fileID": 7150870,
+   "file": "DungeonsArise-1.21.1-2.1.68-release.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Xaero's Minimap",
+   "projectID": 263420,
+   "fileID": 9067173,
+   "file": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "Xaero's World Map",
+   "projectID": 317780,
+   "fileID": 9067277,
+   "file": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "optional"
+  },
+  {
+   "n": "YUNG's API",
+   "projectID": 1015100,
+   "fileID": 8894736,
+   "file": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Desert Temples",
+   "projectID": 1015114,
+   "fileID": 6276955,
+   "file": "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Dungeons",
+   "projectID": 1015112,
+   "fileID": 5954804,
+   "file": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better End Island",
+   "projectID": 1015127,
+   "fileID": 6300968,
+   "file": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Jungle Temples",
+   "projectID": 1015123,
+   "fileID": 5924482,
+   "file": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Mineshafts",
+   "projectID": 1015096,
+   "fileID": 5812193,
+   "file": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Nether Fortresses",
+   "projectID": 1015118,
+   "fileID": 6606621,
+   "file": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Ocean Monuments",
+   "projectID": 1015115,
+   "fileID": 5924487,
+   "file": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Strongholds",
+   "projectID": 1015105,
+   "fileID": 6272264,
+   "file": "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Better Witch Huts",
+   "projectID": 1015144,
+   "fileID": 5812532,
+   "file": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "YUNG's Extras",
+   "projectID": 1015146,
+   "fileID": 5812546,
+   "file": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+   "origem": "modrinth",
+   "client": "unsupported",
+   "server": "required"
+  },
+  {
+   "n": "Zeta",
+   "projectID": 968868,
+   "fileID": 9804404,
+   "file": "Zeta-1.1-41.jar",
+   "origem": "modrinth",
+   "client": "required",
+   "server": "required"
+  }
+ ],
+ "fora_do_curseforge": [],
+ "download_manual": [],
+ "nao_encontrados": []
+}

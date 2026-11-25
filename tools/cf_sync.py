@@ -9,6 +9,8 @@ Passos:
 Uso:
   python -I tools/cf_sync.py              sincroniza (passos 1-3)
   python -I tools/cf_sync.py --export     também gera dist/Thaumora-<versão>.zip (formato de modpack do CurseForge)
+  python -I tools/cf_sync.py --export-only  só gera o .zip a partir do data/cf_lock.json, sem chave da API
+                                           (para quando o cf_lock já está em dia com o lock.json)
 
 A chave nunca é gravada em nenhum arquivo do pack.
 """
@@ -107,6 +109,8 @@ def download(f):
 
 def main():
     global KEY
+    if "--export-only" in sys.argv:
+        return export_only()
     KEY = api_key()
     lock = json.loads(LOCK.read_text(encoding="utf-8"))
     pins = {m["cf"]: m["pin"] for m in json.loads(MODS.read_text(encoding="utf-8")) if m.get("cf") and m.get("pin")}
@@ -184,11 +188,31 @@ def main():
         export(entries, missing)
 
 
+def export_only():
+    """Gera o .zip a partir do cf_lock.json, conferindo antes se ele cobre exatamente os jars do pack."""
+    cf = json.loads(CF_LOCK.read_text(encoding="utf-8"))
+    lock = json.loads(LOCK.read_text(encoding="utf-8"))
+    prism = ROOT / "data" / "cf_prism.json"
+    pack_files = {m["file"] for m in lock["mods"]}
+    if prism.exists():
+        pack_files |= {c["file"] for c in json.loads(prism.read_text(encoding="utf-8"))["files"]}
+    cf_files = {e["file"] for e in cf["files"]}
+    if pack_files != cf_files:
+        print("O cf_lock.json está desatualizado em relação ao lock.json/cf_prism.json:")
+        for f in sorted(pack_files - cf_files):
+            print("  sem ID no CurseForge:", f)
+        for f in sorted(cf_files - pack_files):
+            print("  não está mais no pack:", f)
+        sys.exit("Atualize o cf_lock.json (cf_sync.py com a chave, ou à mão) antes de exportar.")
+    export(cf["files"], cf.get("fora_do_curseforge", []))
+
+
 def export(entries, missing):
     if missing:
         print("\n(atenção: o .zip sai sem os mods acima, que não estão no CurseForge)")
     manifest = {
-        "minecraft": {"version": MC, "modLoaders": [{"id": f"neoforge-{PACK['neoforge']}", "primary": True}]},
+        "minecraft": {"version": MC, "modLoaders": [{"id": f"neoforge-{PACK['neoforge']}", "primary": True}],
+                      **({"recommendedRam": PACK["ram_mb"]} if PACK.get("ram_mb") else {})},
         "manifestType": "minecraftModpack", "manifestVersion": 1,
         "name": PACK["name"], "version": PACK["version"], "author": PACK["author"],
         "files": [{"projectID": e["projectID"], "fileID": e["fileID"], "required": True} for e in entries],
@@ -203,10 +227,10 @@ def export(entries, missing):
         z.writestr("modlist.html", modlist)
         ov = ROOT / "overrides"  # configs, kubejs, quests etc. que vão junto no pack
         if ov.exists():
-            for p in ov.rglob("*"):
-                if p.is_file():
+            for p in sorted(ov.rglob("*")):
+                if p.is_file() and not any(part.startswith(".") for part in p.relative_to(ov).parts):
                     z.write(p, "overrides/" + p.relative_to(ov).as_posix())
-    print(f"\nmodpack gerado: {out}")
+    print(f"\nmodpack gerado: {out} ({len(entries)} mods)")
 
 
 if __name__ == "__main__":

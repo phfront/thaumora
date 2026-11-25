@@ -59,6 +59,16 @@
 - Sem erros de geração do End no log. O "Can't keep up" de 17 s logo depois é dos `/locate`, que são pesados.
 - ⚠️ O travamento do VerseWorks em `thaumictinkerer:bedrock` **voltou** (5,1 s, logo depois do teleporte). A pilha passa pelo Galosphere (`MobEvents.handleBurrowAnchorTeleporting` → carregamento síncrono de chunk). Investigar por que essa dimensão é processada sem ninguém nela.
 
+### Pack do CurseForge (0.1.0-beta), instalado como um jogador instalaria
+- Export do Prism (fingerprint) achou 196 dos 217 jars. Os outros 21 foram achados pela API pública do site do CurseForge e conferidos por dentro: o código é idêntico, muda só o `META-INF/MANIFEST.MF` (data de build). TerraBlender NeoForge fica num projeto separado no CurseForge ("TerraBlender (NeoForge)").
+- **Serene Seasons** fixado na 10.1.0.3 (`pin`): as versões 10.1.0.7–10.1.0.9 só existem no Modrinth. A 10.1.0.9 corrige um "mixin stack overflow" que só aparece em certas combinações; testar se aparece com a 10.1.0.3.
+- IDs de todos os jars em `data/cf_lock.json`; `.zip` gerado com `cf_sync.py --export-only` (sem chave).
+- Importado no Prism como **Thaumora Beta** (10 GB): baixou os 217 mods. 197 idênticos byte a byte aos testados, 17 só com o `MANIFEST.MF` diferente, 3 com o mesmo conteúdo e compactação diferente.
+- **Structory** e **Structory: Towers** bloqueiam download por launchers de terceiros: o Prism pede para baixar à mão (o app do CurseForge baixa sozinho). Os jars do nosso cache são os mesmos (mesmo hash).
+- ✅ Menu em 1 min 20 s; **mundo novo** `BetaTeste` criado e jogável. Sem erros novos.
+- Primeira sessão com 27.922 receitas; na segunda, **28.169**. O Cucumber (Mystical Agriculture) só resolve as tags de lingotes/gemas depois do primeiro mundo carregar, e as receitas dependentes aparecem na abertura seguinte. Afeta só a primeira sessão de cada jogador.
+- As configs geradas do zero na Beta saíram mais completas que as da instância de desenvolvimento (ex.: Neo Vitae reconhece o âmbar do Thaumaturge), que acumulou configs de antes de alguns mods entrarem.
+
 ### Pendente
 
 1. Investigar o travamento recorrente na dimensão `thaumictinkerer:bedrock` (VerseWorks/Galosphere).

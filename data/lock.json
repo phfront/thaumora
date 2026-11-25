@@ -1959,12 +1959,12 @@
   {
    "slug": "serene-seasons",
    "title": "Serene Seasons",
-   "version": "10.1.0.9",
+   "version": "10.1.0.3",
    "type": "beta",
-   "file": "SereneSeasons-neoforge-1.21.1-10.1.0.9.jar",
-   "url": "https://cdn.modrinth.com/data/e0bNACJD/versions/pHEgQQUE/SereneSeasons-neoforge-1.21.1-10.1.0.9.jar",
-   "sha1": "6b98eb4e64344bb8aba424187ed08bf04e59dccf",
-   "size": 163020,
+   "file": "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/e0bNACJD/versions/SPj5bJoM/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+   "sha1": "127e4a3e699dafebc512e1fa7983f245b49cb420",
+   "size": 159206,
    "client": "required",
    "server": "required",
    "via": "Serene Seasons"

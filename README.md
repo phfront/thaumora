@@ -22,6 +22,7 @@
 | `tools/cf_sync.py` | casa cada jar com o CurseForge por fingerprint (`tools/Murmur2.java`), baixa os mods que só estão lá e, com `--export`, gera o `.zip` do modpack |
 | `tools/cf_map.py` | mapeamento preliminar para o CurseForge, sem chave (cfwidget) |
 | `tools/build_page.py` | gera a página `thaumora.html` a partir de `data/mods.json` |
+| `tools/build_instance.py` | monta a pasta de mods da instância do Prism a partir de `lock.json` + `cf_prism.json`: copia o que falta (cache ou download, inclusive do CDN do CurseForge), troca jars com sha1 errado e tira o que sobrou para `mods-removidos/`. Sem `--apply` só mostra o que faria; `--import-prism` regrava o `cf_prism.json` depois de instalar um mod do CurseForge pelo Prism |
 
 **Por que 1.21.1 e não a última?** É a versão "estável" do modding atual: quase todos os grandes mods de magia (Ars Nouveau, Iron's Spells, Occultism, Malum, Forbidden & Arcanus) estão nela. Versões mais novas ainda têm poucos mods de magia portados.
 

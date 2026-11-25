@@ -83,7 +83,7 @@
  {"n":"Iron's Spells Delight","mr":"irons-spells-delight","cat":"fazenda","s":"ok","t":"—","d":"Comidas que recuperam mana."},
  {"n":"Ender's Delight","mr":"enders-delight","cat":"fazenda","s":"ok","t":"—","d":"Culinária com ingredientes do End."},
  {"n":"Brewin' and Chewin'","mr":"brewin-and-chewin","cat":"fazenda","s":"ok","t":"—","d":"Barris de fermentação, bebidas e queijos."},
- {"n":"Serene Seasons","mr":"serene-seasons","cat":"fazenda","s":"ok","t":"—","d":"Estações do ano que afetam as plantações."},
+ {"n":"Serene Seasons","mr":"serene-seasons","cat":"fazenda","s":"ok","t":"—","pin":"10.1.0.3","d":"Estações do ano que afetam as plantações."},
  {"n":"Mystical Agriculture","mr":"mystical-agriculture","cat":"fazenda","s":"ok","t":"III","d":"Sementes mágicas que fazem crescer minérios e essências."},
  {"n":"Cooking for Blockheads","mr":"cooking-for-blockheads","cat":"fazenda","s":"ok","t":"—","d":"Cozinha integrada com livro de receitas."},
  {"n":"Farming for Blockheads","mr":"farming-for-blockheads","cat":"fazenda","s":"ok","t":"—","d":"Mercado para comprar sementes e mudas."},

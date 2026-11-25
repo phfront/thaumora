@@ -1,7 +1,8 @@
 {
  "name": "Thaumora",
- "version": "0.1.0",
+ "version": "0.1.0-beta",
  "author": "Thaumtek",
  "minecraft": "1.21.1",
- "neoforge": "21.1.267"
+ "neoforge": "21.1.267",
+ "ram_mb": 10240
 }

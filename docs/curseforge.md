@@ -35,7 +35,12 @@ O CurseForge identifica cada jar por um hash (murmur2) e tem um endpoint que rec
 ## O que já dá para automatizar
 - [x] `lock.json` (versões travadas) e o cache de jars
 - [x] mapeamento preliminar para o CurseForge (`cf_map.py`)
-- [ ] fingerprint exato (precisa da chave ou do export do Prism)
-- [ ] baixar os 11 mods só do CurseForge (precisa da chave; sem ela, o Prism instala pela aba CurseForge do navegador de mods)
-- [ ] gerar o `.zip` do modpack (`manifest.json`, `modlist.html`, `overrides/` com configs, KubeJS e quests)
-- [ ] enviar o pack ao CurseForge (a API de upload de modpack pede um token de autor; o primeiro envio do projeto é manual no site)
+- [x] fingerprint exato: feito pelo export do Prism (196 de 217) + API pública do site do CurseForge para os outros 21 → `data/cf_lock.json`
+- [x] baixar os mods só do CurseForge: `tools/build_instance.py` baixa pelo CDN público (`mediafilez.forgecdn.net`), sem chave, a partir dos IDs do `cf_prism.json`. Para um mod **novo** do CurseForge ainda é preciso instalar uma vez pelo Prism (é de lá que saem os IDs) e rodar `--import-prism`
+- [x] gerar o `.zip` do modpack: `python -I tools/cf_sync.py --export-only` → `dist/Thaumora-<versão>.zip` (para se o `cf_lock.json` não cobrir exatamente os jars do pack). `overrides/` ainda vazio: configs, KubeJS e quests entram quando forem do pack de fato
+- [ ] enviar o pack ao CurseForge (a API de upload de modpack pede um token de autor; o primeiro envio do projeto é manual no site). Textos da página em `docs/curseforge-pagina.md`
+
+## Mod novo no pack, daqui para frente
+1. `mods.json` → `resolve_mods.py` → `build_instance.py --apply` → testar.
+2. Achar o projeto/arquivo do jar novo no CurseForge e acrescentar em `data/cf_lock.json` (com a chave: `cf_sync.py` faz sozinho).
+3. `cf_sync.py --export-only` recusa exportar se algum jar do pack ficar sem ID.
